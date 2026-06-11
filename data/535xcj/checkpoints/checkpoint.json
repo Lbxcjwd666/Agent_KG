@@ -1,0 +1,186 @@
+{
+  "last_segment": 8,
+  "batch_num": 1,
+  "entity_id_counter": 25,
+  "relation_id_counter": 10,
+  "entities": {
+    "西池集_LIT": {
+      "id": 1,
+      "text": "西池集",
+      "label": "LIT"
+    },
+    "重阳子_LIT": {
+      "id": 2,
+      "text": "重阳子",
+      "label": "LIT"
+    },
+    "咏性功十八首_LIT": {
+      "id": 3,
+      "text": "咏性功十八首",
+      "label": "LIT"
+    },
+    "回春子_LIT": {
+      "id": 4,
+      "text": "回春子",
+      "label": "LIT"
+    },
+    "海蟾子_LIT": {
+      "id": 5,
+      "text": "海蟾子",
+      "label": "LIT"
+    },
+    "灵阳子_LIT": {
+      "id": 6,
+      "text": "灵阳子",
+      "label": "LIT"
+    },
+    "心性非一物_BEC": {
+      "id": 7,
+      "text": "心性非一物",
+      "label": "BEC"
+    },
+    "性在心中见_VIS": {
+      "id": 8,
+      "text": "性在心中见",
+      "label": "VIS"
+    },
+    "心_VIS": {
+      "id": 9,
+      "text": "心",
+      "label": "VIS"
+    },
+    "灵台深广似江_BDP": {
+      "id": 10,
+      "text": "灵台深广似江",
+      "label": "BDP"
+    },
+    "灵台_BDP": {
+      "id": 11,
+      "text": "灵台",
+      "label": "BDP"
+    },
+    "毒龙_SYM": {
+      "id": 12,
+      "text": "毒龙",
+      "label": "SYM"
+    },
+    "沟血污泥扬_SIG": {
+      "id": 13,
+      "text": "沟血污泥扬",
+      "label": "SIG"
+    },
+    "清光如鉴_TNG": {
+      "id": 14,
+      "text": "清光如鉴",
+      "label": "TNG"
+    },
+    "静中现个团圆月_TNG": {
+      "id": 15,
+      "text": "静中现个团圆月",
+      "label": "TNG"
+    },
+    "浓云密雨雾凄凄_TNG": {
+      "id": 16,
+      "text": "浓云密雨雾凄凄",
+      "label": "TNG"
+    },
+    "蟾光_TNG": {
+      "id": 17,
+      "text": "蟾光",
+      "label": "TNG"
+    },
+    "《西池集》_LIT": {
+      "id": 18,
+      "text": "《西池集》",
+      "label": "LIT"
+    },
+    "坤道_CON": {
+      "id": 19,
+      "text": "坤道",
+      "label": "CON"
+    },
+    "性命_CON": {
+      "id": 20,
+      "text": "性命",
+      "label": "CON"
+    },
+    "气_VIS": {
+      "id": 22,
+      "text": "气",
+      "label": "VIS"
+    },
+    "性根_VIS": {
+      "id": 23,
+      "text": "性根",
+      "label": "VIS"
+    },
+    "命蒂_VIS": {
+      "id": 24,
+      "text": "命蒂",
+      "label": "VIS"
+    }
+  },
+  "relations": [
+    {
+      "id": 1,
+      "from_id": 2,
+      "to_id": 3,
+      "type": "from"
+    },
+    {
+      "id": 2,
+      "from_id": 4,
+      "to_id": 3,
+      "type": "from"
+    },
+    {
+      "id": 3,
+      "from_id": 5,
+      "to_id": 3,
+      "type": "from"
+    },
+    {
+      "id": 4,
+      "from_id": 6,
+      "to_id": 3,
+      "type": "from"
+    },
+    {
+      "id": 5,
+      "from_id": 8,
+      "to_id": 9,
+      "type": "mapped_part"
+    },
+    {
+      "id": 6,
+      "from_id": 18,
+      "to_id": 19,
+      "type": "from"
+    },
+    {
+      "id": 7,
+      "from_id": 18,
+      "to_id": 20,
+      "type": "from"
+    },
+    {
+      "id": 8,
+      "from_id": 21,
+      "to_id": 23,
+      "type": "perf"
+    },
+    {
+      "id": 9,
+      "from_id": 22,
+      "to_id": 24,
+      "type": "perf"
+    }
+  ],
+  "success_count": 4,
+  "fail_count": 3,
+  "failed_segments": [
+    4,
+    5,
+    6
+  ]
+}

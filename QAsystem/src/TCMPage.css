@@ -1,0 +1,119 @@
+.tcm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.tcm-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tcm-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.tcm-nav a:hover {
+  text-decoration: underline;
+}
+
+.tcm-content {
+  width: 80%;
+  max-width: 1200px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.alphabet {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.alphabet span {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+.alphabet .active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.alphabet .disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fafafa;
+  height: 600px; /* 固定高度 */
+  max-height: 600px; /* 固定最大高度 */
+  overflow-y: auto; /* 超出高度时滚动 */
+}
+
+.item {
+  flex: 1 1 calc(50% - 40px);
+  margin: 10px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: #f0e6d2; /* 悬停时的背景颜色 */
+}
+
+.no-item {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination span {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.pagination .active {
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,1205 @@
+{
+  "last_segment": 4,
+  "batch_num": 1,
+  "entity_id_counter": 254,
+  "relation_id_counter": 1,
+  "entities": {
+    "百虫入耳_DIS": {
+      "id": 1,
+      "text": "百虫入耳",
+      "label": "DIS"
+    },
+    "小蒜_MED": {
+      "id": 2,
+      "text": "小蒜",
+      "label": "MED"
+    },
+    "鸡血_MED": {
+      "id": 3,
+      "text": "鸡血",
+      "label": "MED"
+    },
+    "误吞针入喉_DIS": {
+      "id": 4,
+      "text": "误吞针入喉",
+      "label": "DIS"
+    },
+    "磁石_MED": {
+      "id": 5,
+      "text": "磁石",
+      "label": "MED"
+    },
+    "虎咬伤_DIS": {
+      "id": 6,
+      "text": "虎咬伤",
+      "label": "DIS"
+    },
+    "蛴螬_MED": {
+      "id": 7,
+      "text": "蛴螬",
+      "label": "MED"
+    },
+    "香麻油_FOO": {
+      "id": 8,
+      "text": "香麻油",
+      "label": "FOO"
+    },
+    "误吞水蛭入腹内_DIS": {
+      "id": 9,
+      "text": "误吞水蛭入腹内",
+      "label": "DIS"
+    },
+    "田中黄泥_MED": {
+      "id": 10,
+      "text": "田中黄泥",
+      "label": "MED"
+    },
+    "小死鱼_FOO": {
+      "id": 11,
+      "text": "小死鱼",
+      "label": "FOO"
+    },
+    "猪脂_FOO": {
+      "id": 12,
+      "text": "猪脂",
+      "label": "FOO"
+    },
+    "巴豆_MED": {
+      "id": 13,
+      "text": "巴豆",
+      "label": "MED"
+    },
+    "荸荠_FOO": {
+      "id": 14,
+      "text": "荸荠",
+      "label": "FOO"
+    },
+    "小儿误吞铜钱_DIS": {
+      "id": 15,
+      "text": "小儿误吞铜钱",
+      "label": "DIS"
+    },
+    "绞肠沙症_DIS": {
+      "id": 16,
+      "text": "绞肠沙症",
+      "label": "DIS"
+    },
+    "手足厥冷_SYM": {
+      "id": 17,
+      "text": "手足厥冷",
+      "label": "SYM"
+    },
+    "腹痛_SYM": {
+      "id": 18,
+      "text": "腹痛",
+      "label": "SYM"
+    },
+    "膝弯_BDP": {
+      "id": 19,
+      "text": "膝弯",
+      "label": "BDP"
+    },
+    "紫黑点_SIG": {
+      "id": 20,
+      "text": "紫黑点",
+      "label": "SIG"
+    },
+    "恶血_BEC": {
+      "id": 21,
+      "text": "恶血",
+      "label": "BEC"
+    },
+    "解诸毒_DIS": {
+      "id": 22,
+      "text": "解诸毒",
+      "label": "DIS"
+    },
+    "黄连_MED": {
+      "id": 23,
+      "text": "黄连",
+      "label": "MED"
+    },
+    "甘草_MED": {
+      "id": 24,
+      "text": "甘草",
+      "label": "MED"
+    },
+    "解榛疮毒_DIS": {
+      "id": 25,
+      "text": "解榛疮毒",
+      "label": "DIS"
+    },
+    "韭菜根_MED": {
+      "id": 26,
+      "text": "韭菜根",
+      "label": "MED"
+    },
+    "蟹黄_FOO": {
+      "id": 27,
+      "text": "蟹黄",
+      "label": "FOO"
+    },
+    "调经_DIS": {
+      "id": 28,
+      "text": "调经",
+      "label": "DIS"
+    },
+    "女子七岁肾气盛齿更发长二七而天癸至任脉通大冲脉盛月事以时下_SYN": {
+      "id": 29,
+      "text": "女子七岁肾气盛齿更发长二七而天癸至任脉通大冲脉盛月事以时下",
+      "label": "SYN"
+    },
+    "天癸_VIS": {
+      "id": 30,
+      "text": "天癸",
+      "label": "VIS"
+    },
+    "任脉_MER": {
+      "id": 31,
+      "text": "任脉",
+      "label": "MER"
+    },
+    "大冲脉_MER": {
+      "id": 32,
+      "text": "大冲脉",
+      "label": "MER"
+    },
+    "月事_DIS": {
+      "id": 33,
+      "text": "月事",
+      "label": "DIS"
+    },
+    "产后_DIS": {
+      "id": 34,
+      "text": "产后",
+      "label": "DIS"
+    },
+    "宿疾_DIS": {
+      "id": 35,
+      "text": "宿疾",
+      "label": "DIS"
+    },
+    "血分痨瘵_DIS": {
+      "id": 36,
+      "text": "血分痨瘵",
+      "label": "DIS"
+    },
+    "崩漏不止_DIS": {
+      "id": 37,
+      "text": "崩漏不止",
+      "label": "DIS"
+    },
+    "心火亢盛_BEC": {
+      "id": 38,
+      "text": "心火亢盛",
+      "label": "BEC"
+    },
+    "血脉泛溢_BEC": {
+      "id": 39,
+      "text": "血脉泛溢",
+      "label": "BEC"
+    },
+    "肝实而不纳血_BEC": {
+      "id": 40,
+      "text": "肝实而不纳血",
+      "label": "BEC"
+    },
+    "出纳之道遂废_BEC": {
+      "id": 41,
+      "text": "出纳之道遂废",
+      "label": "BEC"
+    },
+    "相火挟心火之势_BEC": {
+      "id": 42,
+      "text": "相火挟心火之势",
+      "label": "BEC"
+    },
+    "月事错经妄行_BEC": {
+      "id": 43,
+      "text": "月事错经妄行",
+      "label": "BEC"
+    },
+    "带下白浊白淫_DIS": {
+      "id": 44,
+      "text": "带下白浊白淫",
+      "label": "DIS"
+    },
+    "血枯发热_DIS": {
+      "id": 45,
+      "text": "血枯发热",
+      "label": "DIS"
+    },
+    "劳极_DIS": {
+      "id": 46,
+      "text": "劳极",
+      "label": "DIS"
+    },
+    "经闭不行_DIS": {
+      "id": 47,
+      "text": "经闭不行",
+      "label": "DIS"
+    },
+    "经漏不止_DIS": {
+      "id": 48,
+      "text": "经漏不止",
+      "label": "DIS"
+    },
+    "月经不调_DIS": {
+      "id": 49,
+      "text": "月经不调",
+      "label": "DIS"
+    },
+    "犯之微若秋毫感病重如山岳_BEC": {
+      "id": 50,
+      "text": "犯之微若秋毫感病重如山岳",
+      "label": "BEC"
+    },
+    "病源_DIS": {
+      "id": 51,
+      "text": "病源",
+      "label": "DIS"
+    },
+    "劳伤气血_BEC": {
+      "id": 52,
+      "text": "劳伤气血",
+      "label": "BEC"
+    },
+    "风冷气袭_BEC": {
+      "id": 53,
+      "text": "风冷气袭",
+      "label": "BEC"
+    },
+    "七情_BEC": {
+      "id": 54,
+      "text": "七情",
+      "label": "BEC"
+    },
+    "六淫_BEC": {
+      "id": 55,
+      "text": "六淫",
+      "label": "BEC"
+    },
+    "房劳_BEC": {
+      "id": 56,
+      "text": "房劳",
+      "label": "BEC"
+    },
+    "经者候也_DIS": {
+      "id": 57,
+      "text": "经者候也",
+      "label": "DIS"
+    },
+    "阴阳愆伏_BEC": {
+      "id": 58,
+      "text": "阴阳愆伏",
+      "label": "BEC"
+    },
+    "阳_CON": {
+      "id": 59,
+      "text": "阳",
+      "label": "CON"
+    },
+    "阴_CON": {
+      "id": 60,
+      "text": "阴",
+      "label": "CON"
+    },
+    "前期而来_DIS": {
+      "id": 61,
+      "text": "前期而来",
+      "label": "DIS"
+    },
+    "后期而至_DIS": {
+      "id": 62,
+      "text": "后期而至",
+      "label": "DIS"
+    },
+    "乍多乍少_DIS": {
+      "id": 63,
+      "text": "乍多乍少",
+      "label": "DIS"
+    },
+    "断绝不行_DIS": {
+      "id": 64,
+      "text": "断绝不行",
+      "label": "DIS"
+    },
+    "寒热为邪_BEC": {
+      "id": 66,
+      "text": "寒热为邪",
+      "label": "BEC"
+    },
+    "妇人月水不调_DIS": {
+      "id": 67,
+      "text": "妇人月水不调",
+      "label": "DIS"
+    },
+    "体虚_CON": {
+      "id": 68,
+      "text": "体虚",
+      "label": "CON"
+    },
+    "风冷之气_BEC": {
+      "id": 69,
+      "text": "风冷之气",
+      "label": "BEC"
+    },
+    "胞内_BDP": {
+      "id": 70,
+      "text": "胞内",
+      "label": "BDP"
+    },
+    "冲任之脉_MER": {
+      "id": 71,
+      "text": "冲任之脉",
+      "label": "MER"
+    },
+    "太阳少阴之经_MER": {
+      "id": 72,
+      "text": "太阳少阴之经",
+      "label": "MER"
+    },
+    "手太阳小肠之经_MER": {
+      "id": 73,
+      "text": "手太阳小肠之经",
+      "label": "MER"
+    },
+    "手少阴心之经_MER": {
+      "id": 74,
+      "text": "手少阴心之经",
+      "label": "MER"
+    },
+    "乳汁_FOO": {
+      "id": 75,
+      "text": "乳汁",
+      "label": "FOO"
+    },
+    "月水_DIS": {
+      "id": 76,
+      "text": "月水",
+      "label": "DIS"
+    },
+    "冷热调和_BEC": {
+      "id": 77,
+      "text": "冷热调和",
+      "label": "BEC"
+    },
+    "太阳少阴_MER": {
+      "id": 79,
+      "text": "太阳少阴",
+      "label": "MER"
+    },
+    "血_MED": {
+      "id": 80,
+      "text": "血",
+      "label": "MED"
+    },
+    "寒温乖适_BEC": {
+      "id": 81,
+      "text": "寒温乖适",
+      "label": "BEC"
+    },
+    "经脉则虚_BEC": {
+      "id": 82,
+      "text": "经脉则虚",
+      "label": "BEC"
+    },
+    "乘之_BEC": {
+      "id": 84,
+      "text": "乘之",
+      "label": "BEC"
+    },
+    "邪传之血_BEC": {
+      "id": 85,
+      "text": "邪传之血",
+      "label": "BEC"
+    },
+    "寒_BEC": {
+      "id": 86,
+      "text": "寒",
+      "label": "BEC"
+    },
+    "温_BEC": {
+      "id": 87,
+      "text": "温",
+      "label": "BEC"
+    },
+    "月水乍多乍少_DIS": {
+      "id": 88,
+      "text": "月水乍多乍少",
+      "label": "DIS"
+    },
+    "经脉不调_DIS": {
+      "id": 89,
+      "text": "经脉不调",
+      "label": "DIS"
+    },
+    "堕胎_DIS": {
+      "id": 90,
+      "text": "堕胎",
+      "label": "DIS"
+    },
+    "脾胃不和_BEC": {
+      "id": 92,
+      "text": "脾胃不和",
+      "label": "BEC"
+    },
+    "饮食少进_SIG": {
+      "id": 93,
+      "text": "饮食少进",
+      "label": "SIG"
+    },
+    "心气停结_BEC": {
+      "id": 95,
+      "text": "心气停结",
+      "label": "BEC"
+    },
+    "气_BEC": {
+      "id": 97,
+      "text": "气",
+      "label": "BEC"
+    },
+    "成块_SIG": {
+      "id": 98,
+      "text": "成块",
+      "label": "SIG"
+    },
+    "气之凝_BEC": {
+      "id": 99,
+      "text": "气之凝",
+      "label": "BEC"
+    },
+    "将行而痛_SYM": {
+      "id": 100,
+      "text": "将行而痛",
+      "label": "SYM"
+    },
+    "气之滞_BEC": {
+      "id": 101,
+      "text": "气之滞",
+      "label": "BEC"
+    },
+    "行后作痛_SYM": {
+      "id": 102,
+      "text": "行后作痛",
+      "label": "SYM"
+    },
+    "气血俱虚_CON": {
+      "id": 103,
+      "text": "气血俱虚",
+      "label": "CON"
+    },
+    "色淡_TNG": {
+      "id": 104,
+      "text": "色淡",
+      "label": "TNG"
+    },
+    "虚_CON": {
+      "id": 105,
+      "text": "虚",
+      "label": "CON"
+    },
+    "错经妄行_BEC": {
+      "id": 106,
+      "text": "错经妄行",
+      "label": "BEC"
+    },
+    "气之乱_BEC": {
+      "id": 107,
+      "text": "气之乱",
+      "label": "BEC"
+    },
+    "紫_TNG": {
+      "id": 108,
+      "text": "紫",
+      "label": "TNG"
+    },
+    "气之热_BEC": {
+      "id": 109,
+      "text": "气之热",
+      "label": "BEC"
+    },
+    "黑_TNG": {
+      "id": 110,
+      "text": "黑",
+      "label": "TNG"
+    },
+    "热之甚_BEC": {
+      "id": 111,
+      "text": "热之甚",
+      "label": "BEC"
+    },
+    "风冷_BEC": {
+      "id": 112,
+      "text": "风冷",
+      "label": "BEC"
+    },
+    "气行则血行_BEC": {
+      "id": 113,
+      "text": "气行则血行",
+      "label": "BEC"
+    },
+    "气止则血止_BEC": {
+      "id": 114,
+      "text": "气止则血止",
+      "label": "BEC"
+    },
+    "王节斋_LIT": {
+      "id": 115,
+      "text": "王节斋",
+      "label": "LIT"
+    },
+    "经闭血死_DIS": {
+      "id": 116,
+      "text": "经闭血死",
+      "label": "DIS"
+    },
+    "通经破血之药_PRE": {
+      "id": 117,
+      "text": "通经破血之药",
+      "label": "PRE"
+    },
+    "饮食劳倦_BEC": {
+      "id": 118,
+      "text": "饮食劳倦",
+      "label": "BEC"
+    },
+    "损伤脾胃_BEC": {
+      "id": 119,
+      "text": "损伤脾胃",
+      "label": "BEC"
+    },
+    "少食恶食_SIG": {
+      "id": 120,
+      "text": "少食恶食",
+      "label": "SIG"
+    },
+    "泄泻疼痛_SYM": {
+      "id": 121,
+      "text": "泄泻疼痛",
+      "label": "SYM"
+    },
+    "汗下致克药_BEC": {
+      "id": 122,
+      "text": "汗下致克药",
+      "label": "BEC"
+    },
+    "中气_BEC": {
+      "id": 123,
+      "text": "中气",
+      "label": "BEC"
+    },
+    "血少_BEC": {
+      "id": 124,
+      "text": "血少",
+      "label": "BEC"
+    },
+    "脾胃虚_SYN": {
+      "id": 125,
+      "text": "脾胃虚",
+      "label": "SYN"
+    },
+    "冬瓜子_MED": {
+      "id": 126,
+      "text": "冬瓜子",
+      "label": "MED"
+    },
+    "慢惊_DIS": {
+      "id": 127,
+      "text": "慢惊",
+      "label": "DIS"
+    },
+    "慢脾风_DIS": {
+      "id": 128,
+      "text": "慢脾风",
+      "label": "DIS"
+    },
+    "黄_MED": {
+      "id": 129,
+      "text": "黄",
+      "label": "MED"
+    },
+    "人参_MED": {
+      "id": 130,
+      "text": "人参",
+      "label": "MED"
+    },
+    "木香_MED": {
+      "id": 131,
+      "text": "木香",
+      "label": "MED"
+    },
+    "莲肉_MED": {
+      "id": 133,
+      "text": "莲肉",
+      "label": "MED"
+    },
+    "扁豆_MED": {
+      "id": 134,
+      "text": "扁豆",
+      "label": "MED"
+    },
+    "茯苓_MED": {
+      "id": 135,
+      "text": "茯苓",
+      "label": "MED"
+    },
+    "白术_MED": {
+      "id": 136,
+      "text": "白术",
+      "label": "MED"
+    },
+    "全蝎_MED": {
+      "id": 137,
+      "text": "全蝎",
+      "label": "MED"
+    },
+    "防风_MED": {
+      "id": 138,
+      "text": "防风",
+      "label": "MED"
+    },
+    "羌活_MED": {
+      "id": 139,
+      "text": "羌活",
+      "label": "MED"
+    },
+    "天麻_MED": {
+      "id": 140,
+      "text": "天麻",
+      "label": "MED"
+    },
+    "脾困内虚_SYN": {
+      "id": 141,
+      "text": "脾困内虚",
+      "label": "SYN"
+    },
+    "将作慢惊_DIS": {
+      "id": 142,
+      "text": "将作慢惊",
+      "label": "DIS"
+    },
+    "陈米_FOO": {
+      "id": 143,
+      "text": "陈米",
+      "label": "FOO"
+    },
+    "慢惊尚有阳症_SYN": {
+      "id": 144,
+      "text": "慢惊尚有阳症",
+      "label": "SYN"
+    },
+    "白附子_MED": {
+      "id": 145,
+      "text": "白附子",
+      "label": "MED"
+    },
+    "僵蚕_MED": {
+      "id": 146,
+      "text": "僵蚕",
+      "label": "MED"
+    },
+    "胆星_MED": {
+      "id": 147,
+      "text": "胆星",
+      "label": "MED"
+    },
+    "蝉蜕_MED": {
+      "id": 148,
+      "text": "蝉蜕",
+      "label": "MED"
+    },
+    "琥珀_MED": {
+      "id": 149,
+      "text": "琥珀",
+      "label": "MED"
+    },
+    "辰砂_MED": {
+      "id": 150,
+      "text": "辰砂",
+      "label": "MED"
+    },
+    "麝香_MED": {
+      "id": 151,
+      "text": "麝香",
+      "label": "MED"
+    },
+    "粟米_FOO": {
+      "id": 152,
+      "text": "粟米",
+      "label": "FOO"
+    },
+    "金箔_MED": {
+      "id": 153,
+      "text": "金箔",
+      "label": "MED"
+    },
+    "慢脾风症_DIS": {
+      "id": 154,
+      "text": "慢脾风症",
+      "label": "DIS"
+    },
+    "胃虚受风_BEC": {
+      "id": 155,
+      "text": "胃虚受风",
+      "label": "BEC"
+    },
+    "面青_SYM": {
+      "id": 156,
+      "text": "面青",
+      "label": "SYM"
+    },
+    "额汗_SYM": {
+      "id": 157,
+      "text": "额汗",
+      "label": "SYM"
+    },
+    "舌强_SIG": {
+      "id": 158,
+      "text": "舌强",
+      "label": "SIG"
+    },
+    "头低_BDP": {
+      "id": 159,
+      "text": "头低",
+      "label": "BDP"
+    },
+    "吐腥_SIG": {
+      "id": 160,
+      "text": "吐腥",
+      "label": "SIG"
+    },
+    "口噤_SIG": {
+      "id": 161,
+      "text": "口噤",
+      "label": "SIG"
+    },
+    "肢冷_SYM": {
+      "id": 162,
+      "text": "肢冷",
+      "label": "SYM"
+    },
+    "脉微_PUL": {
+      "id": 163,
+      "text": "脉微",
+      "label": "PUL"
+    },
+    "蝎附散_PRE": {
+      "id": 164,
+      "text": "蝎附散",
+      "label": "PRE"
+    },
+    "君附散_PRE": {
+      "id": 165,
+      "text": "君附散",
+      "label": "PRE"
+    },
+    "慢脾风久困_SYN": {
+      "id": 166,
+      "text": "慢脾风久困",
+      "label": "SYN"
+    },
+    "吐泻_SIG": {
+      "id": 167,
+      "text": "吐泻",
+      "label": "SIG"
+    },
+    "困睡_SYM": {
+      "id": 168,
+      "text": "困睡",
+      "label": "SYM"
+    },
+    "不食_SIG": {
+      "id": 169,
+      "text": "不食",
+      "label": "SIG"
+    },
+    "多汗_SYM": {
+      "id": 170,
+      "text": "多汗",
+      "label": "SYM"
+    },
+    "朱君散_PRE": {
+      "id": 171,
+      "text": "朱君散",
+      "label": "PRE"
+    },
+    "异功散_PRE": {
+      "id": 172,
+      "text": "异功散",
+      "label": "PRE"
+    },
+    "痰涎盛_SIG": {
+      "id": 173,
+      "text": "痰涎盛",
+      "label": "SIG"
+    },
+    "微喘_SYM": {
+      "id": 174,
+      "text": "微喘",
+      "label": "SYM"
+    },
+    "肢强_SYM": {
+      "id": 175,
+      "text": "肢强",
+      "label": "SYM"
+    },
+    "白僵蚕丸_PRE": {
+      "id": 176,
+      "text": "白僵蚕丸",
+      "label": "PRE"
+    },
+    "回阳气_SYM": {
+      "id": 177,
+      "text": "回阳气",
+      "label": "SYM"
+    },
+    "豁痰涎_SIG": {
+      "id": 178,
+      "text": "豁痰涎",
+      "label": "SIG"
+    },
+    "黑附子_MED": {
+      "id": 179,
+      "text": "黑附子",
+      "label": "MED"
+    },
+    "南星_MED": {
+      "id": 180,
+      "text": "南星",
+      "label": "MED"
+    },
+    "姜_MED": {
+      "id": 181,
+      "text": "姜",
+      "label": "MED"
+    },
+    "枣_MED": {
+      "id": 182,
+      "text": "枣",
+      "label": "MED"
+    },
+    "慢脾困睡不食多汗_SYN": {
+      "id": 183,
+      "text": "慢脾困睡不食多汗",
+      "label": "SYN"
+    },
+    "朱砂_MED": {
+      "id": 184,
+      "text": "朱砂",
+      "label": "MED"
+    },
+    "清米汤_FOO": {
+      "id": 185,
+      "text": "清米汤",
+      "label": "FOO"
+    },
+    "橘红_MED": {
+      "id": 186,
+      "text": "橘红",
+      "label": "MED"
+    },
+    "山药_MED": {
+      "id": 187,
+      "text": "山药",
+      "label": "MED"
+    },
+    "惊风_DIS": {
+      "id": 188,
+      "text": "惊风",
+      "label": "DIS"
+    },
+    "泻青痰鸣_SIG": {
+      "id": 189,
+      "text": "泻青痰鸣",
+      "label": "SIG"
+    },
+    "发热_SYM": {
+      "id": 190,
+      "text": "发热",
+      "label": "SYM"
+    },
+    "惊风将至_DIS": {
+      "id": 191,
+      "text": "惊风将至",
+      "label": "DIS"
+    },
+    "钩藤饮_PRE": {
+      "id": 193,
+      "text": "钩藤饮",
+      "label": "PRE"
+    },
+    "惊热内实_SYN": {
+      "id": 194,
+      "text": "惊热内实",
+      "label": "SYN"
+    },
+    "青龙丸_PRE": {
+      "id": 195,
+      "text": "青龙丸",
+      "label": "PRE"
+    },
+    "牛黄镇心丸_PRE": {
+      "id": 196,
+      "text": "牛黄镇心丸",
+      "label": "PRE"
+    },
+    "神不宁_SYM": {
+      "id": 197,
+      "text": "神不宁",
+      "label": "SYM"
+    },
+    "安神丸_PRE": {
+      "id": 198,
+      "text": "安神丸",
+      "label": "PRE"
+    },
+    "镇惊锭子_PRE": {
+      "id": 199,
+      "text": "镇惊锭子",
+      "label": "PRE"
+    },
+    "风邪入内_BEC": {
+      "id": 200,
+      "text": "风邪入内",
+      "label": "BEC"
+    },
+    "肚疼_SYM": {
+      "id": 201,
+      "text": "肚疼",
+      "label": "SYM"
+    },
+    "夜啼_SYM": {
+      "id": 202,
+      "text": "夜啼",
+      "label": "SYM"
+    },
+    "痰鸣_SIG": {
+      "id": 203,
+      "text": "痰鸣",
+      "label": "SIG"
+    },
+    "钩藤_MED": {
+      "id": 204,
+      "text": "钩藤",
+      "label": "MED"
+    },
+    "川芎_MED": {
+      "id": 205,
+      "text": "川芎",
+      "label": "MED"
+    },
+    "芍药_MED": {
+      "id": 206,
+      "text": "芍药",
+      "label": "MED"
+    },
+    "灯心_MED": {
+      "id": 207,
+      "text": "灯心",
+      "label": "MED"
+    },
+    "青黛_MED": {
+      "id": 208,
+      "text": "青黛",
+      "label": "MED"
+    },
+    "芦荟_MED": {
+      "id": 209,
+      "text": "芦荟",
+      "label": "MED"
+    },
+    "轻粉_MED": {
+      "id": 210,
+      "text": "轻粉",
+      "label": "MED"
+    },
+    "饭_FOO": {
+      "id": 212,
+      "text": "饭",
+      "label": "FOO"
+    },
+    "薄荷汤_FOO": {
+      "id": 214,
+      "text": "薄荷汤",
+      "label": "FOO"
+    },
+    "天钓_DIS": {
+      "id": 215,
+      "text": "天钓",
+      "label": "DIS"
+    },
+    "壮热_SYM": {
+      "id": 216,
+      "text": "壮热",
+      "label": "SYM"
+    },
+    "眼翻_SYM": {
+      "id": 217,
+      "text": "眼翻",
+      "label": "SYM"
+    },
+    "手抽掣_SYM": {
+      "id": 218,
+      "text": "手抽掣",
+      "label": "SYM"
+    },
+    "惊啼_SYM": {
+      "id": 219,
+      "text": "惊啼",
+      "label": "SYM"
+    },
+    "大黄_MED": {
+      "id": 220,
+      "text": "大黄",
+      "label": "MED"
+    },
+    "独活_MED": {
+      "id": 221,
+      "text": "独活",
+      "label": "MED"
+    },
+    "青皮_MED": {
+      "id": 222,
+      "text": "青皮",
+      "label": "MED"
+    },
+    "犀角_MED": {
+      "id": 223,
+      "text": "犀角",
+      "label": "MED"
+    },
+    "中风_DIS": {
+      "id": 224,
+      "text": "中风",
+      "label": "DIS"
+    },
+    "昏不出声_SIG": {
+      "id": 225,
+      "text": "昏不出声",
+      "label": "SIG"
+    },
+    "细辛_MED": {
+      "id": 226,
+      "text": "细辛",
+      "label": "MED"
+    },
+    "薄荷_MED": {
+      "id": 227,
+      "text": "薄荷",
+      "label": "MED"
+    },
+    "牙皂_MED": {
+      "id": 228,
+      "text": "牙皂",
+      "label": "MED"
+    },
+    "雄黄_MED": {
+      "id": 229,
+      "text": "雄黄",
+      "label": "MED"
+    },
+    "小儿中风痰盛_SYN": {
+      "id": 230,
+      "text": "小儿中风痰盛",
+      "label": "SYN"
+    },
+    "半夏_MED": {
+      "id": 231,
+      "text": "半夏",
+      "label": "MED"
+    },
+    "黄芩_MED": {
+      "id": 232,
+      "text": "黄芩",
+      "label": "MED"
+    },
+    "不省人事_SIG": {
+      "id": 233,
+      "text": "不省人事",
+      "label": "SIG"
+    },
+    "涎鸣反张_SIG": {
+      "id": 234,
+      "text": "涎鸣反张",
+      "label": "SIG"
+    },
+    "厥冷_SYM": {
+      "id": 235,
+      "text": "厥冷",
+      "label": "SYM"
+    },
+    "麻黄_MED": {
+      "id": 236,
+      "text": "麻黄",
+      "label": "MED"
+    },
+    "杏仁_MED": {
+      "id": 237,
+      "text": "杏仁",
+      "label": "MED"
+    },
+    "防己_MED": {
+      "id": 238,
+      "text": "防己",
+      "label": "MED"
+    },
+    "肉官桂_MED": {
+      "id": 239,
+      "text": "肉官桂",
+      "label": "MED"
+    },
+    "附子_MED": {
+      "id": 240,
+      "text": "附子",
+      "label": "MED"
+    },
+    "保命丹_PRE": {
+      "id": 241,
+      "text": "保命丹",
+      "label": "PRE"
+    },
+    "珍珠丸_PRE": {
+      "id": 242,
+      "text": "珍珠丸",
+      "label": "PRE"
+    },
+    "狂语_SYM": {
+      "id": 243,
+      "text": "狂语",
+      "label": "SYM"
+    },
+    "失音精神错乱_SIG": {
+      "id": 244,
+      "text": "失音精神错乱",
+      "label": "SIG"
+    },
+    "白藓皮_MED": {
+      "id": 245,
+      "text": "白藓皮",
+      "label": "MED"
+    },
+    "桂心_MED": {
+      "id": 247,
+      "text": "桂心",
+      "label": "MED"
+    },
+    "当归_MED": {
+      "id": 248,
+      "text": "当归",
+      "label": "MED"
+    },
+    "夜啼客忤_DIS": {
+      "id": 253,
+      "text": "夜啼客忤",
+      "label": "DIS"
+    }
+  },
+  "relations": [],
+  "success_count": 2,
+  "fail_count": 2,
+  "failed_segments": [
+    1,
+    2
+  ]
+}

@@ -1,0 +1,10 @@
+id,from_id,to_id,type
+1,2,1,cause
+2,3,2,oname
+3,4,2,oname
+4,5,6,inandex
+5,6,7,inandex
+6,14,6,inandex
+7,41,19,abpulse
+8,44,32,abpulse
+9,45,31,abpulse

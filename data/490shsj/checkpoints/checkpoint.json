@@ -1,0 +1,10264 @@
+{
+  "last_segment": 37,
+  "batch_num": 1,
+  "entity_id_counter": 1249,
+  "relation_id_counter": 867,
+  "entities": {
+    "伤寒_DIS": {
+      "id": 1,
+      "text": "伤寒",
+      "label": "DIS"
+    },
+    "伏邪瘟疫_DIS": {
+      "id": 2,
+      "text": "伏邪瘟疫",
+      "label": "DIS"
+    },
+    "舌白_TNG": {
+      "id": 3,
+      "text": "舌白",
+      "label": "TNG"
+    },
+    "苔滑_TNG": {
+      "id": 4,
+      "text": "苔滑",
+      "label": "TNG"
+    },
+    "黄_TNG": {
+      "id": 5,
+      "text": "黄",
+      "label": "TNG"
+    },
+    "黑_TNG": {
+      "id": 6,
+      "text": "黑",
+      "label": "TNG"
+    },
+    "刺_TNG": {
+      "id": 7,
+      "text": "刺",
+      "label": "TNG"
+    },
+    "裂_TNG": {
+      "id": 8,
+      "text": "裂",
+      "label": "TNG"
+    },
+    "黄黑诸苔_TNG": {
+      "id": 9,
+      "text": "黄黑诸苔",
+      "label": "TNG"
+    },
+    "仲景书_LIT": {
+      "id": 10,
+      "text": "仲景书",
+      "label": "LIT"
+    },
+    "金镜录_LIT": {
+      "id": 11,
+      "text": "金镜录",
+      "label": "LIT"
+    },
+    "观舌心法_LIT": {
+      "id": 12,
+      "text": "观舌心法",
+      "label": "LIT"
+    },
+    "自表传里_BEC": {
+      "id": 13,
+      "text": "自表传里",
+      "label": "BEC"
+    },
+    "邪气入里_BEC": {
+      "id": 14,
+      "text": "邪气入里",
+      "label": "BEC"
+    },
+    "阴盛格阳_BEC": {
+      "id": 15,
+      "text": "阴盛格阳",
+      "label": "BEC"
+    },
+    "邪热郁伏_BEC": {
+      "id": 16,
+      "text": "邪热郁伏",
+      "label": "BEC"
+    },
+    "难治_SYM": {
+      "id": 17,
+      "text": "难治",
+      "label": "SYM"
+    },
+    "假证_SYM": {
+      "id": 18,
+      "text": "假证",
+      "label": "SYM"
+    },
+    "假脉_PUL": {
+      "id": 19,
+      "text": "假脉",
+      "label": "PUL"
+    },
+    "白苔舌_TNG": {
+      "id": 21,
+      "text": "白苔舌",
+      "label": "TNG"
+    },
+    "白沫_TNG": {
+      "id": 22,
+      "text": "白沫",
+      "label": "TNG"
+    },
+    "白涎_TNG": {
+      "id": 23,
+      "text": "白涎",
+      "label": "TNG"
+    },
+    "白滑_TNG": {
+      "id": 24,
+      "text": "白滑",
+      "label": "TNG"
+    },
+    "白屑_TNG": {
+      "id": 25,
+      "text": "白屑",
+      "label": "TNG"
+    },
+    "白_TNG": {
+      "id": 26,
+      "text": "白",
+      "label": "TNG"
+    },
+    "舌中_BDP": {
+      "id": 27,
+      "text": "舌中",
+      "label": "BDP"
+    },
+    "舌尖_BDP": {
+      "id": 28,
+      "text": "舌尖",
+      "label": "BDP"
+    },
+    "舌根_BDP": {
+      "id": 29,
+      "text": "舌根",
+      "label": "BDP"
+    },
+    "心_VIS": {
+      "id": 30,
+      "text": "心",
+      "label": "VIS"
+    },
+    "南方火_VIS": {
+      "id": 31,
+      "text": "南方火",
+      "label": "VIS"
+    },
+    "白色_TNG": {
+      "id": 32,
+      "text": "白色",
+      "label": "TNG"
+    },
+    "火不能制金_BEC": {
+      "id": 33,
+      "text": "火不能制金",
+      "label": "BEC"
+    },
+    "寒郁皮肤_BEC": {
+      "id": 34,
+      "text": "寒郁皮肤",
+      "label": "BEC"
+    },
+    "热气不得外泄_BEC": {
+      "id": 35,
+      "text": "热气不得外泄",
+      "label": "BEC"
+    },
+    "恶寒发热_SYM": {
+      "id": 36,
+      "text": "恶寒发热",
+      "label": "SYM"
+    },
+    "太阳经_MER": {
+      "id": 37,
+      "text": "太阳经",
+      "label": "MER"
+    },
+    "头痛_SYM": {
+      "id": 38,
+      "text": "头痛",
+      "label": "SYM"
+    },
+    "身热_SYM": {
+      "id": 39,
+      "text": "身热",
+      "label": "SYM"
+    },
+    "项背强_SYM": {
+      "id": 40,
+      "text": "项背强",
+      "label": "SYM"
+    },
+    "腰脊疼_SYM": {
+      "id": 41,
+      "text": "腰脊疼",
+      "label": "SYM"
+    },
+    "阳明经_MER": {
+      "id": 42,
+      "text": "阳明经",
+      "label": "MER"
+    },
+    "白屑满舌_TNG": {
+      "id": 43,
+      "text": "白屑满舌",
+      "label": "TNG"
+    },
+    "烦躁_SYM": {
+      "id": 44,
+      "text": "烦躁",
+      "label": "SYM"
+    },
+    "脉浮紧_PUL": {
+      "id": 45,
+      "text": "脉浮紧",
+      "label": "PUL"
+    },
+    "少阳经_MER": {
+      "id": 46,
+      "text": "少阳经",
+      "label": "MER"
+    },
+    "白苔白滑_TNG": {
+      "id": 47,
+      "text": "白苔白滑",
+      "label": "TNG"
+    },
+    "小柴胡汤_PRE": {
+      "id": 48,
+      "text": "小柴胡汤",
+      "label": "PRE"
+    },
+    "胃虚者_CON": {
+      "id": 49,
+      "text": "胃虚者",
+      "label": "CON"
+    },
+    "理中汤_PRE": {
+      "id": 50,
+      "text": "理中汤",
+      "label": "PRE"
+    },
+    "白色少变黄_TNG": {
+      "id": 51,
+      "text": "白色少变黄",
+      "label": "TNG"
+    },
+    "大柴胡_PRE": {
+      "id": 52,
+      "text": "大柴胡",
+      "label": "PRE"
+    },
+    "大小承气_PRE": {
+      "id": 53,
+      "text": "大小承气",
+      "label": "PRE"
+    },
+    "白舌_TNG": {
+      "id": 54,
+      "text": "白舌",
+      "label": "TNG"
+    },
+    "微白滑苔舌_TNG": {
+      "id": 55,
+      "text": "微白滑苔舌",
+      "label": "TNG"
+    },
+    "寒邪初入太阳_BEC": {
+      "id": 56,
+      "text": "寒邪初入太阳",
+      "label": "BEC"
+    },
+    "太阳_SYN": {
+      "id": 57,
+      "text": "太阳",
+      "label": "SYN"
+    },
+    "头疼_SYM": {
+      "id": 58,
+      "text": "头疼",
+      "label": "SYM"
+    },
+    "恶寒_SYM": {
+      "id": 60,
+      "text": "恶寒",
+      "label": "SYM"
+    },
+    "舌色微白有津_TNG": {
+      "id": 61,
+      "text": "舌色微白有津",
+      "label": "TNG"
+    },
+    "香苏散_PRE": {
+      "id": 62,
+      "text": "香苏散",
+      "label": "PRE"
+    },
+    "羌活汤_PRE": {
+      "id": 63,
+      "text": "羌活汤",
+      "label": "PRE"
+    },
+    "薄白滑苔舌_TNG": {
+      "id": 64,
+      "text": "薄白滑苔舌",
+      "label": "TNG"
+    },
+    "太阳里证_SYN": {
+      "id": 65,
+      "text": "太阳里证",
+      "label": "SYN"
+    },
+    "二三日未曾汗_BEC": {
+      "id": 66,
+      "text": "二三日未曾汗",
+      "label": "BEC"
+    },
+    "邪入丹田渐深_BEC": {
+      "id": 67,
+      "text": "邪入丹田渐深",
+      "label": "BEC"
+    },
+    "急宜汗之_SIG": {
+      "id": 68,
+      "text": "急宜汗之",
+      "label": "SIG"
+    },
+    "太阳与少阳合病_DIS": {
+      "id": 69,
+      "text": "太阳与少阳合病",
+      "label": "DIS"
+    },
+    "柴胡桂枝汤_PRE": {
+      "id": 70,
+      "text": "柴胡桂枝汤",
+      "label": "PRE"
+    },
+    "浓白滑苔舌_TNG": {
+      "id": 71,
+      "text": "浓白滑苔舌",
+      "label": "TNG"
+    },
+    "病三四日_BEC": {
+      "id": 72,
+      "text": "病三四日",
+      "label": "BEC"
+    },
+    "其邪只在太阳_BEC": {
+      "id": 73,
+      "text": "其邪只在太阳",
+      "label": "BEC"
+    },
+    "苔纯白而浓_TNG": {
+      "id": 75,
+      "text": "苔纯白而浓",
+      "label": "TNG"
+    },
+    "头疼发热_SYM": {
+      "id": 76,
+      "text": "头疼发热",
+      "label": "SYM"
+    },
+    "脉浮而紧_PUL": {
+      "id": 77,
+      "text": "脉浮而紧",
+      "label": "PUL"
+    },
+    "解表_SIG": {
+      "id": 78,
+      "text": "解表",
+      "label": "SIG"
+    },
+    "干浓白苔舌_TNG": {
+      "id": 79,
+      "text": "干浓白苔舌",
+      "label": "TNG"
+    },
+    "病四五日_BEC": {
+      "id": 80,
+      "text": "病四五日",
+      "label": "BEC"
+    },
+    "未经发汗_BEC": {
+      "id": 81,
+      "text": "未经发汗",
+      "label": "BEC"
+    },
+    "邪热渐深_BEC": {
+      "id": 82,
+      "text": "邪热渐深",
+      "label": "BEC"
+    },
+    "微渴_SYM": {
+      "id": 83,
+      "text": "微渴",
+      "label": "SYM"
+    },
+    "过饮生冷_BEC": {
+      "id": 84,
+      "text": "过饮生冷",
+      "label": "BEC"
+    },
+    "停积胸中_BEC": {
+      "id": 85,
+      "text": "停积胸中",
+      "label": "BEC"
+    },
+    "营热胃冷_BEC": {
+      "id": 86,
+      "text": "营热胃冷",
+      "label": "BEC"
+    },
+    "发热_SYM": {
+      "id": 87,
+      "text": "发热",
+      "label": "SYM"
+    },
+    "四肢逆冷_SYM": {
+      "id": 89,
+      "text": "四肢逆冷",
+      "label": "SYM"
+    },
+    "苔白干浓_TNG": {
+      "id": 90,
+      "text": "苔白干浓",
+      "label": "TNG"
+    },
+    "满口白屑_TNG": {
+      "id": 91,
+      "text": "满口白屑",
+      "label": "TNG"
+    },
+    "四逆散_PRE": {
+      "id": 92,
+      "text": "四逆散",
+      "label": "PRE"
+    },
+    "干姜_MED": {
+      "id": 93,
+      "text": "干姜",
+      "label": "MED"
+    },
+    "白苔黄心舌_TNG": {
+      "id": 94,
+      "text": "白苔黄心舌",
+      "label": "TNG"
+    },
+    "阳明府病_DIS": {
+      "id": 96,
+      "text": "阳明府病",
+      "label": "DIS"
+    },
+    "微黄而润_TNG": {
+      "id": 97,
+      "text": "微黄而润",
+      "label": "TNG"
+    },
+    "苔燥_TNG": {
+      "id": 98,
+      "text": "苔燥",
+      "label": "TNG"
+    },
+    "里证具_SYN": {
+      "id": 99,
+      "text": "里证具",
+      "label": "SYN"
+    },
+    "下之_SIG": {
+      "id": 100,
+      "text": "下之",
+      "label": "SIG"
+    },
+    "呕吐_SIG": {
+      "id": 102,
+      "text": "呕吐",
+      "label": "SIG"
+    },
+    "大柴胡汤_PRE": {
+      "id": 103,
+      "text": "大柴胡汤",
+      "label": "PRE"
+    },
+    "淡黄水沫_SIG": {
+      "id": 104,
+      "text": "淡黄水沫",
+      "label": "SIG"
+    },
+    "无稀粪者_SIG": {
+      "id": 105,
+      "text": "无稀粪者",
+      "label": "SIG"
+    },
+    "大承气汤_PRE": {
+      "id": 106,
+      "text": "大承气汤",
+      "label": "PRE"
+    },
+    "白苔黄边舌_TNG": {
+      "id": 107,
+      "text": "白苔黄边舌",
+      "label": "TNG"
+    },
+    "舌中见白苔_TNG": {
+      "id": 108,
+      "text": "舌中见白苔",
+      "label": "TNG"
+    },
+    "外有微黄_TNG": {
+      "id": 109,
+      "text": "外有微黄",
+      "label": "TNG"
+    },
+    "作泄_SIG": {
+      "id": 110,
+      "text": "作泄",
+      "label": "SIG"
+    },
+    "解毒汤_PRE": {
+      "id": 111,
+      "text": "解毒汤",
+      "label": "PRE"
+    },
+    "五苓散_PRE": {
+      "id": 113,
+      "text": "五苓散",
+      "label": "PRE"
+    },
+    "干白苔黑心舌_TNG": {
+      "id": 114,
+      "text": "干白苔黑心舌",
+      "label": "TNG"
+    },
+    "阳明府_SYN": {
+      "id": 115,
+      "text": "阳明府",
+      "label": "SYN"
+    },
+    "汗不彻_BEC": {
+      "id": 117,
+      "text": "汗不彻",
+      "label": "BEC"
+    },
+    "传至阳明_BEC": {
+      "id": 118,
+      "text": "传至阳明",
+      "label": "BEC"
+    },
+    "微汗出_SYM": {
+      "id": 119,
+      "text": "微汗出",
+      "label": "SYM"
+    },
+    "不恶寒_SYM": {
+      "id": 120,
+      "text": "不恶寒",
+      "label": "SYM"
+    },
+    "脉沉_PUL": {
+      "id": 121,
+      "text": "脉沉",
+      "label": "PUL"
+    },
+    "未曾汗_BEC": {
+      "id": 123,
+      "text": "未曾汗",
+      "label": "BEC"
+    },
+    "此舌_TNG": {
+      "id": 124,
+      "text": "此舌",
+      "label": "TNG"
+    },
+    "少阳舌_TNG": {
+      "id": 126,
+      "text": "少阳舌",
+      "label": "TNG"
+    },
+    "自利_SIG": {
+      "id": 127,
+      "text": "自利",
+      "label": "SIG"
+    },
+    "脉长_PUL": {
+      "id": 128,
+      "text": "脉长",
+      "label": "PUL"
+    },
+    "弦数_PUL": {
+      "id": 129,
+      "text": "弦数",
+      "label": "PUL"
+    },
+    "宿食_BEC": {
+      "id": 130,
+      "text": "宿食",
+      "label": "BEC"
+    },
+    "大承气_PRE": {
+      "id": 131,
+      "text": "大承气",
+      "label": "PRE"
+    },
+    "白苔满黑刺干舌_TNG": {
+      "id": 132,
+      "text": "白苔满黑刺干舌",
+      "label": "TNG"
+    },
+    "少阳之里证_SYN": {
+      "id": 133,
+      "text": "少阳之里证",
+      "label": "SYN"
+    },
+    "不恶寒反恶热_SYM": {
+      "id": 134,
+      "text": "不恶寒反恶热",
+      "label": "SYM"
+    },
+    "芒硝_MED": {
+      "id": 136,
+      "text": "芒硝",
+      "label": "MED"
+    },
+    "白滑苔黑心舌_TNG": {
+      "id": 137,
+      "text": "白滑苔黑心舌",
+      "label": "TNG"
+    },
+    "白苔中黑_TNG": {
+      "id": 138,
+      "text": "白苔中黑",
+      "label": "TNG"
+    },
+    "表那入里_BEC": {
+      "id": 139,
+      "text": "表那入里",
+      "label": "BEC"
+    },
+    "大热谵语_SYM": {
+      "id": 140,
+      "text": "大热谵语",
+      "label": "SYM"
+    },
+    "承气_PRE": {
+      "id": 141,
+      "text": "承气",
+      "label": "PRE"
+    },
+    "食复_BEC": {
+      "id": 142,
+      "text": "食复",
+      "label": "BEC"
+    },
+    "利不止_SIG": {
+      "id": 144,
+      "text": "利不止",
+      "label": "SIG"
+    },
+    "半边白滑舌_TNG": {
+      "id": 145,
+      "text": "半边白滑舌",
+      "label": "TNG"
+    },
+    "白苔见于一边_TNG": {
+      "id": 146,
+      "text": "白苔见于一边",
+      "label": "TNG"
+    },
+    "半表半里_SYN": {
+      "id": 147,
+      "text": "半表半里",
+      "label": "SYN"
+    },
+    "葛根_MED": {
+      "id": 149,
+      "text": "葛根",
+      "label": "MED"
+    },
+    "茯苓_MED": {
+      "id": 150,
+      "text": "茯苓",
+      "label": "MED"
+    },
+    "咳嗽引胁下痛_SYM": {
+      "id": 151,
+      "text": "咳嗽引胁下痛",
+      "label": "SYM"
+    },
+    "小青龙汤_PRE": {
+      "id": 152,
+      "text": "小青龙汤",
+      "label": "PRE"
+    },
+    "夏月多汗自利_SIG": {
+      "id": 153,
+      "text": "夏月多汗自利",
+      "label": "SIG"
+    },
+    "人参白虎汤_PRE": {
+      "id": 154,
+      "text": "人参白虎汤",
+      "label": "PRE"
+    },
+    "脏结_DIS": {
+      "id": 155,
+      "text": "脏结",
+      "label": "DIS"
+    },
+    "白滑舌_TNG": {
+      "id": 156,
+      "text": "白滑舌",
+      "label": "TNG"
+    },
+    "半边白苔_TNG": {
+      "id": 157,
+      "text": "半边白苔",
+      "label": "TNG"
+    },
+    "老黄_TNG": {
+      "id": 159,
+      "text": "老黄",
+      "label": "TNG"
+    },
+    "寒邪结在脏_BEC": {
+      "id": 160,
+      "text": "寒邪结在脏",
+      "label": "BEC"
+    },
+    "黄连汤_PRE": {
+      "id": 161,
+      "text": "黄连汤",
+      "label": "PRE"
+    },
+    "附子_MED": {
+      "id": 162,
+      "text": "附子",
+      "label": "MED"
+    },
+    "结在咽_BEC": {
+      "id": 163,
+      "text": "结在咽",
+      "label": "BEC"
+    },
+    "不能语言_SYM": {
+      "id": 164,
+      "text": "不能语言",
+      "label": "SYM"
+    },
+    "生脉散_PRE": {
+      "id": 165,
+      "text": "生脉散",
+      "label": "PRE"
+    },
+    "四逆汤_PRE": {
+      "id": 166,
+      "text": "四逆汤",
+      "label": "PRE"
+    },
+    "白苔黑斑舌_TNG": {
+      "id": 167,
+      "text": "白苔黑斑舌",
+      "label": "TNG"
+    },
+    "白苔_TNG": {
+      "id": 168,
+      "text": "白苔",
+      "label": "TNG"
+    },
+    "黑小斑点_TNG": {
+      "id": 169,
+      "text": "黑小斑点",
+      "label": "TNG"
+    },
+    "水来克火_BEC": {
+      "id": 170,
+      "text": "水来克火",
+      "label": "BEC"
+    },
+    "凉膈散_PRE": {
+      "id": 171,
+      "text": "凉膈散",
+      "label": "PRE"
+    },
+    "承气汤_PRE": {
+      "id": 172,
+      "text": "承气汤",
+      "label": "PRE"
+    },
+    "白苔燥裂舌_TNG": {
+      "id": 173,
+      "text": "白苔燥裂舌",
+      "label": "TNG"
+    },
+    "胸中_BDP": {
+      "id": 175,
+      "text": "胸中",
+      "label": "BDP"
+    },
+    "寒_BEC": {
+      "id": 176,
+      "text": "寒",
+      "label": "BEC"
+    },
+    "丹田_BDP": {
+      "id": 177,
+      "text": "丹田",
+      "label": "BDP"
+    },
+    "热_BEC": {
+      "id": 178,
+      "text": "热",
+      "label": "BEC"
+    },
+    "舌上白苔_TNG": {
+      "id": 179,
+      "text": "舌上白苔",
+      "label": "TNG"
+    },
+    "过汗_BEC": {
+      "id": 180,
+      "text": "过汗",
+      "label": "BEC"
+    },
+    "伤营_BEC": {
+      "id": 181,
+      "text": "伤营",
+      "label": "BEC"
+    },
+    "舌上无津_TNG": {
+      "id": 182,
+      "text": "舌上无津",
+      "label": "TNG"
+    },
+    "燥裂_TNG": {
+      "id": 183,
+      "text": "燥裂",
+      "label": "TNG"
+    },
+    "内无实热_BEC": {
+      "id": 184,
+      "text": "内无实热",
+      "label": "BEC"
+    },
+    "小柴胡_PRE": {
+      "id": 185,
+      "text": "小柴胡",
+      "label": "PRE"
+    },
+    "白苔黑根舌_TNG": {
+      "id": 187,
+      "text": "白苔黑根舌",
+      "label": "TNG"
+    },
+    "舌苔白_TNG": {
+      "id": 188,
+      "text": "舌苔白",
+      "label": "TNG"
+    },
+    "根黑_TNG": {
+      "id": 189,
+      "text": "根黑",
+      "label": "TNG"
+    },
+    "火被水克_BEC": {
+      "id": 190,
+      "text": "火被水克",
+      "label": "BEC"
+    },
+    "白尖黄根舌_TNG": {
+      "id": 191,
+      "text": "白尖黄根舌",
+      "label": "TNG"
+    },
+    "邪_BEC": {
+      "id": 192,
+      "text": "邪",
+      "label": "BEC"
+    },
+    "入里_BEC": {
+      "id": 193,
+      "text": "入里",
+      "label": "BEC"
+    },
+    "下后无他证_SYN": {
+      "id": 196,
+      "text": "下后无他证",
+      "label": "SYN"
+    },
+    "安卧神清_SYM": {
+      "id": 197,
+      "text": "安卧神清",
+      "label": "SYM"
+    },
+    "变证_SYN": {
+      "id": 198,
+      "text": "变证",
+      "label": "SYN"
+    },
+    "白苔双黄舌_TNG": {
+      "id": 199,
+      "text": "白苔双黄舌",
+      "label": "TNG"
+    },
+    "阳明里证_SYN": {
+      "id": 200,
+      "text": "阳明里证",
+      "label": "SYN"
+    },
+    "土_VIS": {
+      "id": 202,
+      "text": "土",
+      "label": "VIS"
+    },
+    "邪热上攻_BEC": {
+      "id": 203,
+      "text": "邪热上攻",
+      "label": "BEC"
+    },
+    "舌有双黄_TNG": {
+      "id": 204,
+      "text": "舌有双黄",
+      "label": "TNG"
+    },
+    "恶热_SYM": {
+      "id": 206,
+      "text": "恶热",
+      "label": "SYM"
+    },
+    "转矢气_SIG": {
+      "id": 207,
+      "text": "转矢气",
+      "label": "SIG"
+    },
+    "调胃承气_PRE": {
+      "id": 210,
+      "text": "调胃承气",
+      "label": "PRE"
+    },
+    "白苔双黑舌_TNG": {
+      "id": 211,
+      "text": "白苔双黑舌",
+      "label": "TNG"
+    },
+    "黑色两条_TNG": {
+      "id": 213,
+      "text": "黑色两条",
+      "label": "TNG"
+    },
+    "太阳少阳之邪_BEC": {
+      "id": 214,
+      "text": "太阳少阳之邪",
+      "label": "BEC"
+    },
+    "胃_VIS": {
+      "id": 215,
+      "text": "胃",
+      "label": "VIS"
+    },
+    "土气衰绝_BEC": {
+      "id": 216,
+      "text": "土气衰绝",
+      "label": "BEC"
+    },
+    "手足厥冷_SYM": {
+      "id": 217,
+      "text": "手足厥冷",
+      "label": "SYM"
+    },
+    "胸中结痛_SYM": {
+      "id": 218,
+      "text": "胸中结痛",
+      "label": "SYM"
+    },
+    "泻心汤_PRE": {
+      "id": 220,
+      "text": "泻心汤",
+      "label": "PRE"
+    },
+    "邪结在舌根_BEC": {
+      "id": 221,
+      "text": "邪结在舌根",
+      "label": "BEC"
+    },
+    "咽嗌_BDP": {
+      "id": 222,
+      "text": "咽嗌",
+      "label": "BDP"
+    },
+    "不能言_SIG": {
+      "id": 223,
+      "text": "不能言",
+      "label": "SIG"
+    },
+    "死证_SYN": {
+      "id": 224,
+      "text": "死证",
+      "label": "SYN"
+    },
+    "白苔双灰色舌_TNG": {
+      "id": 225,
+      "text": "白苔双灰色舌",
+      "label": "TNG"
+    },
+    "夹冷食_BEC": {
+      "id": 226,
+      "text": "夹冷食",
+      "label": "BEC"
+    },
+    "津_SIG": {
+      "id": 227,
+      "text": "津",
+      "label": "SIG"
+    },
+    "理中_PRE": {
+      "id": 228,
+      "text": "理中",
+      "label": "PRE"
+    },
+    "四逆_PRE": {
+      "id": 229,
+      "text": "四逆",
+      "label": "PRE"
+    },
+    "干浓_TNG": {
+      "id": 230,
+      "text": "干浓",
+      "label": "TNG"
+    },
+    "里证_SYN": {
+      "id": 231,
+      "text": "里证",
+      "label": "SYN"
+    },
+    "得汤_PRE": {
+      "id": 232,
+      "text": "得汤",
+      "label": "PRE"
+    },
+    "灰色去_TNG": {
+      "id": 233,
+      "text": "灰色去",
+      "label": "TNG"
+    },
+    "白尖中红黑根舌_TNG": {
+      "id": 234,
+      "text": "白尖中红黑根舌",
+      "label": "TNG"
+    },
+    "舌尖白而根灰黑_TNG": {
+      "id": 235,
+      "text": "舌尖白而根灰黑",
+      "label": "TNG"
+    },
+    "少阳邪热传腑_BEC": {
+      "id": 236,
+      "text": "少阳邪热传腑",
+      "label": "BEC"
+    },
+    "热极而伤冷冻饮料也_BEC": {
+      "id": 237,
+      "text": "热极而伤冷冻饮料也",
+      "label": "BEC"
+    },
+    "渴_SYM": {
+      "id": 238,
+      "text": "渴",
+      "label": "SYM"
+    },
+    "水停津液固结_BEC": {
+      "id": 239,
+      "text": "水停津液固结",
+      "label": "BEC"
+    },
+    "自汗_SIG": {
+      "id": 241,
+      "text": "自汗",
+      "label": "SIG"
+    },
+    "白虎汤_PRE": {
+      "id": 243,
+      "text": "白虎汤",
+      "label": "PRE"
+    },
+    "下利_SIG": {
+      "id": 244,
+      "text": "下利",
+      "label": "SIG"
+    },
+    "黑根多、白尖少、中不甚红_TNG": {
+      "id": 247,
+      "text": "黑根多、白尖少、中不甚红",
+      "label": "TNG"
+    },
+    "难治_DIS": {
+      "id": 248,
+      "text": "难治",
+      "label": "DIS"
+    },
+    "白苔尖红舌_TNG": {
+      "id": 249,
+      "text": "白苔尖红舌",
+      "label": "TNG"
+    },
+    "满舌白滑_TNG": {
+      "id": 250,
+      "text": "满舌白滑",
+      "label": "TNG"
+    },
+    "尖却鲜红_TNG": {
+      "id": 251,
+      "text": "尖却鲜红",
+      "label": "TNG"
+    },
+    "热邪内盛_BEC": {
+      "id": 252,
+      "text": "热邪内盛",
+      "label": "BEC"
+    },
+    "客寒_BEC": {
+      "id": 253,
+      "text": "客寒",
+      "label": "BEC"
+    },
+    "小柴胡汤加减_PRE": {
+      "id": 255,
+      "text": "小柴胡汤加减",
+      "label": "PRE"
+    },
+    "白苔中红舌_TNG": {
+      "id": 256,
+      "text": "白苔中红舌",
+      "label": "TNG"
+    },
+    "太阳初传经_SYN": {
+      "id": 257,
+      "text": "太阳初传经",
+      "label": "SYN"
+    },
+    "无汗_SIG": {
+      "id": 258,
+      "text": "无汗",
+      "label": "SIG"
+    },
+    "有汗_SIG": {
+      "id": 259,
+      "text": "有汗",
+      "label": "SIG"
+    },
+    "解肌_DIS": {
+      "id": 260,
+      "text": "解肌",
+      "label": "DIS"
+    },
+    "少阳经者_SYN": {
+      "id": 261,
+      "text": "少阳经者",
+      "label": "SYN"
+    },
+    "白苔变黄舌_TNG": {
+      "id": 263,
+      "text": "白苔变黄舌",
+      "label": "TNG"
+    },
+    "少阳证罢_SYN": {
+      "id": 264,
+      "text": "少阳证罢",
+      "label": "SYN"
+    },
+    "苔变黄色_TNG": {
+      "id": 266,
+      "text": "苔变黄色",
+      "label": "TNG"
+    },
+    "兼矢气者_SIG": {
+      "id": 267,
+      "text": "兼矢气者",
+      "label": "SIG"
+    },
+    "白尖红根舌_TNG": {
+      "id": 269,
+      "text": "白尖红根舌",
+      "label": "TNG"
+    },
+    "舌尖苔白_TNG": {
+      "id": 270,
+      "text": "舌尖苔白",
+      "label": "TNG"
+    },
+    "邪在半表半里_BEC": {
+      "id": 271,
+      "text": "邪在半表半里",
+      "label": "BEC"
+    },
+    "寒热_SYM": {
+      "id": 272,
+      "text": "寒热",
+      "label": "SYM"
+    },
+    "耳聋_SYM": {
+      "id": 273,
+      "text": "耳聋",
+      "label": "SYM"
+    },
+    "口苦_SYM": {
+      "id": 274,
+      "text": "口苦",
+      "label": "SYM"
+    },
+    "胁痛_SYM": {
+      "id": 275,
+      "text": "胁痛",
+      "label": "SYM"
+    },
+    "脉弦_PUL": {
+      "id": 276,
+      "text": "脉弦",
+      "label": "PUL"
+    },
+    "白苔尖灰根黄舌_TNG": {
+      "id": 278,
+      "text": "白苔尖灰根黄舌",
+      "label": "TNG"
+    },
+    "太阳湿热并于阳明_BEC": {
+      "id": 279,
+      "text": "太阳湿热并于阳明",
+      "label": "BEC"
+    },
+    "根黄色润_TNG": {
+      "id": 280,
+      "text": "根黄色润",
+      "label": "TNG"
+    },
+    "目黄_SIG": {
+      "id": 281,
+      "text": "目黄",
+      "label": "SIG"
+    },
+    "小便黄_SIG": {
+      "id": 282,
+      "text": "小便黄",
+      "label": "SIG"
+    },
+    "茵陈蒿汤_PRE": {
+      "id": 283,
+      "text": "茵陈蒿汤",
+      "label": "PRE"
+    },
+    "白苔尖根俱黑舌_TNG": {
+      "id": 284,
+      "text": "白苔尖根俱黑舌",
+      "label": "TNG"
+    },
+    "舌根尖俱黑而中白_TNG": {
+      "id": 285,
+      "text": "舌根尖俱黑而中白",
+      "label": "TNG"
+    },
+    "金水太过_BEC": {
+      "id": 286,
+      "text": "金水太过",
+      "label": "BEC"
+    },
+    "火土气绝于内_BEC": {
+      "id": 287,
+      "text": "火土气绝于内",
+      "label": "BEC"
+    },
+    "熟白舌_TNG": {
+      "id": 288,
+      "text": "熟白舌",
+      "label": "TNG"
+    },
+    "白苔老极_TNG": {
+      "id": 289,
+      "text": "白苔老极",
+      "label": "TNG"
+    },
+    "心气绝_BEC": {
+      "id": 290,
+      "text": "心气绝",
+      "label": "BEC"
+    },
+    "肺色乘于上_BEC": {
+      "id": 291,
+      "text": "肺色乘于上",
+      "label": "BEC"
+    },
+    "食瓜果冰水等物_FOO": {
+      "id": 292,
+      "text": "食瓜果冰水等物",
+      "label": "FOO"
+    },
+    "阳气不得发越_BEC": {
+      "id": 293,
+      "text": "阳气不得发越",
+      "label": "BEC"
+    },
+    "枳实_MED": {
+      "id": 294,
+      "text": "枳实",
+      "label": "MED"
+    },
+    "淡白透明舌_TNG": {
+      "id": 296,
+      "text": "淡白透明舌",
+      "label": "TNG"
+    },
+    "年老胃弱_CON": {
+      "id": 297,
+      "text": "年老胃弱",
+      "label": "CON"
+    },
+    "风寒_BEC": {
+      "id": 298,
+      "text": "风寒",
+      "label": "BEC"
+    },
+    "多服汤药_BEC": {
+      "id": 299,
+      "text": "多服汤药",
+      "label": "BEC"
+    },
+    "伤其胃气_BEC": {
+      "id": 300,
+      "text": "伤其胃气",
+      "label": "BEC"
+    },
+    "淡白透明_TNG": {
+      "id": 301,
+      "text": "淡白透明",
+      "label": "TNG"
+    },
+    "补中益气_PRE": {
+      "id": 302,
+      "text": "补中益气",
+      "label": "PRE"
+    },
+    "白苔如积粉舌_TNG": {
+      "id": 303,
+      "text": "白苔如积粉舌",
+      "label": "TNG"
+    },
+    "瘟疫_DIS": {
+      "id": 304,
+      "text": "瘟疫",
+      "label": "DIS"
+    },
+    "募原_BDP": {
+      "id": 305,
+      "text": "募原",
+      "label": "BDP"
+    },
+    "达原饮_PRE": {
+      "id": 306,
+      "text": "达原饮",
+      "label": "PRE"
+    },
+    "三阳表证_SYN": {
+      "id": 307,
+      "text": "三阳表证",
+      "label": "SYN"
+    },
+    "柴胡_MED": {
+      "id": 308,
+      "text": "柴胡",
+      "label": "MED"
+    },
+    "羌活_MED": {
+      "id": 310,
+      "text": "羌活",
+      "label": "MED"
+    },
+    "大黄_MED": {
+      "id": 312,
+      "text": "大黄",
+      "label": "MED"
+    },
+    "黄苔_TNG": {
+      "id": 313,
+      "text": "黄苔",
+      "label": "TNG"
+    },
+    "阳明府实_SYN": {
+      "id": 317,
+      "text": "阳明府实",
+      "label": "SYN"
+    },
+    "胃中火盛_BEC": {
+      "id": 318,
+      "text": "胃中火盛",
+      "label": "BEC"
+    },
+    "火乘土位_BEC": {
+      "id": 319,
+      "text": "火乘土位",
+      "label": "BEC"
+    },
+    "微黄_TNG": {
+      "id": 320,
+      "text": "微黄",
+      "label": "TNG"
+    },
+    "深黄有滑_TNG": {
+      "id": 321,
+      "text": "深黄有滑",
+      "label": "TNG"
+    },
+    "干黄焦黄_TNG": {
+      "id": 322,
+      "text": "干黄焦黄",
+      "label": "TNG"
+    },
+    "大热_SYM": {
+      "id": 323,
+      "text": "大热",
+      "label": "SYM"
+    },
+    "大渴_SYM": {
+      "id": 324,
+      "text": "大渴",
+      "label": "SYM"
+    },
+    "便秘_SIG": {
+      "id": 325,
+      "text": "便秘",
+      "label": "SIG"
+    },
+    "谵语_SYM": {
+      "id": 326,
+      "text": "谵语",
+      "label": "SYM"
+    },
+    "痞结_SYM": {
+      "id": 327,
+      "text": "痞结",
+      "label": "SYM"
+    },
+    "失汗_BEC": {
+      "id": 329,
+      "text": "失汗",
+      "label": "BEC"
+    },
+    "发黄_SYM": {
+      "id": 330,
+      "text": "发黄",
+      "label": "SYM"
+    },
+    "蓄血_BEC": {
+      "id": 331,
+      "text": "蓄血",
+      "label": "BEC"
+    },
+    "如狂_SYM": {
+      "id": 332,
+      "text": "如狂",
+      "label": "SYM"
+    },
+    "湿热太盛_BEC": {
+      "id": 333,
+      "text": "湿热太盛",
+      "label": "BEC"
+    },
+    "小便不利_SIG": {
+      "id": 334,
+      "text": "小便不利",
+      "label": "SIG"
+    },
+    "目白如金_SIG": {
+      "id": 335,
+      "text": "目白如金",
+      "label": "SIG"
+    },
+    "身黄如橘_SIG": {
+      "id": 336,
+      "text": "身黄如橘",
+      "label": "SIG"
+    },
+    "栀子柏皮汤_PRE": {
+      "id": 339,
+      "text": "栀子柏皮汤",
+      "label": "PRE"
+    },
+    "蓄血在上焦_BEC": {
+      "id": 340,
+      "text": "蓄血在上焦",
+      "label": "BEC"
+    },
+    "犀角地黄汤_PRE": {
+      "id": 341,
+      "text": "犀角地黄汤",
+      "label": "PRE"
+    },
+    "中焦_BDP": {
+      "id": 342,
+      "text": "中焦",
+      "label": "BDP"
+    },
+    "桃仁承气汤_PRE": {
+      "id": 343,
+      "text": "桃仁承气汤",
+      "label": "PRE"
+    },
+    "下焦_BDP": {
+      "id": 344,
+      "text": "下焦",
+      "label": "BDP"
+    },
+    "代抵当汤_PRE": {
+      "id": 345,
+      "text": "代抵当汤",
+      "label": "PRE"
+    },
+    "血证_SYN": {
+      "id": 346,
+      "text": "血证",
+      "label": "SYN"
+    },
+    "冷水_FOO": {
+      "id": 347,
+      "text": "冷水",
+      "label": "FOO"
+    },
+    "中土有气_BEC": {
+      "id": 349,
+      "text": "中土有气",
+      "label": "BEC"
+    },
+    "下之_PRE": {
+      "id": 350,
+      "text": "下之",
+      "label": "PRE"
+    },
+    "舌苔黄中有黑色者_TNG": {
+      "id": 353,
+      "text": "舌苔黄中有黑色者",
+      "label": "TNG"
+    },
+    "危证_SYN": {
+      "id": 354,
+      "text": "危证",
+      "label": "SYN"
+    },
+    "纯黄微干舌_TNG": {
+      "id": 355,
+      "text": "纯黄微干舌",
+      "label": "TNG"
+    },
+    "舌见黄苔_TNG": {
+      "id": 356,
+      "text": "舌见黄苔",
+      "label": "TNG"
+    },
+    "胃热之极_BEC": {
+      "id": 357,
+      "text": "胃热之极",
+      "label": "BEC"
+    },
+    "土色见于舌端_BEC": {
+      "id": 358,
+      "text": "土色见于舌端",
+      "label": "BEC"
+    },
+    "黄老变黑_TNG": {
+      "id": 361,
+      "text": "黄老变黑",
+      "label": "TNG"
+    },
+    "恶候_SYN": {
+      "id": 362,
+      "text": "恶候",
+      "label": "SYN"
+    },
+    "微黄苔舌_TNG": {
+      "id": 363,
+      "text": "微黄苔舌",
+      "label": "TNG"
+    },
+    "舌微黄而不甚燥者_TNG": {
+      "id": 364,
+      "text": "舌微黄而不甚燥者",
+      "label": "TNG"
+    },
+    "表邪失汗_BEC": {
+      "id": 365,
+      "text": "表邪失汗",
+      "label": "BEC"
+    },
+    "初传里_BEC": {
+      "id": 366,
+      "text": "初传里",
+      "label": "BEC"
+    },
+    "身目俱黄_SYM": {
+      "id": 368,
+      "text": "身目俱黄",
+      "label": "SYM"
+    },
+    "黄干舌_TNG": {
+      "id": 370,
+      "text": "黄干舌",
+      "label": "TNG"
+    },
+    "舌见干黄_TNG": {
+      "id": 371,
+      "text": "舌见干黄",
+      "label": "TNG"
+    },
+    "里热已极_BEC": {
+      "id": 372,
+      "text": "里热已极",
+      "label": "BEC"
+    },
+    "急下勿缓_PRE": {
+      "id": 373,
+      "text": "急下勿缓",
+      "label": "PRE"
+    },
+    "下后脉静身凉者生_SYM": {
+      "id": 374,
+      "text": "下后脉静身凉者生",
+      "label": "SYM"
+    },
+    "反大热而喘脉躁者死_SYM": {
+      "id": 375,
+      "text": "反大热而喘脉躁者死",
+      "label": "SYM"
+    },
+    "黄苔黑滑舌_TNG": {
+      "id": 376,
+      "text": "黄苔黑滑舌",
+      "label": "TNG"
+    },
+    "舌黄而有黑滑者_TNG": {
+      "id": 377,
+      "text": "舌黄而有黑滑者",
+      "label": "TNG"
+    },
+    "阳明里证具也_SYN": {
+      "id": 378,
+      "text": "阳明里证具也",
+      "label": "SYN"
+    },
+    "不干燥_TNG": {
+      "id": 379,
+      "text": "不干燥",
+      "label": "TNG"
+    },
+    "下后身凉脉静者生_SYM": {
+      "id": 381,
+      "text": "下后身凉脉静者生",
+      "label": "SYM"
+    },
+    "大热脉躁者死_SYM": {
+      "id": 382,
+      "text": "大热脉躁者死",
+      "label": "SYM"
+    },
+    "黄苔黑斑舌_TNG": {
+      "id": 383,
+      "text": "黄苔黑斑舌",
+      "label": "TNG"
+    },
+    "身无斑_SIG": {
+      "id": 386,
+      "text": "身无斑",
+      "label": "SIG"
+    },
+    "脉涩_PUL": {
+      "id": 388,
+      "text": "脉涩",
+      "label": "PUL"
+    },
+    "循衣摸床_SYM": {
+      "id": 390,
+      "text": "循衣摸床",
+      "label": "SYM"
+    },
+    "身黄_SIG": {
+      "id": 391,
+      "text": "身黄",
+      "label": "SIG"
+    },
+    "斑黑_SIG": {
+      "id": 392,
+      "text": "斑黑",
+      "label": "SIG"
+    },
+    "下出稀黑粪_SIG": {
+      "id": 393,
+      "text": "下出稀黑粪",
+      "label": "SIG"
+    },
+    "黄苔中黑通尖舌_TNG": {
+      "id": 394,
+      "text": "黄苔中黑通尖舌",
+      "label": "TNG"
+    },
+    "火土燥_BEC": {
+      "id": 395,
+      "text": "火土燥",
+      "label": "BEC"
+    },
+    "热毒最深_BEC": {
+      "id": 396,
+      "text": "热毒最深",
+      "label": "BEC"
+    },
+    "两感伤寒_DIS": {
+      "id": 397,
+      "text": "两感伤寒",
+      "label": "DIS"
+    },
+    "恶寒甚_SYM": {
+      "id": 398,
+      "text": "恶寒甚",
+      "label": "SYM"
+    },
+    "口燥_SYM": {
+      "id": 399,
+      "text": "口燥",
+      "label": "SYM"
+    },
+    "咽干_SYM": {
+      "id": 400,
+      "text": "咽干",
+      "label": "SYM"
+    },
+    "下利臭水_SIG": {
+      "id": 401,
+      "text": "下利臭水",
+      "label": "SIG"
+    },
+    "调胃承气汤_PRE": {
+      "id": 402,
+      "text": "调胃承气汤",
+      "label": "PRE"
+    },
+    "口干_SYM": {
+      "id": 403,
+      "text": "口干",
+      "label": "SYM"
+    },
+    "齿燥_SYM": {
+      "id": 404,
+      "text": "齿燥",
+      "label": "SYM"
+    },
+    "形脱_SYM": {
+      "id": 405,
+      "text": "形脱",
+      "label": "SYM"
+    },
+    "老黄隔瓣舌_TNG": {
+      "id": 406,
+      "text": "老黄隔瓣舌",
+      "label": "TNG"
+    },
+    "舌黄干涩_TNG": {
+      "id": 407,
+      "text": "舌黄干涩",
+      "label": "TNG"
+    },
+    "邪热入胃_BEC": {
+      "id": 408,
+      "text": "邪热入胃",
+      "label": "BEC"
+    },
+    "毒结已深_BEC": {
+      "id": 409,
+      "text": "毒结已深",
+      "label": "BEC"
+    },
+    "发黄_SIG": {
+      "id": 413,
+      "text": "发黄",
+      "label": "SIG"
+    },
+    "少腹痛_SYM": {
+      "id": 415,
+      "text": "少腹痛",
+      "label": "SYM"
+    },
+    "瘀血_BEC": {
+      "id": 416,
+      "text": "瘀血",
+      "label": "BEC"
+    },
+    "抵当汤_PRE": {
+      "id": 417,
+      "text": "抵当汤",
+      "label": "PRE"
+    },
+    "结胸_DIS": {
+      "id": 418,
+      "text": "结胸",
+      "label": "DIS"
+    },
+    "大陷胸汤_PRE": {
+      "id": 419,
+      "text": "大陷胸汤",
+      "label": "PRE"
+    },
+    "黄尖舌_TNG": {
+      "id": 420,
+      "text": "黄尖舌",
+      "label": "TNG"
+    },
+    "舌尖苔黄_TNG": {
+      "id": 421,
+      "text": "舌尖苔黄",
+      "label": "TNG"
+    },
+    "热邪_BEC": {
+      "id": 422,
+      "text": "热邪",
+      "label": "BEC"
+    },
+    "胃腑_VIS": {
+      "id": 423,
+      "text": "胃腑",
+      "label": "VIS"
+    },
+    "脉浮_PUL": {
+      "id": 425,
+      "text": "脉浮",
+      "label": "PUL"
+    },
+    "表证未尽_SYN": {
+      "id": 427,
+      "text": "表证未尽",
+      "label": "SYN"
+    },
+    "两解之_SIG": {
+      "id": 429,
+      "text": "两解之",
+      "label": "SIG"
+    },
+    "黄苔灰根舌_TNG": {
+      "id": 430,
+      "text": "黄苔灰根舌",
+      "label": "TNG"
+    },
+    "舌根灰色而尖黄_TNG": {
+      "id": 431,
+      "text": "舌根灰色而尖黄",
+      "label": "TNG"
+    },
+    "黑根_TNG": {
+      "id": 432,
+      "text": "黑根",
+      "label": "TNG"
+    },
+    "直视_SYM": {
+      "id": 434,
+      "text": "直视",
+      "label": "SYM"
+    },
+    "脉沉而有力_PUL": {
+      "id": 435,
+      "text": "脉沉而有力",
+      "label": "PUL"
+    },
+    "加减治之_SIG": {
+      "id": 437,
+      "text": "加减治之",
+      "label": "SIG"
+    },
+    "黄尖红根舌_TNG": {
+      "id": 438,
+      "text": "黄尖红根舌",
+      "label": "TNG"
+    },
+    "根红而尖黄_TNG": {
+      "id": 439,
+      "text": "根红而尖黄",
+      "label": "TNG"
+    },
+    "湿热_BEC": {
+      "id": 440,
+      "text": "湿热",
+      "label": "BEC"
+    },
+    "火位_BDP": {
+      "id": 441,
+      "text": "火位",
+      "label": "BDP"
+    },
+    "瘟热_DIS": {
+      "id": 442,
+      "text": "瘟热",
+      "label": "DIS"
+    },
+    "凉膈解毒_PRE": {
+      "id": 443,
+      "text": "凉膈解毒",
+      "label": "PRE"
+    },
+    "消息治之_SIG": {
+      "id": 444,
+      "text": "消息治之",
+      "label": "SIG"
+    },
+    "黄尖黑根舌_TNG": {
+      "id": 445,
+      "text": "黄尖黑根舌",
+      "label": "TNG"
+    },
+    "舌黑根多而黄尖少_TNG": {
+      "id": 446,
+      "text": "舌黑根多而黄尖少",
+      "label": "TNG"
+    },
+    "胃气竭绝_BEC": {
+      "id": 447,
+      "text": "胃气竭绝",
+      "label": "BEC"
+    },
+    "黄苔黑刺舌_TNG": {
+      "id": 448,
+      "text": "黄苔黑刺舌",
+      "label": "TNG"
+    },
+    "舌苔老黄极而中有黑刺_TNG": {
+      "id": 449,
+      "text": "舌苔老黄极而中有黑刺",
+      "label": "TNG"
+    },
+    "邪毒内陷_BEC": {
+      "id": 451,
+      "text": "邪毒内陷",
+      "label": "BEC"
+    },
+    "黄大胀满舌_TNG": {
+      "id": 454,
+      "text": "黄大胀满舌",
+      "label": "TNG"
+    },
+    "阳明胃经湿热_BEC": {
+      "id": 455,
+      "text": "阳明胃经湿热",
+      "label": "BEC"
+    },
+    "阳明胃经_MER": {
+      "id": 456,
+      "text": "阳明胃经",
+      "label": "MER"
+    },
+    "身黄_SYM": {
+      "id": 457,
+      "text": "身黄",
+      "label": "SYM"
+    },
+    "大便自利_SIG": {
+      "id": 461,
+      "text": "大便自利",
+      "label": "SIG"
+    },
+    "茵陈_MED": {
+      "id": 464,
+      "text": "茵陈",
+      "label": "MED"
+    },
+    "栀子_MED": {
+      "id": 465,
+      "text": "栀子",
+      "label": "MED"
+    },
+    "黄连_MED": {
+      "id": 466,
+      "text": "黄连",
+      "label": "MED"
+    },
+    "黄尖白根舌_TNG": {
+      "id": 467,
+      "text": "黄尖白根舌",
+      "label": "TNG"
+    },
+    "舌根白尖黄_TNG": {
+      "id": 468,
+      "text": "舌根白尖黄",
+      "label": "TNG"
+    },
+    "阳明证_SYN": {
+      "id": 471,
+      "text": "阳明证",
+      "label": "SYN"
+    },
+    "少阳证_SYN": {
+      "id": 473,
+      "text": "少阳证",
+      "label": "SYN"
+    },
+    "黄根白尖舌_TNG": {
+      "id": 478,
+      "text": "黄根白尖舌",
+      "label": "TNG"
+    },
+    "舌尖白根黄_TNG": {
+      "id": 479,
+      "text": "舌尖白根黄",
+      "label": "TNG"
+    },
+    "表邪_BEC": {
+      "id": 480,
+      "text": "表邪",
+      "label": "BEC"
+    },
+    "里邪_BEC": {
+      "id": 481,
+      "text": "里邪",
+      "label": "BEC"
+    },
+    "天水散_PRE": {
+      "id": 482,
+      "text": "天水散",
+      "label": "PRE"
+    },
+    "阳明无汗_SIG": {
+      "id": 484,
+      "text": "阳明无汗",
+      "label": "SIG"
+    },
+    "心中懊_SYM": {
+      "id": 486,
+      "text": "心中懊",
+      "label": "SYM"
+    },
+    "黄根灰尖舌_TNG": {
+      "id": 489,
+      "text": "黄根灰尖舌",
+      "label": "TNG"
+    },
+    "舌乃火位_VIS": {
+      "id": 490,
+      "text": "舌乃火位",
+      "label": "VIS"
+    },
+    "根黄尖灰_TNG": {
+      "id": 492,
+      "text": "根黄尖灰",
+      "label": "TNG"
+    },
+    "土来侮火_BEC": {
+      "id": 493,
+      "text": "土来侮火",
+      "label": "BEC"
+    },
+    "不吐_SIG": {
+      "id": 494,
+      "text": "不吐",
+      "label": "SIG"
+    },
+    "不利_SIG": {
+      "id": 495,
+      "text": "不利",
+      "label": "SIG"
+    },
+    "心烦_SYM": {
+      "id": 496,
+      "text": "心烦",
+      "label": "SYM"
+    },
+    "胃中郁热_BEC": {
+      "id": 498,
+      "text": "胃中郁热",
+      "label": "BEC"
+    },
+    "调胃承气加黄连_PRE": {
+      "id": 500,
+      "text": "调胃承气加黄连",
+      "label": "PRE"
+    },
+    "黄根白尖短缩舌_TNG": {
+      "id": 501,
+      "text": "黄根白尖短缩舌",
+      "label": "TNG"
+    },
+    "舌见根黄尖白而短硬_TNG": {
+      "id": 502,
+      "text": "舌见根黄尖白而短硬",
+      "label": "TNG"
+    },
+    "不能伸出_SIG": {
+      "id": 503,
+      "text": "不能伸出",
+      "label": "SIG"
+    },
+    "谵妄烦乱_SYM": {
+      "id": 504,
+      "text": "谵妄烦乱",
+      "label": "SYM"
+    },
+    "痰挟宿食占据中宫_BEC": {
+      "id": 505,
+      "text": "痰挟宿食占据中宫",
+      "label": "BEC"
+    },
+    "大承气加姜、半_PRE": {
+      "id": 506,
+      "text": "大承气加姜、半",
+      "label": "PRE"
+    },
+    "黑苔舌总论_LIT": {
+      "id": 507,
+      "text": "黑苔舌总论",
+      "label": "LIT"
+    },
+    "伤寒五七日_DIS": {
+      "id": 508,
+      "text": "伤寒五七日",
+      "label": "DIS"
+    },
+    "黑苔_TNG": {
+      "id": 509,
+      "text": "黑苔",
+      "label": "TNG"
+    },
+    "两感_DIS": {
+      "id": 510,
+      "text": "两感",
+      "label": "DIS"
+    },
+    "邪热传里_BEC": {
+      "id": 512,
+      "text": "邪热传里",
+      "label": "BEC"
+    },
+    "红舌_TNG": {
+      "id": 513,
+      "text": "红舌",
+      "label": "TNG"
+    },
+    "瘟疫传变_BEC": {
+      "id": 514,
+      "text": "瘟疫传变",
+      "label": "BEC"
+    },
+    "坏证将至_SYN": {
+      "id": 515,
+      "text": "坏证将至",
+      "label": "SYN"
+    },
+    "火极似水_BEC": {
+      "id": 517,
+      "text": "火极似水",
+      "label": "BEC"
+    },
+    "脏气已绝_BEC": {
+      "id": 518,
+      "text": "脏气已绝",
+      "label": "BEC"
+    },
+    "纯黑舌_TNG": {
+      "id": 519,
+      "text": "纯黑舌",
+      "label": "TNG"
+    },
+    "遍舌黑苔_TNG": {
+      "id": 520,
+      "text": "遍舌黑苔",
+      "label": "TNG"
+    },
+    "代结_PUL": {
+      "id": 523,
+      "text": "代结",
+      "label": "PUL"
+    },
+    "黑苔瓣底红舌_TNG": {
+      "id": 524,
+      "text": "黑苔瓣底红舌",
+      "label": "TNG"
+    },
+    "黄苔久而变黑_TNG": {
+      "id": 525,
+      "text": "黄苔久而变黑",
+      "label": "TNG"
+    },
+    "实热亢极之候_BEC": {
+      "id": 526,
+      "text": "实热亢极之候",
+      "label": "BEC"
+    },
+    "脉伏_PUL": {
+      "id": 527,
+      "text": "脉伏",
+      "label": "PUL"
+    },
+    "目闭_SIG": {
+      "id": 528,
+      "text": "目闭",
+      "label": "SIG"
+    },
+    "口开_SIG": {
+      "id": 529,
+      "text": "口开",
+      "label": "SIG"
+    },
+    "独语_SYM": {
+      "id": 530,
+      "text": "独语",
+      "label": "SYM"
+    },
+    "谵妄_SYM": {
+      "id": 531,
+      "text": "谵妄",
+      "label": "SYM"
+    },
+    "黑苔瓣底黑舌_TNG": {
+      "id": 533,
+      "text": "黑苔瓣底黑舌",
+      "label": "TNG"
+    },
+    "满黑刺底红舌_TNG": {
+      "id": 534,
+      "text": "满黑刺底红舌",
+      "label": "TNG"
+    },
+    "满舌黑苔_TNG": {
+      "id": 535,
+      "text": "满舌黑苔",
+      "label": "TNG"
+    },
+    "干燥_SIG": {
+      "id": 536,
+      "text": "干燥",
+      "label": "SIG"
+    },
+    "生大刺_TNG": {
+      "id": 537,
+      "text": "生大刺",
+      "label": "TNG"
+    },
+    "刺底红色_TNG": {
+      "id": 538,
+      "text": "刺底红色",
+      "label": "TNG"
+    },
+    "心神_VIS": {
+      "id": 539,
+      "text": "心神",
+      "label": "VIS"
+    },
+    "火过极_BEC": {
+      "id": 540,
+      "text": "火过极",
+      "label": "BEC"
+    },
+    "肥盛多湿热人_CON": {
+      "id": 541,
+      "text": "肥盛多湿热人",
+      "label": "CON"
+    },
+    "感冒发热_DIS": {
+      "id": 542,
+      "text": "感冒发热",
+      "label": "DIS"
+    },
+    "痞胀闷乱_SYM": {
+      "id": 543,
+      "text": "痞胀闷乱",
+      "label": "SYM"
+    },
+    "大陷胸丸_PRE": {
+      "id": 544,
+      "text": "大陷胸丸",
+      "label": "PRE"
+    },
+    "小陷胸汤_PRE": {
+      "id": 545,
+      "text": "小陷胸汤",
+      "label": "PRE"
+    },
+    "刺底黑舌_TNG": {
+      "id": 546,
+      "text": "刺底黑舌",
+      "label": "TNG"
+    },
+    "刮去芒刺_TNG": {
+      "id": 547,
+      "text": "刮去芒刺",
+      "label": "TNG"
+    },
+    "底下肉色俱黑也凡见此舌_TNG": {
+      "id": 548,
+      "text": "底下肉色俱黑也凡见此舌",
+      "label": "TNG"
+    },
+    "黑烂自啮舌_TNG": {
+      "id": 549,
+      "text": "黑烂自啮舌",
+      "label": "TNG"
+    },
+    "舌黑烂而频欲啮_TNG": {
+      "id": 550,
+      "text": "舌黑烂而频欲啮",
+      "label": "TNG"
+    },
+    "中黑边白滑苔舌_TNG": {
+      "id": 551,
+      "text": "中黑边白滑苔舌",
+      "label": "TNG"
+    },
+    "舌见中黑边白而滑_TNG": {
+      "id": 552,
+      "text": "舌见中黑边白而滑",
+      "label": "TNG"
+    },
+    "表里俱虚寒_SYN": {
+      "id": 553,
+      "text": "表里俱虚寒",
+      "label": "SYN"
+    },
+    "脉必微弱_PUL": {
+      "id": 554,
+      "text": "脉必微弱",
+      "label": "PUL"
+    },
+    "证必畏寒_SYM": {
+      "id": 555,
+      "text": "证必畏寒",
+      "label": "SYM"
+    },
+    "附子理中汤_PRE": {
+      "id": 556,
+      "text": "附子理中汤",
+      "label": "PRE"
+    },
+    "温之_SIG": {
+      "id": 557,
+      "text": "温之",
+      "label": "SIG"
+    },
+    "夏月过食生冷_BEC": {
+      "id": 558,
+      "text": "夏月过食生冷",
+      "label": "BEC"
+    },
+    "大顺冷香_PRE": {
+      "id": 559,
+      "text": "大顺冷香",
+      "label": "PRE"
+    },
+    "选用_SIG": {
+      "id": 560,
+      "text": "选用",
+      "label": "SIG"
+    },
+    "红边中黑滑舌_TNG": {
+      "id": 561,
+      "text": "红边中黑滑舌",
+      "label": "TNG"
+    },
+    "舌黑有津_TNG": {
+      "id": 562,
+      "text": "舌黑有津",
+      "label": "TNG"
+    },
+    "证见谵语_SYM": {
+      "id": 563,
+      "text": "证见谵语",
+      "label": "SYM"
+    },
+    "表证时不曾服药_BEC": {
+      "id": 564,
+      "text": "表证时不曾服药",
+      "label": "BEC"
+    },
+    "不戒饮食_BEC": {
+      "id": 565,
+      "text": "不戒饮食",
+      "label": "BEC"
+    },
+    "冷物结滞于胃_BEC": {
+      "id": 566,
+      "text": "冷物结滞于胃",
+      "label": "BEC"
+    },
+    "虚人_CON": {
+      "id": 567,
+      "text": "虚人",
+      "label": "CON"
+    },
+    "黄龙汤_PRE": {
+      "id": 568,
+      "text": "黄龙汤",
+      "label": "PRE"
+    },
+    "枳实理中加大黄_PRE": {
+      "id": 569,
+      "text": "枳实理中加大黄",
+      "label": "PRE"
+    },
+    "壮实者_CON": {
+      "id": 570,
+      "text": "壮实者",
+      "label": "CON"
+    },
+    "备急丸_PRE": {
+      "id": 571,
+      "text": "备急丸",
+      "label": "PRE"
+    },
+    "热下之_SIG": {
+      "id": 572,
+      "text": "热下之",
+      "label": "SIG"
+    },
+    "夏月中_SYM": {
+      "id": 573,
+      "text": "夏月中",
+      "label": "SYM"
+    },
+    "主之_SIG": {
+      "id": 575,
+      "text": "主之",
+      "label": "SIG"
+    },
+    "通尖黑干边白舌_TNG": {
+      "id": 576,
+      "text": "通尖黑干边白舌",
+      "label": "TNG"
+    },
+    "大羌活汤_PRE": {
+      "id": 578,
+      "text": "大羌活汤",
+      "label": "PRE"
+    },
+    "黑边晕内微红舌_TNG": {
+      "id": 579,
+      "text": "黑边晕内微红舌",
+      "label": "TNG"
+    },
+    "邪热入于心胞之候_BEC": {
+      "id": 580,
+      "text": "邪热入于心胞之候",
+      "label": "BEC"
+    },
+    "凉膈合大承气_PRE": {
+      "id": 581,
+      "text": "凉膈合大承气",
+      "label": "PRE"
+    },
+    "中燥舌_TNG": {
+      "id": 582,
+      "text": "中燥舌",
+      "label": "TNG"
+    },
+    "舌苔中心黑浓而干_TNG": {
+      "id": 583,
+      "text": "舌苔中心黑浓而干",
+      "label": "TNG"
+    },
+    "热盛津枯之候_BEC": {
+      "id": 584,
+      "text": "热盛津枯之候",
+      "label": "BEC"
+    },
+    "生脉散合黄连解毒汤_PRE": {
+      "id": 585,
+      "text": "生脉散合黄连解毒汤",
+      "label": "PRE"
+    },
+    "中黑无苔干燥舌_TNG": {
+      "id": 586,
+      "text": "中黑无苔干燥舌",
+      "label": "TNG"
+    },
+    "舌黑无苔而燥_TNG": {
+      "id": 587,
+      "text": "舌黑无苔而燥",
+      "label": "TNG"
+    },
+    "津液受伤而虚火用事也_BEC": {
+      "id": 588,
+      "text": "津液受伤而虚火用事也",
+      "label": "BEC"
+    },
+    "生脉散合附子理中汤_PRE": {
+      "id": 589,
+      "text": "生脉散合附子理中汤",
+      "label": "PRE"
+    },
+    "黑中无苔枯瘦舌_TNG": {
+      "id": 590,
+      "text": "黑中无苔枯瘦舌",
+      "label": "TNG"
+    },
+    "伤寒八九日_DIS": {
+      "id": 591,
+      "text": "伤寒八九日",
+      "label": "DIS"
+    },
+    "过汗_SYM": {
+      "id": 592,
+      "text": "过汗",
+      "label": "SYM"
+    },
+    "津枯血燥_BEC": {
+      "id": 593,
+      "text": "津枯血燥",
+      "label": "BEC"
+    },
+    "舌无苔而黑瘦_TNG": {
+      "id": 594,
+      "text": "舌无苔而黑瘦",
+      "label": "TNG"
+    },
+    "大便五六日不行_SIG": {
+      "id": 595,
+      "text": "大便五六日不行",
+      "label": "SIG"
+    },
+    "腹不硬满_SYM": {
+      "id": 596,
+      "text": "腹不硬满",
+      "label": "SYM"
+    },
+    "神昏不得卧_SYM": {
+      "id": 597,
+      "text": "神昏不得卧",
+      "label": "SYM"
+    },
+    "呢喃叹息_SYM": {
+      "id": 598,
+      "text": "呢喃叹息",
+      "label": "SYM"
+    },
+    "炙甘草汤_PRE": {
+      "id": 599,
+      "text": "炙甘草汤",
+      "label": "PRE"
+    },
+    "黑干短舌_TNG": {
+      "id": 600,
+      "text": "黑干短舌",
+      "label": "TNG"
+    },
+    "舌至干黑而短_TNG": {
+      "id": 601,
+      "text": "舌至干黑而短",
+      "label": "TNG"
+    },
+    "厥阴极热_BEC": {
+      "id": 602,
+      "text": "厥阴极热",
+      "label": "BEC"
+    },
+    "食填中脘_BEC": {
+      "id": 603,
+      "text": "食填中脘",
+      "label": "BEC"
+    },
+    "胀_SYM": {
+      "id": 604,
+      "text": "胀",
+      "label": "SYM"
+    },
+    "粪黄_SIG": {
+      "id": 606,
+      "text": "粪黄",
+      "label": "SIG"
+    },
+    "热退_SIG": {
+      "id": 607,
+      "text": "热退",
+      "label": "SIG"
+    },
+    "粪黑_SIG": {
+      "id": 608,
+      "text": "粪黑",
+      "label": "SIG"
+    },
+    "热不止_SYM": {
+      "id": 609,
+      "text": "热不止",
+      "label": "SYM"
+    },
+    "灰色舌_TNG": {
+      "id": 610,
+      "text": "灰色舌",
+      "label": "TNG"
+    },
+    "阴阳_CON": {
+      "id": 611,
+      "text": "阴阳",
+      "label": "CON"
+    },
+    "直中阴经_SYN": {
+      "id": 612,
+      "text": "直中阴经",
+      "label": "SYN"
+    },
+    "灰黑_TNG": {
+      "id": 613,
+      "text": "灰黑",
+      "label": "TNG"
+    },
+    "热传三阴_BEC": {
+      "id": 614,
+      "text": "热传三阴",
+      "label": "BEC"
+    },
+    "表证罢_SYN": {
+      "id": 615,
+      "text": "表证罢",
+      "label": "SYN"
+    },
+    "苔变灰色_TNG": {
+      "id": 616,
+      "text": "苔变灰色",
+      "label": "TNG"
+    },
+    "根_BDP": {
+      "id": 617,
+      "text": "根",
+      "label": "BDP"
+    },
+    "尖_BDP": {
+      "id": 618,
+      "text": "尖",
+      "label": "BDP"
+    },
+    "中_BDP": {
+      "id": 619,
+      "text": "中",
+      "label": "BDP"
+    },
+    "浑舌俱灰黑_TNG": {
+      "id": 620,
+      "text": "浑舌俱灰黑",
+      "label": "TNG"
+    },
+    "传经热证_SYN": {
+      "id": 621,
+      "text": "传经热证",
+      "label": "SYN"
+    },
+    "灰黑干苔_TNG": {
+      "id": 622,
+      "text": "灰黑干苔",
+      "label": "TNG"
+    },
+    "攻下泄热_DIS": {
+      "id": 623,
+      "text": "攻下泄热",
+      "label": "DIS"
+    },
+    "直中三阴_SYN": {
+      "id": 624,
+      "text": "直中三阴",
+      "label": "SYN"
+    },
+    "灰黑无苔_TNG": {
+      "id": 625,
+      "text": "灰黑无苔",
+      "label": "TNG"
+    },
+    "温经散寒_DIS": {
+      "id": 626,
+      "text": "温经散寒",
+      "label": "DIS"
+    },
+    "蓄血证_SYN": {
+      "id": 627,
+      "text": "蓄血证",
+      "label": "SYN"
+    },
+    "瞑目谵语_SYM": {
+      "id": 629,
+      "text": "瞑目谵语",
+      "label": "SYM"
+    },
+    "不狂不语_SYM": {
+      "id": 630,
+      "text": "不狂不语",
+      "label": "SYM"
+    },
+    "不知人事_SYM": {
+      "id": 631,
+      "text": "不知人事",
+      "label": "SYM"
+    },
+    "面黑_TNG": {
+      "id": 632,
+      "text": "面黑",
+      "label": "TNG"
+    },
+    "舌灰_TNG": {
+      "id": 633,
+      "text": "舌灰",
+      "label": "TNG"
+    },
+    "攻其血_DIS": {
+      "id": 634,
+      "text": "攻其血",
+      "label": "DIS"
+    },
+    "纯灰舌_TNG": {
+      "id": 635,
+      "text": "纯灰舌",
+      "label": "TNG"
+    },
+    "舌灰色无苔_TNG": {
+      "id": 636,
+      "text": "舌灰色无苔",
+      "label": "TNG"
+    },
+    "脉必沉细而迟_PUL": {
+      "id": 639,
+      "text": "脉必沉细而迟",
+      "label": "PUL"
+    },
+    "沉细_PUL": {
+      "id": 640,
+      "text": "沉细",
+      "label": "PUL"
+    },
+    "迟_PUL": {
+      "id": 641,
+      "text": "迟",
+      "label": "PUL"
+    },
+    "不渴_SYM": {
+      "id": 642,
+      "text": "不渴",
+      "label": "SYM"
+    },
+    "不烦_SYM": {
+      "id": 643,
+      "text": "不烦",
+      "label": "SYM"
+    },
+    "附子理中四逆汤_PRE": {
+      "id": 644,
+      "text": "附子理中四逆汤",
+      "label": "PRE"
+    },
+    "舌变灰中有微黄色者生_TNG": {
+      "id": 645,
+      "text": "舌变灰中有微黄色者生",
+      "label": "TNG"
+    },
+    "渐渐灰缩干黑者死_TNG": {
+      "id": 646,
+      "text": "渐渐灰缩干黑者死",
+      "label": "TNG"
+    },
+    "灰色现于中央_TNG": {
+      "id": 647,
+      "text": "灰色现于中央",
+      "label": "TNG"
+    },
+    "消渴_SYM": {
+      "id": 648,
+      "text": "消渴",
+      "label": "SYM"
+    },
+    "气上冲心_SYM": {
+      "id": 649,
+      "text": "气上冲心",
+      "label": "SYM"
+    },
+    "饥不欲食_SYM": {
+      "id": 650,
+      "text": "饥不欲食",
+      "label": "SYM"
+    },
+    "食即吐蛔_SIG": {
+      "id": 651,
+      "text": "食即吐蛔",
+      "label": "SIG"
+    },
+    "热传厥阴之候_SYN": {
+      "id": 652,
+      "text": "热传厥阴之候",
+      "label": "SYN"
+    },
+    "乌梅丸_PRE": {
+      "id": 653,
+      "text": "乌梅丸",
+      "label": "PRE"
+    },
+    "灰黑苔干纹裂舌_TNG": {
+      "id": 654,
+      "text": "灰黑苔干纹裂舌",
+      "label": "TNG"
+    },
+    "土邪胜水_BEC": {
+      "id": 655,
+      "text": "土邪胜水",
+      "label": "BEC"
+    },
+    "凉膈调胃_PRE": {
+      "id": 656,
+      "text": "凉膈调胃",
+      "label": "PRE"
+    },
+    "十中可救二三_DIS": {
+      "id": 657,
+      "text": "十中可救二三",
+      "label": "DIS"
+    },
+    "下后_SIG": {
+      "id": 658,
+      "text": "下后",
+      "label": "SIG"
+    },
+    "渴不止_SYM": {
+      "id": 659,
+      "text": "渴不止",
+      "label": "SYM"
+    },
+    "热不退_SYM": {
+      "id": 660,
+      "text": "热不退",
+      "label": "SYM"
+    },
+    "不治_DIS": {
+      "id": 661,
+      "text": "不治",
+      "label": "DIS"
+    },
+    "灰根黄尖中赤舌_TNG": {
+      "id": 662,
+      "text": "灰根黄尖中赤舌",
+      "label": "TNG"
+    },
+    "舌根灰色而中红尖黄_TNG": {
+      "id": 663,
+      "text": "舌根灰色而中红尖黄",
+      "label": "TNG"
+    },
+    "肠胃燥热之证_SYN": {
+      "id": 664,
+      "text": "肠胃燥热之证",
+      "label": "SYN"
+    },
+    "五六日不大便_SIG": {
+      "id": 667,
+      "text": "五六日不大便",
+      "label": "SIG"
+    },
+    "温病热病_DIS": {
+      "id": 670,
+      "text": "温病热病",
+      "label": "DIS"
+    },
+    "凉膈_PRE": {
+      "id": 673,
+      "text": "凉膈",
+      "label": "PRE"
+    },
+    "双解_PRE": {
+      "id": 674,
+      "text": "双解",
+      "label": "PRE"
+    },
+    "灰色重晕舌_TNG": {
+      "id": 675,
+      "text": "灰色重晕舌",
+      "label": "TNG"
+    },
+    "瘟病热毒_DIS": {
+      "id": 676,
+      "text": "瘟病热毒",
+      "label": "DIS"
+    },
+    "传遍三阴_SYN": {
+      "id": 677,
+      "text": "传遍三阴",
+      "label": "SYN"
+    },
+    "热毒传内一次_BEC": {
+      "id": 678,
+      "text": "热毒传内一次",
+      "label": "BEC"
+    },
+    "舌_BDP": {
+      "id": 679,
+      "text": "舌",
+      "label": "BDP"
+    },
+    "毒盛_BEC": {
+      "id": 680,
+      "text": "毒盛",
+      "label": "BEC"
+    },
+    "重晕_SYM": {
+      "id": 681,
+      "text": "重晕",
+      "label": "SYM"
+    },
+    "一晕_SYM": {
+      "id": 685,
+      "text": "一晕",
+      "label": "SYM"
+    },
+    "二晕_SYM": {
+      "id": 686,
+      "text": "二晕",
+      "label": "SYM"
+    },
+    "三晕_SYM": {
+      "id": 687,
+      "text": "三晕",
+      "label": "SYM"
+    },
+    "横纹二三层_TNG": {
+      "id": 688,
+      "text": "横纹二三层",
+      "label": "TNG"
+    },
+    "灰黑干刺舌_TNG": {
+      "id": 689,
+      "text": "灰黑干刺舌",
+      "label": "TNG"
+    },
+    "咽干_SIG": {
+      "id": 690,
+      "text": "咽干",
+      "label": "SIG"
+    },
+    "口燥_SIG": {
+      "id": 691,
+      "text": "口燥",
+      "label": "SIG"
+    },
+    "喘满_SYM": {
+      "id": 692,
+      "text": "喘满",
+      "label": "SYM"
+    },
+    "邪热_BEC": {
+      "id": 693,
+      "text": "邪热",
+      "label": "BEC"
+    },
+    "少阴_SYN": {
+      "id": 694,
+      "text": "少阴",
+      "label": "SYN"
+    },
+    "小便难_SIG": {
+      "id": 696,
+      "text": "小便难",
+      "label": "SIG"
+    },
+    "灰黑尖舌_TNG": {
+      "id": 697,
+      "text": "灰黑尖舌",
+      "label": "TNG"
+    },
+    "汗解_SIG": {
+      "id": 698,
+      "text": "汗解",
+      "label": "SIG"
+    },
+    "舌尖灰黑_TNG": {
+      "id": 699,
+      "text": "舌尖灰黑",
+      "label": "TNG"
+    },
+    "宿食未消_BEC": {
+      "id": 700,
+      "text": "宿食未消",
+      "label": "BEC"
+    },
+    "伤饮食_BEC": {
+      "id": 701,
+      "text": "伤饮食",
+      "label": "BEC"
+    },
+    "邪热复盛_BEC": {
+      "id": 702,
+      "text": "邪热复盛",
+      "label": "BEC"
+    },
+    "灰黑尖干刺舌_TNG": {
+      "id": 704,
+      "text": "灰黑尖干刺舌",
+      "label": "TNG"
+    },
+    "舌尖灰黑有刺而干_TNG": {
+      "id": 705,
+      "text": "舌尖灰黑有刺而干",
+      "label": "TNG"
+    },
+    "得病后犹加饮食_BEC": {
+      "id": 706,
+      "text": "得病后犹加饮食",
+      "label": "BEC"
+    },
+    "口苦_SIG": {
+      "id": 710,
+      "text": "口苦",
+      "label": "SIG"
+    },
+    "消导药_MED": {
+      "id": 714,
+      "text": "消导药",
+      "label": "MED"
+    },
+    "灰中墨滑舌_TNG": {
+      "id": 715,
+      "text": "灰中墨滑舌",
+      "label": "TNG"
+    },
+    "淡淡灰色中间有滑苔四五点如墨汁_TNG": {
+      "id": 716,
+      "text": "淡淡灰色中间有滑苔四五点如墨汁",
+      "label": "TNG"
+    },
+    "热邪传里_BEC": {
+      "id": 717,
+      "text": "热邪传里",
+      "label": "BEC"
+    },
+    "中有宿食未化_BEC": {
+      "id": 718,
+      "text": "中有宿食未化",
+      "label": "BEC"
+    },
+    "灰黑多黄根少舌_TNG": {
+      "id": 720,
+      "text": "灰黑多黄根少舌",
+      "label": "TNG"
+    },
+    "舌灰色而根黄_TNG": {
+      "id": 721,
+      "text": "舌灰色而根黄",
+      "label": "TNG"
+    },
+    "热传厥阴_BEC": {
+      "id": 722,
+      "text": "热传厥阴",
+      "label": "BEC"
+    },
+    "胃中复有停滞_BEC": {
+      "id": 723,
+      "text": "胃中复有停滞",
+      "label": "BEC"
+    },
+    "伤寒六七日不利_DIS": {
+      "id": 724,
+      "text": "伤寒六七日不利",
+      "label": "DIS"
+    },
+    "便发热而利_SYM": {
+      "id": 725,
+      "text": "便发热而利",
+      "label": "SYM"
+    },
+    "汗出不止_SYM": {
+      "id": 726,
+      "text": "汗出不止",
+      "label": "SYM"
+    },
+    "正气脱_BEC": {
+      "id": 727,
+      "text": "正气脱",
+      "label": "BEC"
+    },
+    "边灰中紫舌_TNG": {
+      "id": 728,
+      "text": "边灰中紫舌",
+      "label": "TNG"
+    },
+    "舌边灰黑而中淡紫_TNG": {
+      "id": 729,
+      "text": "舌边灰黑而中淡紫",
+      "label": "TNG"
+    },
+    "时时自啮舌尖为爽_SIG": {
+      "id": 730,
+      "text": "时时自啮舌尖为爽",
+      "label": "SIG"
+    },
+    "少阴厥气逆上_BEC": {
+      "id": 731,
+      "text": "少阴厥气逆上",
+      "label": "BEC"
+    },
+    "红色舌总论_LIT": {
+      "id": 732,
+      "text": "红色舌总论",
+      "label": "LIT"
+    },
+    "伏热内蓄于心胃_BEC": {
+      "id": 734,
+      "text": "伏热内蓄于心胃",
+      "label": "BEC"
+    },
+    "自里而达于表_BEC": {
+      "id": 735,
+      "text": "自里而达于表",
+      "label": "BEC"
+    },
+    "仲景_LIT": {
+      "id": 736,
+      "text": "仲景",
+      "label": "LIT"
+    },
+    "冬伤于寒_BEC": {
+      "id": 737,
+      "text": "冬伤于寒",
+      "label": "BEC"
+    },
+    "至春变为温病_DIS": {
+      "id": 738,
+      "text": "至春变为温病",
+      "label": "DIS"
+    },
+    "至夏变为热病_DIS": {
+      "id": 739,
+      "text": "至夏变为热病",
+      "label": "DIS"
+    },
+    "舌红而赤_TNG": {
+      "id": 740,
+      "text": "舌红而赤",
+      "label": "TNG"
+    },
+    "瘟疫疫疠_DIS": {
+      "id": 741,
+      "text": "瘟疫疫疠",
+      "label": "DIS"
+    },
+    "一方之内_BDP": {
+      "id": 742,
+      "text": "一方之内",
+      "label": "BDP"
+    },
+    "老幼之病皆同_DIS": {
+      "id": 743,
+      "text": "老幼之病皆同",
+      "label": "DIS"
+    },
+    "舌亦正赤而加积苔_TNG": {
+      "id": 744,
+      "text": "舌亦正赤而加积苔",
+      "label": "TNG"
+    },
+    "更多食_FOO": {
+      "id": 745,
+      "text": "更多食",
+      "label": "FOO"
+    },
+    "助热内蒸_BEC": {
+      "id": 746,
+      "text": "助热内蒸",
+      "label": "BEC"
+    },
+    "瘟毒火热蕴化_BEC": {
+      "id": 747,
+      "text": "瘟毒火热蕴化",
+      "label": "BEC"
+    },
+    "黄连解毒_PRE": {
+      "id": 749,
+      "text": "黄连解毒",
+      "label": "PRE"
+    },
+    "三黄石膏_PRE": {
+      "id": 750,
+      "text": "三黄石膏",
+      "label": "PRE"
+    },
+    "纯红舌_TNG": {
+      "id": 751,
+      "text": "纯红舌",
+      "label": "TNG"
+    },
+    "败毒散_PRE": {
+      "id": 754,
+      "text": "败毒散",
+      "label": "PRE"
+    },
+    "升麻葛根汤_PRE": {
+      "id": 755,
+      "text": "升麻葛根汤",
+      "label": "PRE"
+    },
+    "红中淡黑舌_TNG": {
+      "id": 756,
+      "text": "红中淡黑舌",
+      "label": "TNG"
+    },
+    "舌红中见淡黑色_TNG": {
+      "id": 757,
+      "text": "舌红中见淡黑色",
+      "label": "TNG"
+    },
+    "滑_SIG": {
+      "id": 758,
+      "text": "滑",
+      "label": "SIG"
+    },
+    "太阳瘟疫_DIS": {
+      "id": 759,
+      "text": "太阳瘟疫",
+      "label": "DIS"
+    },
+    "表证_SYN": {
+      "id": 761,
+      "text": "表证",
+      "label": "SYN"
+    },
+    "双解散_PRE": {
+      "id": 762,
+      "text": "双解散",
+      "label": "PRE"
+    },
+    "汗_SIG": {
+      "id": 764,
+      "text": "汗",
+      "label": "SIG"
+    },
+    "结胸_SYM": {
+      "id": 765,
+      "text": "结胸",
+      "label": "SYM"
+    },
+    "红中焦黑舌_TNG": {
+      "id": 768,
+      "text": "红中焦黑舌",
+      "label": "TNG"
+    },
+    "舌见红色_TNG": {
+      "id": 769,
+      "text": "舌见红色",
+      "label": "TNG"
+    },
+    "黑形如小舌_TNG": {
+      "id": 770,
+      "text": "黑形如小舌",
+      "label": "TNG"
+    },
+    "瘟毒内结于胃火极反兼水化_BEC": {
+      "id": 771,
+      "text": "瘟毒内结于胃火极反兼水化",
+      "label": "BEC"
+    },
+    "黑而干硬_TNG": {
+      "id": 773,
+      "text": "黑而干硬",
+      "label": "TNG"
+    },
+    "指甲刮之有 声_SIG": {
+      "id": 774,
+      "text": "指甲刮之有 声",
+      "label": "SIG"
+    },
+    "红中黑斑舌_TNG": {
+      "id": 777,
+      "text": "红中黑斑舌",
+      "label": "TNG"
+    },
+    "小黑斑星于红舌上_TNG": {
+      "id": 778,
+      "text": "小黑斑星于红舌上",
+      "label": "TNG"
+    },
+    "瘟热乘虚入于阳明_BEC": {
+      "id": 779,
+      "text": "瘟热乘虚入于阳明",
+      "label": "BEC"
+    },
+    "胃热则发斑_SYM": {
+      "id": 780,
+      "text": "胃热则发斑",
+      "label": "SYM"
+    },
+    "身上亦兼有红赤斑_SYM": {
+      "id": 781,
+      "text": "身上亦兼有红赤斑",
+      "label": "SYM"
+    },
+    "黑参升麻汤_PRE": {
+      "id": 782,
+      "text": "黑参升麻汤",
+      "label": "PRE"
+    },
+    "化斑汤_PRE": {
+      "id": 783,
+      "text": "化斑汤",
+      "label": "PRE"
+    },
+    "红内黑尖舌_TNG": {
+      "id": 784,
+      "text": "红内黑尖舌",
+      "label": "TNG"
+    },
+    "舌本红而尖黑_TNG": {
+      "id": 785,
+      "text": "舌本红而尖黑",
+      "label": "TNG"
+    },
+    "足少阴瘟热乘于手少阴_BEC": {
+      "id": 786,
+      "text": "足少阴瘟热乘于手少阴",
+      "label": "BEC"
+    },
+    "竹叶石膏汤_PRE": {
+      "id": 787,
+      "text": "竹叶石膏汤",
+      "label": "PRE"
+    },
+    "红色人字纹裂舌_TNG": {
+      "id": 788,
+      "text": "红色人字纹裂舌",
+      "label": "TNG"
+    },
+    "舌红甚而又有纹裂_TNG": {
+      "id": 789,
+      "text": "舌红甚而又有纹裂",
+      "label": "TNG"
+    },
+    "阳明热毒熏蒸膈上_BEC": {
+      "id": 790,
+      "text": "阳明热毒熏蒸膈上",
+      "label": "BEC"
+    },
+    "人字纹_TNG": {
+      "id": 791,
+      "text": "人字纹",
+      "label": "TNG"
+    },
+    "渴甚_SYM": {
+      "id": 793,
+      "text": "渴甚",
+      "label": "SYM"
+    },
+    "红断纹裂舌_TNG": {
+      "id": 797,
+      "text": "红断纹裂舌",
+      "label": "TNG"
+    },
+    "相火来乘君位_BEC": {
+      "id": 798,
+      "text": "相火来乘君位",
+      "label": "BEC"
+    },
+    "舌红燥而纹裂作痛_TNG": {
+      "id": 799,
+      "text": "舌红燥而纹裂作痛",
+      "label": "TNG"
+    },
+    "黄连解毒汤_PRE": {
+      "id": 800,
+      "text": "黄连解毒汤",
+      "label": "PRE"
+    },
+    "麦门冬_MED": {
+      "id": 801,
+      "text": "麦门冬",
+      "label": "MED"
+    },
+    "红内红星舌_TNG": {
+      "id": 802,
+      "text": "红内红星舌",
+      "label": "TNG"
+    },
+    "淡红色_TNG": {
+      "id": 803,
+      "text": "淡红色",
+      "label": "TNG"
+    },
+    "大红星点_TNG": {
+      "id": 804,
+      "text": "大红星点",
+      "label": "TNG"
+    },
+    "脾土_VIS": {
+      "id": 806,
+      "text": "脾土",
+      "label": "VIS"
+    },
+    "深红虫碎舌_TNG": {
+      "id": 810,
+      "text": "深红虫碎舌",
+      "label": "TNG"
+    },
+    "舌红_TNG": {
+      "id": 811,
+      "text": "舌红",
+      "label": "TNG"
+    },
+    "红点_TNG": {
+      "id": 812,
+      "text": "红点",
+      "label": "TNG"
+    },
+    "坑烂如虫蚀之状_TNG": {
+      "id": 813,
+      "text": "坑烂如虫蚀之状",
+      "label": "TNG"
+    },
+    "水火不能既济_BEC": {
+      "id": 814,
+      "text": "水火不能既济",
+      "label": "BEC"
+    },
+    "热毒炽盛_BEC": {
+      "id": 815,
+      "text": "热毒炽盛",
+      "label": "BEC"
+    },
+    "小承气汤_PRE": {
+      "id": 816,
+      "text": "小承气汤",
+      "label": "PRE"
+    },
+    "红色紫疮舌_TNG": {
+      "id": 818,
+      "text": "红色紫疮舌",
+      "label": "TNG"
+    },
+    "便作渴_SYM": {
+      "id": 821,
+      "text": "便作渴",
+      "label": "SYM"
+    },
+    "咳痰_SYM": {
+      "id": 823,
+      "text": "咳痰",
+      "label": "SYM"
+    },
+    "黑参_MED": {
+      "id": 825,
+      "text": "黑参",
+      "label": "MED"
+    },
+    "薄荷_MED": {
+      "id": 826,
+      "text": "薄荷",
+      "label": "MED"
+    },
+    "益元散_PRE": {
+      "id": 827,
+      "text": "益元散",
+      "label": "PRE"
+    },
+    "尺脉无_PUL": {
+      "id": 828,
+      "text": "尺脉无",
+      "label": "PUL"
+    },
+    "战栗_SYM": {
+      "id": 829,
+      "text": "战栗",
+      "label": "SYM"
+    },
+    "红中微黄根舌_TNG": {
+      "id": 830,
+      "text": "红中微黄根舌",
+      "label": "TNG"
+    },
+    "热入阳明胃腑_BEC": {
+      "id": 831,
+      "text": "热入阳明胃腑",
+      "label": "BEC"
+    },
+    "阳明_SYN": {
+      "id": 832,
+      "text": "阳明",
+      "label": "SYN"
+    },
+    "舌根微黄_TNG": {
+      "id": 834,
+      "text": "舌根微黄",
+      "label": "TNG"
+    },
+    "头汗_SIG": {
+      "id": 835,
+      "text": "头汗",
+      "label": "SIG"
+    },
+    "身凉_SIG": {
+      "id": 836,
+      "text": "身凉",
+      "label": "SIG"
+    },
+    "香豉_MED": {
+      "id": 840,
+      "text": "香豉",
+      "label": "MED"
+    },
+    "红中微黄滑舌_TNG": {
+      "id": 841,
+      "text": "红中微黄滑舌",
+      "label": "TNG"
+    },
+    "病五七日舌中有黄苔_SYM": {
+      "id": 842,
+      "text": "病五七日舌中有黄苔",
+      "label": "SYM"
+    },
+    "脉沉实谵语_SIG": {
+      "id": 844,
+      "text": "脉沉实谵语",
+      "label": "SIG"
+    },
+    "干燥者_SYM": {
+      "id": 846,
+      "text": "干燥者",
+      "label": "SYM"
+    },
+    "内邪热盛_BEC": {
+      "id": 847,
+      "text": "内邪热盛",
+      "label": "BEC"
+    },
+    "红长胀退场门外舌_TNG": {
+      "id": 849,
+      "text": "红长胀退场门外舌",
+      "label": "TNG"
+    },
+    "舌长大胀退场门外_SYM": {
+      "id": 850,
+      "text": "舌长大胀退场门外",
+      "label": "SYM"
+    },
+    "热毒乘心_BEC": {
+      "id": 851,
+      "text": "热毒乘心",
+      "label": "BEC"
+    },
+    "片脑_MED": {
+      "id": 853,
+      "text": "片脑",
+      "label": "MED"
+    },
+    "人中黄_MED": {
+      "id": 854,
+      "text": "人中黄",
+      "label": "MED"
+    },
+    "红 舌_TNG": {
+      "id": 855,
+      "text": "红 舌",
+      "label": "TNG"
+    },
+    "舌频退场门为弄舌_SYM": {
+      "id": 856,
+      "text": "舌频退场门为弄舌",
+      "label": "SYM"
+    },
+    "至鼻尖上下或口角左右者_BDP": {
+      "id": 857,
+      "text": "至鼻尖上下或口角左右者",
+      "label": "BDP"
+    },
+    "恶候_DIS": {
+      "id": 858,
+      "text": "恶候",
+      "label": "DIS"
+    },
+    "生地黄_MED": {
+      "id": 860,
+      "text": "生地黄",
+      "label": "MED"
+    },
+    "红痿舌_TNG": {
+      "id": 861,
+      "text": "红痿舌",
+      "label": "TNG"
+    },
+    "舌痿软而不能动者_SYM": {
+      "id": 862,
+      "text": "舌痿软而不能动者",
+      "label": "SYM"
+    },
+    "心脏受伤_BEC": {
+      "id": 863,
+      "text": "心脏受伤",
+      "label": "BEC"
+    },
+    "心脏_VIS": {
+      "id": 864,
+      "text": "心脏",
+      "label": "VIS"
+    },
+    "红硬舌_TNG": {
+      "id": 865,
+      "text": "红硬舌",
+      "label": "TNG"
+    },
+    "舌根强硬失音_SYM": {
+      "id": 866,
+      "text": "舌根强硬失音",
+      "label": "SYM"
+    },
+    "邪结咽嗌_BEC": {
+      "id": 867,
+      "text": "邪结咽嗌",
+      "label": "BEC"
+    },
+    "不语_SYM": {
+      "id": 868,
+      "text": "不语",
+      "label": "SYM"
+    },
+    "死证_DIS": {
+      "id": 869,
+      "text": "死证",
+      "label": "DIS"
+    },
+    "脉有神_PUL": {
+      "id": 870,
+      "text": "脉有神",
+      "label": "PUL"
+    },
+    "外证轻_SIG": {
+      "id": 871,
+      "text": "外证轻",
+      "label": "SIG"
+    },
+    "清心降火去风痰药_PRE": {
+      "id": 872,
+      "text": "清心降火去风痰药",
+      "label": "PRE"
+    },
+    "红尖出血舌_TNG": {
+      "id": 873,
+      "text": "红尖出血舌",
+      "label": "TNG"
+    },
+    "舌上出血如溅_SIG": {
+      "id": 874,
+      "text": "舌上出血如溅",
+      "label": "SIG"
+    },
+    "心脏邪热壅盛_BEC": {
+      "id": 875,
+      "text": "心脏邪热壅盛",
+      "label": "BEC"
+    },
+    "红中双灰干舌_TNG": {
+      "id": 879,
+      "text": "红中双灰干舌",
+      "label": "TNG"
+    },
+    "瘟热病_DIS": {
+      "id": 880,
+      "text": "瘟热病",
+      "label": "DIS"
+    },
+    "舌见两路灰色_TNG": {
+      "id": 881,
+      "text": "舌见两路灰色",
+      "label": "TNG"
+    },
+    "病后复伤饮食_BEC": {
+      "id": 882,
+      "text": "病后复伤饮食",
+      "label": "BEC"
+    },
+    "循衣撮空_SYM": {
+      "id": 885,
+      "text": "循衣撮空",
+      "label": "SYM"
+    },
+    "脉滑_PUL": {
+      "id": 886,
+      "text": "脉滑",
+      "label": "PUL"
+    },
+    "下出黑粪_SIG": {
+      "id": 887,
+      "text": "下出黑粪",
+      "label": "SIG"
+    },
+    "红尖白根舌_TNG": {
+      "id": 888,
+      "text": "红尖白根舌",
+      "label": "TNG"
+    },
+    "红尖_TNG": {
+      "id": 889,
+      "text": "红尖",
+      "label": "TNG"
+    },
+    "烦渴_SYM": {
+      "id": 896,
+      "text": "烦渴",
+      "label": "SYM"
+    },
+    "红战舌_TNG": {
+      "id": 898,
+      "text": "红战舌",
+      "label": "TNG"
+    },
+    "舌战_TNG": {
+      "id": 899,
+      "text": "舌战",
+      "label": "TNG"
+    },
+    "颤掉不安_SYM": {
+      "id": 900,
+      "text": "颤掉不安",
+      "label": "SYM"
+    },
+    "蠕蠕动_SYM": {
+      "id": 901,
+      "text": "蠕蠕动",
+      "label": "SYM"
+    },
+    "汗多亡阳_BEC": {
+      "id": 902,
+      "text": "汗多亡阳",
+      "label": "BEC"
+    },
+    "漏风_BEC": {
+      "id": 903,
+      "text": "漏风",
+      "label": "BEC"
+    },
+    "十全大补_PRE": {
+      "id": 905,
+      "text": "十全大补",
+      "label": "PRE"
+    },
+    "大建中汤_PRE": {
+      "id": 906,
+      "text": "大建中汤",
+      "label": "PRE"
+    },
+    "红细枯长舌_TNG": {
+      "id": 907,
+      "text": "红细枯长舌",
+      "label": "TNG"
+    },
+    "少阴之气绝于内_BEC": {
+      "id": 908,
+      "text": "少阴之气绝于内",
+      "label": "BEC"
+    },
+    "脉再衰绝_PUL": {
+      "id": 909,
+      "text": "脉再衰绝",
+      "label": "PUL"
+    },
+    "红短白 舌_TNG": {
+      "id": 910,
+      "text": "红短白 舌",
+      "label": "TNG"
+    },
+    "口疮_SYM": {
+      "id": 911,
+      "text": "口疮",
+      "label": "SYM"
+    },
+    "舌短_SIG": {
+      "id": 912,
+      "text": "舌短",
+      "label": "SIG"
+    },
+    "声哑_SYM": {
+      "id": 913,
+      "text": "声哑",
+      "label": "SYM"
+    },
+    "瘟疫强汗_BEC": {
+      "id": 916,
+      "text": "瘟疫强汗",
+      "label": "BEC"
+    },
+    "伤寒未汗_BEC": {
+      "id": 917,
+      "text": "伤寒未汗",
+      "label": "BEC"
+    },
+    "黄连犀角汤_PRE": {
+      "id": 918,
+      "text": "黄连犀角汤",
+      "label": "PRE"
+    },
+    "三黄石膏汤_PRE": {
+      "id": 919,
+      "text": "三黄石膏汤",
+      "label": "PRE"
+    },
+    "边红通尖黑干舌_TNG": {
+      "id": 920,
+      "text": "边红通尖黑干舌",
+      "label": "TNG"
+    },
+    "舌心干黑_TNG": {
+      "id": 921,
+      "text": "舌心干黑",
+      "label": "TNG"
+    },
+    "急下_SIG": {
+      "id": 922,
+      "text": "急下",
+      "label": "SIG"
+    },
+    "红尖紫刺舌_TNG": {
+      "id": 923,
+      "text": "红尖紫刺舌",
+      "label": "TNG"
+    },
+    "汗后食复_BEC": {
+      "id": 924,
+      "text": "汗后食复",
+      "label": "BEC"
+    },
+    "红尖紫刺_TNG": {
+      "id": 925,
+      "text": "红尖紫刺",
+      "label": "TNG"
+    },
+    "枳实栀子豉汤_PRE": {
+      "id": 926,
+      "text": "枳实栀子豉汤",
+      "label": "PRE"
+    },
+    "芒刺_SIG": {
+      "id": 928,
+      "text": "芒刺",
+      "label": "SIG"
+    },
+    "红尖黑根舌_TNG": {
+      "id": 929,
+      "text": "红尖黑根舌",
+      "label": "TNG"
+    },
+    "下_SIG": {
+      "id": 934,
+      "text": "下",
+      "label": "SIG"
+    },
+    "深黑_TNG": {
+      "id": 936,
+      "text": "深黑",
+      "label": "TNG"
+    },
+    "邪结于咽_BEC": {
+      "id": 937,
+      "text": "邪结于咽",
+      "label": "BEC"
+    },
+    "目瞑_SYM": {
+      "id": 938,
+      "text": "目瞑",
+      "label": "SYM"
+    },
+    "脉绝_PUL": {
+      "id": 939,
+      "text": "脉绝",
+      "label": "PUL"
+    },
+    "油汗_SYM": {
+      "id": 940,
+      "text": "油汗",
+      "label": "SYM"
+    },
+    "红嫩无津舌_TNG": {
+      "id": 941,
+      "text": "红嫩无津舌",
+      "label": "TNG"
+    },
+    "汗下太过_BEC": {
+      "id": 942,
+      "text": "汗下太过",
+      "label": "BEC"
+    },
+    "津液耗竭_BEC": {
+      "id": 943,
+      "text": "津液耗竭",
+      "label": "BEC"
+    },
+    "舌色鲜红柔嫩如新生_TNG": {
+      "id": 944,
+      "text": "舌色鲜红柔嫩如新生",
+      "label": "TNG"
+    },
+    "望之似润_TNG": {
+      "id": 945,
+      "text": "望之似润",
+      "label": "TNG"
+    },
+    "燥涸_TNG": {
+      "id": 946,
+      "text": "燥涸",
+      "label": "TNG"
+    },
+    "人参三白汤_PRE": {
+      "id": 948,
+      "text": "人参三白汤",
+      "label": "PRE"
+    },
+    "紫色舌总论_LIT": {
+      "id": 949,
+      "text": "紫色舌总论",
+      "label": "LIT"
+    },
+    "紫舌苔_TNG": {
+      "id": 950,
+      "text": "紫舌苔",
+      "label": "TNG"
+    },
+    "酒后伤寒_DIS": {
+      "id": 951,
+      "text": "酒后伤寒",
+      "label": "DIS"
+    },
+    "大醉露卧当风_BEC": {
+      "id": 952,
+      "text": "大醉露卧当风",
+      "label": "BEC"
+    },
+    "已病而仍饮酒_BEC": {
+      "id": 953,
+      "text": "已病而仍饮酒",
+      "label": "BEC"
+    },
+    "感冒不服药_BEC": {
+      "id": 954,
+      "text": "感冒不服药",
+      "label": "BEC"
+    },
+    "用葱姜热酒发汗_BEC": {
+      "id": 955,
+      "text": "用葱姜热酒发汗",
+      "label": "BEC"
+    },
+    "汗虽出而酒热留于心胞_BEC": {
+      "id": 956,
+      "text": "汗虽出而酒热留于心胞",
+      "label": "BEC"
+    },
+    "心胞_VIS": {
+      "id": 957,
+      "text": "心胞",
+      "label": "VIS"
+    },
+    "经络_MER": {
+      "id": 958,
+      "text": "经络",
+      "label": "MER"
+    },
+    "舌见紫色_TNG": {
+      "id": 959,
+      "text": "舌见紫色",
+      "label": "TNG"
+    },
+    "微白苔_TNG": {
+      "id": 960,
+      "text": "微白苔",
+      "label": "TNG"
+    },
+    "苔结舌之根尖_TNG": {
+      "id": 961,
+      "text": "苔结舌之根尖",
+      "label": "TNG"
+    },
+    "长短浓薄_TNG": {
+      "id": 962,
+      "text": "长短浓薄",
+      "label": "TNG"
+    },
+    "涎滑干焦_TNG": {
+      "id": 963,
+      "text": "涎滑干焦",
+      "label": "TNG"
+    },
+    "纯紫舌_TNG": {
+      "id": 964,
+      "text": "纯紫舌",
+      "label": "TNG"
+    },
+    "葱酒_FOO": {
+      "id": 966,
+      "text": "葱酒",
+      "label": "FOO"
+    },
+    "发汗_SIG": {
+      "id": 967,
+      "text": "发汗",
+      "label": "SIG"
+    },
+    "酒毒_BEC": {
+      "id": 968,
+      "text": "酒毒",
+      "label": "BEC"
+    },
+    "石膏_MED": {
+      "id": 972,
+      "text": "石膏",
+      "label": "MED"
+    },
+    "滑石_MED": {
+      "id": 973,
+      "text": "滑石",
+      "label": "MED"
+    },
+    "心烦懊_SYM": {
+      "id": 974,
+      "text": "心烦懊",
+      "label": "SYM"
+    },
+    "不安_SYM": {
+      "id": 975,
+      "text": "不安",
+      "label": "SYM"
+    },
+    "栀子豉汤_PRE": {
+      "id": 976,
+      "text": "栀子豉汤",
+      "label": "PRE"
+    },
+    "发斑_SIG": {
+      "id": 977,
+      "text": "发斑",
+      "label": "SIG"
+    },
+    "紫中红斑舌_TNG": {
+      "id": 978,
+      "text": "紫中红斑舌",
+      "label": "TNG"
+    },
+    "舌浑紫_TNG": {
+      "id": 979,
+      "text": "舌浑紫",
+      "label": "TNG"
+    },
+    "满舌红斑_TNG": {
+      "id": 980,
+      "text": "满舌红斑",
+      "label": "TNG"
+    },
+    "浑身赤斑_SIG": {
+      "id": 981,
+      "text": "浑身赤斑",
+      "label": "SIG"
+    },
+    "青黛_MED": {
+      "id": 986,
+      "text": "青黛",
+      "label": "MED"
+    },
+    "下证_SYN": {
+      "id": 987,
+      "text": "下证",
+      "label": "SYN"
+    },
+    "紫上白滑舌_TNG": {
+      "id": 989,
+      "text": "紫上白滑舌",
+      "label": "TNG"
+    },
+    "舌紫_TNG": {
+      "id": 990,
+      "text": "舌紫",
+      "label": "TNG"
+    },
+    "酒后感寒_BEC": {
+      "id": 992,
+      "text": "酒后感寒",
+      "label": "BEC"
+    },
+    "误饮冷酒_BEC": {
+      "id": 993,
+      "text": "误饮冷酒",
+      "label": "BEC"
+    },
+    "淡紫青筋舌_TNG": {
+      "id": 998,
+      "text": "淡紫青筋舌",
+      "label": "TNG"
+    },
+    "舌淡紫带青_TNG": {
+      "id": 999,
+      "text": "舌淡紫带青",
+      "label": "TNG"
+    },
+    "润_TNG": {
+      "id": 1000,
+      "text": "润",
+      "label": "TNG"
+    },
+    "青黑筋_TNG": {
+      "id": 1001,
+      "text": "青黑筋",
+      "label": "TNG"
+    },
+    "身凉_SYM": {
+      "id": 1003,
+      "text": "身凉",
+      "label": "SYM"
+    },
+    "四肢厥冷_SYM": {
+      "id": 1004,
+      "text": "四肢厥冷",
+      "label": "SYM"
+    },
+    "面黑_SIG": {
+      "id": 1006,
+      "text": "面黑",
+      "label": "SIG"
+    },
+    "紫上赤肿干焦舌_TNG": {
+      "id": 1009,
+      "text": "紫上赤肿干焦舌",
+      "label": "TNG"
+    },
+    "舌边紫而中心赤肿_TNG": {
+      "id": 1010,
+      "text": "舌边紫而中心赤肿",
+      "label": "TNG"
+    },
+    "足阳明受邪_BEC": {
+      "id": 1011,
+      "text": "足阳明受邪",
+      "label": "BEC"
+    },
+    "已下_SIG": {
+      "id": 1012,
+      "text": "已下",
+      "label": "SIG"
+    },
+    "便食酒肉_FOO": {
+      "id": 1013,
+      "text": "便食酒肉",
+      "label": "FOO"
+    },
+    "邪热复聚_BEC": {
+      "id": 1014,
+      "text": "邪热复聚",
+      "label": "BEC"
+    },
+    "赤肿津润_TNG": {
+      "id": 1015,
+      "text": "赤肿津润",
+      "label": "TNG"
+    },
+    "微利之_SIG": {
+      "id": 1017,
+      "text": "微利之",
+      "label": "SIG"
+    },
+    "厥逆_SYM": {
+      "id": 1019,
+      "text": "厥逆",
+      "label": "SYM"
+    },
+    "枳实理中_PRE": {
+      "id": 1021,
+      "text": "枳实理中",
+      "label": "PRE"
+    },
+    "小承气_PRE": {
+      "id": 1022,
+      "text": "小承气",
+      "label": "PRE"
+    },
+    "紫上黄苔干燥舌_TNG": {
+      "id": 1023,
+      "text": "紫上黄苔干燥舌",
+      "label": "TNG"
+    },
+    "嗜酒之人_CON": {
+      "id": 1024,
+      "text": "嗜酒之人",
+      "label": "CON"
+    },
+    "伤于寒_BEC": {
+      "id": 1025,
+      "text": "伤于寒",
+      "label": "BEC"
+    },
+    "干黄苔_TNG": {
+      "id": 1027,
+      "text": "干黄苔",
+      "label": "TNG"
+    },
+    "紫短舌_TNG": {
+      "id": 1031,
+      "text": "紫短舌",
+      "label": "TNG"
+    },
+    "舌紫短而团KT_TNG": {
+      "id": 1032,
+      "text": "舌紫短而团KT",
+      "label": "TNG"
+    },
+    "食滞中宫_BEC": {
+      "id": 1033,
+      "text": "食滞中宫",
+      "label": "BEC"
+    },
+    "脉静_PUL": {
+      "id": 1037,
+      "text": "脉静",
+      "label": "PUL"
+    },
+    "舌柔和_TNG": {
+      "id": 1038,
+      "text": "舌柔和",
+      "label": "TNG"
+    },
+    "紫上黄苔湿润舌_TNG": {
+      "id": 1039,
+      "text": "紫上黄苔湿润舌",
+      "label": "TNG"
+    },
+    "舌淡青紫_TNG": {
+      "id": 1040,
+      "text": "舌淡青紫",
+      "label": "TNG"
+    },
+    "黄湿苔_TNG": {
+      "id": 1041,
+      "text": "黄湿苔",
+      "label": "TNG"
+    },
+    "食伤太阴_BEC": {
+      "id": 1042,
+      "text": "食伤太阴",
+      "label": "BEC"
+    },
+    "心下脐旁_BDP": {
+      "id": 1044,
+      "text": "心下脐旁",
+      "label": "BDP"
+    },
+    "硬痛_SYM": {
+      "id": 1045,
+      "text": "硬痛",
+      "label": "SYM"
+    },
+    "矢气_SIG": {
+      "id": 1046,
+      "text": "矢气",
+      "label": "SIG"
+    },
+    "生附子_MED": {
+      "id": 1048,
+      "text": "生附子",
+      "label": "MED"
+    },
+    "紫尖蓓蕾舌_TNG": {
+      "id": 1050,
+      "text": "紫尖蓓蕾舌",
+      "label": "TNG"
+    },
+    "感寒之后_BEC": {
+      "id": 1051,
+      "text": "感寒之后",
+      "label": "BEC"
+    },
+    "不戒酒食_BEC": {
+      "id": 1052,
+      "text": "不戒酒食",
+      "label": "BEC"
+    },
+    "咳嗽生痰_SYM": {
+      "id": 1053,
+      "text": "咳嗽生痰",
+      "label": "SYM"
+    },
+    "烦躁不宁_SYM": {
+      "id": 1054,
+      "text": "烦躁不宁",
+      "label": "SYM"
+    },
+    "舌色淡紫_TNG": {
+      "id": 1055,
+      "text": "舌色淡紫",
+      "label": "TNG"
+    },
+    "尖生蓓蕾_TNG": {
+      "id": 1056,
+      "text": "尖生蓓蕾",
+      "label": "TNG"
+    },
+    "酒湿伤肺_BEC": {
+      "id": 1057,
+      "text": "酒湿伤肺",
+      "label": "BEC"
+    },
+    "味浓伤胃_BEC": {
+      "id": 1058,
+      "text": "味浓伤胃",
+      "label": "BEC"
+    },
+    "熟紫老干舌_TNG": {
+      "id": 1060,
+      "text": "熟紫老干舌",
+      "label": "TNG"
+    },
+    "热邪传入厥阴_BEC": {
+      "id": 1061,
+      "text": "热邪传入厥阴",
+      "label": "BEC"
+    },
+    "至笃之兆_DIS": {
+      "id": 1062,
+      "text": "至笃之兆",
+      "label": "DIS"
+    },
+    "当归四逆汤_PRE": {
+      "id": 1063,
+      "text": "当归四逆汤",
+      "label": "PRE"
+    },
+    "淡紫带青舌_TNG": {
+      "id": 1064,
+      "text": "淡紫带青舌",
+      "label": "TNG"
+    },
+    "舌色青紫无苔_TNG": {
+      "id": 1065,
+      "text": "舌色青紫无苔",
+      "label": "TNG"
+    },
+    "滑润瘦小_SIG": {
+      "id": 1066,
+      "text": "滑润瘦小",
+      "label": "SIG"
+    },
+    "直中肾肝阴证_SYN": {
+      "id": 1067,
+      "text": "直中肾肝阴证",
+      "label": "SYN"
+    },
+    "吴茱萸汤_PRE": {
+      "id": 1068,
+      "text": "吴茱萸汤",
+      "label": "PRE"
+    },
+    "急温之_SIG": {
+      "id": 1070,
+      "text": "急温之",
+      "label": "SIG"
+    },
+    "淡紫灰心舌_TNG": {
+      "id": 1071,
+      "text": "淡紫灰心舌",
+      "label": "TNG"
+    },
+    "舌淡紫而中心带灰_TNG": {
+      "id": 1072,
+      "text": "舌淡紫而中心带灰",
+      "label": "TNG"
+    },
+    "青黑_TNG": {
+      "id": 1073,
+      "text": "青黑",
+      "label": "TNG"
+    },
+    "不燥不湿者_TNG": {
+      "id": 1074,
+      "text": "不燥不湿者",
+      "label": "TNG"
+    },
+    "邪伤血分_BEC": {
+      "id": 1075,
+      "text": "邪伤血分",
+      "label": "BEC"
+    },
+    "下证_SYM": {
+      "id": 1076,
+      "text": "下证",
+      "label": "SYM"
+    },
+    "酒大黄_MED": {
+      "id": 1078,
+      "text": "酒大黄",
+      "label": "MED"
+    },
+    "霉酱色苔_TNG": {
+      "id": 1080,
+      "text": "霉酱色苔",
+      "label": "TNG"
+    },
+    "夹食伤寒_DIS": {
+      "id": 1081,
+      "text": "夹食伤寒",
+      "label": "DIS"
+    },
+    "寒伤太阴_BEC": {
+      "id": 1082,
+      "text": "寒伤太阴",
+      "label": "BEC"
+    },
+    "食停胃腑_BEC": {
+      "id": 1083,
+      "text": "食停胃腑",
+      "label": "BEC"
+    },
+    "腹痛_SYM": {
+      "id": 1084,
+      "text": "腹痛",
+      "label": "SYM"
+    },
+    "桂枝汤_PRE": {
+      "id": 1085,
+      "text": "桂枝汤",
+      "label": "PRE"
+    },
+    "橘_MED": {
+      "id": 1086,
+      "text": "橘",
+      "label": "MED"
+    },
+    "半_MED": {
+      "id": 1087,
+      "text": "半",
+      "label": "MED"
+    },
+    "枳_MED": {
+      "id": 1088,
+      "text": "枳",
+      "label": "MED"
+    },
+    "朴_MED": {
+      "id": 1089,
+      "text": "朴",
+      "label": "MED"
+    },
+    "浓朴_MED": {
+      "id": 1092,
+      "text": "浓朴",
+      "label": "MED"
+    },
+    "苔色浓_TNG": {
+      "id": 1093,
+      "text": "苔色浓",
+      "label": "TNG"
+    },
+    "舌见酱色_TNG": {
+      "id": 1094,
+      "text": "舌见酱色",
+      "label": "TNG"
+    },
+    "黄兼黑色_TNG": {
+      "id": 1095,
+      "text": "黄兼黑色",
+      "label": "TNG"
+    },
+    "土邪传水_BEC": {
+      "id": 1096,
+      "text": "土邪传水",
+      "label": "BEC"
+    },
+    "唇口干燥_SYM": {
+      "id": 1097,
+      "text": "唇口干燥",
+      "label": "SYM"
+    },
+    "下夺_PRE": {
+      "id": 1099,
+      "text": "下夺",
+      "label": "PRE"
+    },
+    "纯霉酱色舌_TNG": {
+      "id": 1100,
+      "text": "纯霉酱色舌",
+      "label": "TNG"
+    },
+    "饮食填塞于胃_BEC": {
+      "id": 1101,
+      "text": "饮食填塞于胃",
+      "label": "BEC"
+    },
+    "寒邪郁遏_BEC": {
+      "id": 1102,
+      "text": "寒邪郁遏",
+      "label": "BEC"
+    },
+    "内热不得外泄_BEC": {
+      "id": 1103,
+      "text": "内热不得外泄",
+      "label": "BEC"
+    },
+    "湿气熏蒸_BEC": {
+      "id": 1104,
+      "text": "湿气熏蒸",
+      "label": "BEC"
+    },
+    "罨而变此色_BEC": {
+      "id": 1105,
+      "text": "罨而变此色",
+      "label": "BEC"
+    },
+    "沉紧_PUL": {
+      "id": 1106,
+      "text": "沉紧",
+      "label": "PUL"
+    },
+    "中霉浮浓舌_TNG": {
+      "id": 1109,
+      "text": "中霉浮浓舌",
+      "label": "TNG"
+    },
+    "荤腻_FOO": {
+      "id": 1111,
+      "text": "荤腻",
+      "label": "FOO"
+    },
+    "苔如酱饼浮于舌中_TNG": {
+      "id": 1112,
+      "text": "苔如酱饼浮于舌中",
+      "label": "TNG"
+    },
+    "脉有胃气_PUL": {
+      "id": 1114,
+      "text": "脉有胃气",
+      "label": "PUL"
+    },
+    "结代_PUL": {
+      "id": 1115,
+      "text": "结代",
+      "label": "PUL"
+    },
+    "嘴不尖_SIG": {
+      "id": 1116,
+      "text": "嘴不尖",
+      "label": "SIG"
+    },
+    "齿不燥_SIG": {
+      "id": 1117,
+      "text": "齿不燥",
+      "label": "SIG"
+    },
+    "枳实理中汤_PRE": {
+      "id": 1119,
+      "text": "枳实理中汤",
+      "label": "PRE"
+    },
+    "姜汁_MED": {
+      "id": 1120,
+      "text": "姜汁",
+      "label": "MED"
+    },
+    "川连_MED": {
+      "id": 1121,
+      "text": "川连",
+      "label": "MED"
+    },
+    "舌苔_TNG": {
+      "id": 1122,
+      "text": "舌苔",
+      "label": "TNG"
+    },
+    "霉色中黄苔舌_TNG": {
+      "id": 1123,
+      "text": "霉色中黄苔舌",
+      "label": "TNG"
+    },
+    "舌霉色中有黄苔_TNG": {
+      "id": 1124,
+      "text": "舌霉色中有黄苔",
+      "label": "TNG"
+    },
+    "中宫_VIS": {
+      "id": 1126,
+      "text": "中宫",
+      "label": "VIS"
+    },
+    "二陈_PRE": {
+      "id": 1127,
+      "text": "二陈",
+      "label": "PRE"
+    },
+    "苔干黄_TNG": {
+      "id": 1130,
+      "text": "苔干黄",
+      "label": "TNG"
+    },
+    "蓝色苔_TNG": {
+      "id": 1132,
+      "text": "蓝色苔",
+      "label": "TNG"
+    },
+    "肝木_VIS": {
+      "id": 1133,
+      "text": "肝木",
+      "label": "VIS"
+    },
+    "汗下_SIG": {
+      "id": 1135,
+      "text": "汗下",
+      "label": "SIG"
+    },
+    "胃气_VIS": {
+      "id": 1136,
+      "text": "胃气",
+      "label": "VIS"
+    },
+    "心火_VIS": {
+      "id": 1137,
+      "text": "心火",
+      "label": "VIS"
+    },
+    "胃土_VIS": {
+      "id": 1138,
+      "text": "胃土",
+      "label": "VIS"
+    },
+    "肺_VIS": {
+      "id": 1139,
+      "text": "肺",
+      "label": "VIS"
+    },
+    "木_VIS": {
+      "id": 1140,
+      "text": "木",
+      "label": "VIS"
+    },
+    "金_VIS": {
+      "id": 1141,
+      "text": "金",
+      "label": "VIS"
+    },
+    "火_VIS": {
+      "id": 1142,
+      "text": "火",
+      "label": "VIS"
+    },
+    "微蓝_TNG": {
+      "id": 1144,
+      "text": "微蓝",
+      "label": "TNG"
+    },
+    "蓝纹_TNG": {
+      "id": 1145,
+      "text": "蓝纹",
+      "label": "TNG"
+    },
+    "温胃健脾_SYM": {
+      "id": 1146,
+      "text": "温胃健脾",
+      "label": "SYM"
+    },
+    "调肝益肺_SYM": {
+      "id": 1147,
+      "text": "调肝益肺",
+      "label": "SYM"
+    },
+    "纯蓝色_TNG": {
+      "id": 1148,
+      "text": "纯蓝色",
+      "label": "TNG"
+    },
+    "肝木独盛无畏_BEC": {
+      "id": 1149,
+      "text": "肝木独盛无畏",
+      "label": "BEC"
+    },
+    "微蓝舌_TNG": {
+      "id": 1150,
+      "text": "微蓝舌",
+      "label": "TNG"
+    },
+    "舌见纯蓝色_TNG": {
+      "id": 1151,
+      "text": "舌见纯蓝色",
+      "label": "TNG"
+    },
+    "中土_VIS": {
+      "id": 1152,
+      "text": "中土",
+      "label": "VIS"
+    },
+    "阳气衰微_CON": {
+      "id": 1153,
+      "text": "阳气衰微",
+      "label": "CON"
+    },
+    "蓝纹舌_TNG": {
+      "id": 1154,
+      "text": "蓝纹舌",
+      "label": "TNG"
+    },
+    "胃土气衰_BEC": {
+      "id": 1155,
+      "text": "胃土气衰",
+      "label": "BEC"
+    },
+    "木气相乘之候_SYN": {
+      "id": 1156,
+      "text": "木气相乘之候",
+      "label": "SYN"
+    },
+    "黄芩_MED": {
+      "id": 1158,
+      "text": "黄芩",
+      "label": "MED"
+    },
+    "炮姜_MED": {
+      "id": 1159,
+      "text": "炮姜",
+      "label": "MED"
+    },
+    "寒物结滞_BEC": {
+      "id": 1160,
+      "text": "寒物结滞",
+      "label": "BEC"
+    },
+    "附子理中_PRE": {
+      "id": 1161,
+      "text": "附子理中",
+      "label": "PRE"
+    },
+    "妊娠伤寒_DIS": {
+      "id": 1163,
+      "text": "妊娠伤寒",
+      "label": "DIS"
+    },
+    "邪入经络_BEC": {
+      "id": 1164,
+      "text": "邪入经络",
+      "label": "BEC"
+    },
+    "母病_SYM": {
+      "id": 1165,
+      "text": "母病",
+      "label": "SYM"
+    },
+    "子伤_SYM": {
+      "id": 1166,
+      "text": "子伤",
+      "label": "SYM"
+    },
+    "胎气_VIS": {
+      "id": 1167,
+      "text": "胎气",
+      "label": "VIS"
+    },
+    "面_BDP": {
+      "id": 1168,
+      "text": "面",
+      "label": "BDP"
+    },
+    "色泽_TNG": {
+      "id": 1170,
+      "text": "色泽",
+      "label": "TNG"
+    },
+    "色败_TNG": {
+      "id": 1171,
+      "text": "色败",
+      "label": "TNG"
+    },
+    "面赤舌青者_TNG": {
+      "id": 1172,
+      "text": "面赤舌青者",
+      "label": "TNG"
+    },
+    "子死母活_SYM": {
+      "id": 1173,
+      "text": "子死母活",
+      "label": "SYM"
+    },
+    "面舌俱青沫出者_TNG": {
+      "id": 1174,
+      "text": "面舌俱青沫出者",
+      "label": "TNG"
+    },
+    "母子俱死_SYM": {
+      "id": 1175,
+      "text": "母子俱死",
+      "label": "SYM"
+    },
+    "面舌俱白_TNG": {
+      "id": 1176,
+      "text": "面舌俱白",
+      "label": "TNG"
+    },
+    "母子皆死者_SYM": {
+      "id": 1177,
+      "text": "母子皆死者",
+      "label": "SYM"
+    },
+    "色不泽也_TNG": {
+      "id": 1178,
+      "text": "色不泽也",
+      "label": "TNG"
+    },
+    "孕妇伤寒白苔舌_TNG": {
+      "id": 1179,
+      "text": "孕妇伤寒白苔舌",
+      "label": "TNG"
+    },
+    "孕妇初伤于寒_DIS": {
+      "id": 1180,
+      "text": "孕妇初伤于寒",
+      "label": "DIS"
+    },
+    "面赤_TNG": {
+      "id": 1181,
+      "text": "面赤",
+      "label": "TNG"
+    },
+    "舌上白滑_TNG": {
+      "id": 1182,
+      "text": "舌上白滑",
+      "label": "TNG"
+    },
+    "微汗_SIG": {
+      "id": 1183,
+      "text": "微汗",
+      "label": "SIG"
+    },
+    "解其表_SYM": {
+      "id": 1184,
+      "text": "解其表",
+      "label": "SYM"
+    },
+    "多饮冷水_FOO": {
+      "id": 1187,
+      "text": "多饮冷水",
+      "label": "FOO"
+    },
+    "阳极变阴_BEC": {
+      "id": 1188,
+      "text": "阳极变阴",
+      "label": "BEC"
+    },
+    "温中之药_MED": {
+      "id": 1189,
+      "text": "温中之药",
+      "label": "MED"
+    },
+    "厥冷烦躁_SYM": {
+      "id": 1190,
+      "text": "厥冷烦躁",
+      "label": "SYM"
+    },
+    "凉剂_PRE": {
+      "id": 1191,
+      "text": "凉剂",
+      "label": "PRE"
+    },
+    "孕妇伤寒_DIS": {
+      "id": 1192,
+      "text": "孕妇伤寒",
+      "label": "DIS"
+    },
+    "黄苔舌_TNG": {
+      "id": 1193,
+      "text": "黄苔舌",
+      "label": "TNG"
+    },
+    "妊娠面赤舌黄_TNG": {
+      "id": 1194,
+      "text": "妊娠面赤舌黄",
+      "label": "TNG"
+    },
+    "热邪伤胎_BEC": {
+      "id": 1197,
+      "text": "热邪伤胎",
+      "label": "BEC"
+    },
+    "湿热入里_BEC": {
+      "id": 1198,
+      "text": "湿热入里",
+      "label": "BEC"
+    },
+    "清热利水药_MED": {
+      "id": 1199,
+      "text": "清热利水药",
+      "label": "MED"
+    },
+    "灰黑舌_TNG": {
+      "id": 1201,
+      "text": "灰黑舌",
+      "label": "TNG"
+    },
+    "妊娠面舌俱黑_TNG": {
+      "id": 1202,
+      "text": "妊娠面舌俱黑",
+      "label": "TNG"
+    },
+    "水火相刑_BEC": {
+      "id": 1203,
+      "text": "水火相刑",
+      "label": "BEC"
+    },
+    "子母俱死_SYM": {
+      "id": 1204,
+      "text": "子母俱死",
+      "label": "SYM"
+    },
+    "面赤舌微黑_TNG": {
+      "id": 1205,
+      "text": "面赤舌微黑",
+      "label": "TNG"
+    },
+    "保胎_SIG": {
+      "id": 1206,
+      "text": "保胎",
+      "label": "SIG"
+    },
+    "邪入子宫_BEC": {
+      "id": 1207,
+      "text": "邪入子宫",
+      "label": "BEC"
+    },
+    "胎不固_SYM": {
+      "id": 1208,
+      "text": "胎不固",
+      "label": "SYM"
+    },
+    "根本未伤_BEC": {
+      "id": 1210,
+      "text": "根本未伤",
+      "label": "BEC"
+    },
+    "救其母_SIG": {
+      "id": 1212,
+      "text": "救其母",
+      "label": "SIG"
+    },
+    "纯赤舌_TNG": {
+      "id": 1214,
+      "text": "纯赤舌",
+      "label": "TNG"
+    },
+    "妊娠伤寒温热_DIS": {
+      "id": 1215,
+      "text": "妊娠伤寒温热",
+      "label": "DIS"
+    },
+    "面舌俱赤_TNG": {
+      "id": 1216,
+      "text": "面舌俱赤",
+      "label": "TNG"
+    },
+    "子母无虞_SYM": {
+      "id": 1218,
+      "text": "子母无虞",
+      "label": "SYM"
+    },
+    "伤寒面色皎白_DIS": {
+      "id": 1219,
+      "text": "伤寒面色皎白",
+      "label": "DIS"
+    },
+    "舌赤_TNG": {
+      "id": 1220,
+      "text": "舌赤",
+      "label": "TNG"
+    },
+    "母气素虚_CON": {
+      "id": 1221,
+      "text": "母气素虚",
+      "label": "CON"
+    },
+    "姜_MED": {
+      "id": 1222,
+      "text": "姜",
+      "label": "MED"
+    },
+    "桂_MED": {
+      "id": 1223,
+      "text": "桂",
+      "label": "MED"
+    },
+    "桂不坠胎_MED": {
+      "id": 1224,
+      "text": "桂不坠胎",
+      "label": "MED"
+    },
+    "庞安常_LIT": {
+      "id": 1225,
+      "text": "庞安常",
+      "label": "LIT"
+    },
+    "面黑舌赤_TNG": {
+      "id": 1226,
+      "text": "面黑舌赤",
+      "label": "TNG"
+    },
+    "非吉兆_SYM": {
+      "id": 1227,
+      "text": "非吉兆",
+      "label": "SYM"
+    },
+    "临月_BDP": {
+      "id": 1228,
+      "text": "临月",
+      "label": "BDP"
+    },
+    "子得生而母当殒_SYM": {
+      "id": 1229,
+      "text": "子得生而母当殒",
+      "label": "SYM"
+    },
+    "紫青舌_TNG": {
+      "id": 1231,
+      "text": "紫青舌",
+      "label": "TNG"
+    },
+    "面赤_SIG": {
+      "id": 1233,
+      "text": "面赤",
+      "label": "SIG"
+    },
+    "酒毒内传_BEC": {
+      "id": 1235,
+      "text": "酒毒内传",
+      "label": "BEC"
+    },
+    "淡紫戴青_TNG": {
+      "id": 1236,
+      "text": "淡紫戴青",
+      "label": "TNG"
+    },
+    "阴证夹食_SYN": {
+      "id": 1237,
+      "text": "阴证夹食",
+      "label": "SYN"
+    },
+    "枳实理中四逆辈_PRE": {
+      "id": 1238,
+      "text": "枳实理中四逆辈",
+      "label": "PRE"
+    },
+    "平胃散_PRE": {
+      "id": 1239,
+      "text": "平胃散",
+      "label": "PRE"
+    },
+    "卷短舌_TNG": {
+      "id": 1242,
+      "text": "卷短舌",
+      "label": "TNG"
+    },
+    "舌干卷短_TNG": {
+      "id": 1244,
+      "text": "舌干卷短",
+      "label": "TNG"
+    },
+    "黄黑刺裂_TNG": {
+      "id": 1245,
+      "text": "黄黑刺裂",
+      "label": "TNG"
+    },
+    "里证至急_SYN": {
+      "id": 1246,
+      "text": "里证至急",
+      "label": "SYN"
+    },
+    "直视循衣撮空_SYM": {
+      "id": 1248,
+      "text": "直视循衣撮空",
+      "label": "SYM"
+    }
+  },
+  "relations": [
+    {
+      "id": 1,
+      "from_id": 10,
+      "to_id": 3,
+      "type": "from"
+    },
+    {
+      "id": 2,
+      "from_id": 10,
+      "to_id": 4,
+      "type": "from"
+    },
+    {
+      "id": 3,
+      "from_id": 11,
+      "to_id": 5,
+      "type": "from"
+    },
+    {
+      "id": 4,
+      "from_id": 11,
+      "to_id": 6,
+      "type": "from"
+    },
+    {
+      "id": 5,
+      "from_id": 11,
+      "to_id": 7,
+      "type": "from"
+    },
+    {
+      "id": 6,
+      "from_id": 11,
+      "to_id": 8,
+      "type": "from"
+    },
+    {
+      "id": 7,
+      "from_id": 12,
+      "to_id": 9,
+      "type": "from"
+    },
+    {
+      "id": 8,
+      "from_id": 13,
+      "to_id": 1,
+      "type": "cause"
+    },
+    {
+      "id": 9,
+      "from_id": 3,
+      "to_id": 17,
+      "type": "assist_diag"
+    },
+    {
+      "id": 10,
+      "from_id": 4,
+      "to_id": 17,
+      "type": "assist_diag"
+    },
+    {
+      "id": 11,
+      "from_id": 15,
+      "to_id": 18,
+      "type": "perf"
+    },
+    {
+      "id": 12,
+      "from_id": 16,
+      "to_id": 19,
+      "type": "perf"
+    },
+    {
+      "id": 13,
+      "from_id": 9,
+      "to_id": 2,
+      "type": "assist_diag"
+    },
+    {
+      "id": 14,
+      "from_id": 21,
+      "to_id": 20,
+      "type": "assist_diag"
+    },
+    {
+      "id": 15,
+      "from_id": 27,
+      "to_id": 21,
+      "type": "mapped_part"
+    },
+    {
+      "id": 16,
+      "from_id": 28,
+      "to_id": 21,
+      "type": "mapped_part"
+    },
+    {
+      "id": 17,
+      "from_id": 29,
+      "to_id": 21,
+      "type": "mapped_part"
+    },
+    {
+      "id": 18,
+      "from_id": 31,
+      "to_id": 30,
+      "type": "inandex"
+    },
+    {
+      "id": 19,
+      "from_id": 32,
+      "to_id": 33,
+      "type": "reflect"
+    },
+    {
+      "id": 20,
+      "from_id": 34,
+      "to_id": 36,
+      "type": "cause"
+    },
+    {
+      "id": 21,
+      "from_id": 35,
+      "to_id": 36,
+      "type": "cause"
+    },
+    {
+      "id": 22,
+      "from_id": 37,
+      "to_id": 38,
+      "type": "perf"
+    },
+    {
+      "id": 23,
+      "from_id": 37,
+      "to_id": 39,
+      "type": "perf"
+    },
+    {
+      "id": 24,
+      "from_id": 37,
+      "to_id": 40,
+      "type": "perf"
+    },
+    {
+      "id": 25,
+      "from_id": 37,
+      "to_id": 41,
+      "type": "perf"
+    },
+    {
+      "id": 26,
+      "from_id": 42,
+      "to_id": 43,
+      "type": "perf"
+    },
+    {
+      "id": 27,
+      "from_id": 42,
+      "to_id": 44,
+      "type": "perf"
+    },
+    {
+      "id": 28,
+      "from_id": 45,
+      "to_id": 37,
+      "type": "abpulse"
+    },
+    {
+      "id": 29,
+      "from_id": 43,
+      "to_id": 42,
+      "type": "assist_diag"
+    },
+    {
+      "id": 30,
+      "from_id": 46,
+      "to_id": 47,
+      "type": "perf"
+    },
+    {
+      "id": 31,
+      "from_id": 47,
+      "to_id": 48,
+      "type": "guide_pre"
+    },
+    {
+      "id": 32,
+      "from_id": 49,
+      "to_id": 50,
+      "type": "guide_pre"
+    },
+    {
+      "id": 33,
+      "from_id": 51,
+      "to_id": 52,
+      "type": "guide_pre"
+    },
+    {
+      "id": 34,
+      "from_id": 51,
+      "to_id": 53,
+      "type": "guide_pre"
+    },
+    {
+      "id": 35,
+      "from_id": 55,
+      "to_id": 56,
+      "type": "reflect"
+    },
+    {
+      "id": 36,
+      "from_id": 56,
+      "to_id": 57,
+      "type": "cause"
+    },
+    {
+      "id": 37,
+      "from_id": 56,
+      "to_id": 58,
+      "type": "perf"
+    },
+    {
+      "id": 38,
+      "from_id": 56,
+      "to_id": 59,
+      "type": "perf"
+    },
+    {
+      "id": 39,
+      "from_id": 56,
+      "to_id": 60,
+      "type": "perf"
+    },
+    {
+      "id": 40,
+      "from_id": 61,
+      "to_id": 62,
+      "type": "guide_pre"
+    },
+    {
+      "id": 41,
+      "from_id": 61,
+      "to_id": 63,
+      "type": "guide_pre"
+    },
+    {
+      "id": 42,
+      "from_id": 64,
+      "to_id": 65,
+      "type": "assist_diag"
+    },
+    {
+      "id": 43,
+      "from_id": 66,
+      "to_id": 67,
+      "type": "cause"
+    },
+    {
+      "id": 44,
+      "from_id": 67,
+      "to_id": 68,
+      "type": "perf"
+    },
+    {
+      "id": 45,
+      "from_id": 69,
+      "to_id": 70,
+      "type": "guide_pre"
+    },
+    {
+      "id": 46,
+      "from_id": 71,
+      "to_id": 72,
+      "type": "reflect"
+    },
+    {
+      "id": 47,
+      "from_id": 73,
+      "to_id": 74,
+      "type": "related"
+    },
+    {
+      "id": 48,
+      "from_id": 75,
+      "to_id": 76,
+      "type": "perf"
+    },
+    {
+      "id": 49,
+      "from_id": 77,
+      "to_id": 74,
+      "type": "abpulse"
+    },
+    {
+      "id": 50,
+      "from_id": 79,
+      "to_id": 80,
+      "type": "reflect"
+    },
+    {
+      "id": 51,
+      "from_id": 81,
+      "to_id": 82,
+      "type": "cause"
+    },
+    {
+      "id": 52,
+      "from_id": 82,
+      "to_id": 83,
+      "type": "perf"
+    },
+    {
+      "id": 53,
+      "from_id": 84,
+      "to_id": 85,
+      "type": "cause"
+    },
+    {
+      "id": 54,
+      "from_id": 85,
+      "to_id": 86,
+      "type": "cause"
+    },
+    {
+      "id": 55,
+      "from_id": 86,
+      "to_id": 87,
+      "type": "perf"
+    },
+    {
+      "id": 56,
+      "from_id": 86,
+      "to_id": 88,
+      "type": "perf"
+    },
+    {
+      "id": 57,
+      "from_id": 86,
+      "to_id": 89,
+      "type": "perf"
+    },
+    {
+      "id": 58,
+      "from_id": 90,
+      "to_id": 86,
+      "type": "reflect"
+    },
+    {
+      "id": 59,
+      "from_id": 91,
+      "to_id": 86,
+      "type": "reflect"
+    },
+    {
+      "id": 60,
+      "from_id": 92,
+      "to_id": 93,
+      "type": "comp"
+    },
+    {
+      "id": 61,
+      "from_id": 94,
+      "to_id": 95,
+      "type": "related"
+    },
+    {
+      "id": 62,
+      "from_id": 94,
+      "to_id": 96,
+      "type": "assist_diag"
+    },
+    {
+      "id": 63,
+      "from_id": 98,
+      "to_id": 100,
+      "type": "guide_pre"
+    },
+    {
+      "id": 64,
+      "from_id": 99,
+      "to_id": 100,
+      "type": "perf"
+    },
+    {
+      "id": 65,
+      "from_id": 104,
+      "to_id": 106,
+      "type": "treat"
+    },
+    {
+      "id": 66,
+      "from_id": 105,
+      "to_id": 106,
+      "type": "treat"
+    },
+    {
+      "id": 67,
+      "from_id": 107,
+      "to_id": 110,
+      "type": "assist_diag"
+    },
+    {
+      "id": 68,
+      "from_id": 108,
+      "to_id": 110,
+      "type": "assist_diag"
+    },
+    {
+      "id": 69,
+      "from_id": 109,
+      "to_id": 110,
+      "type": "assist_diag"
+    },
+    {
+      "id": 70,
+      "from_id": 111,
+      "to_id": 110,
+      "type": "treat"
+    },
+    {
+      "id": 71,
+      "from_id": 112,
+      "to_id": 113,
+      "type": "treat"
+    },
+    {
+      "id": 72,
+      "from_id": 114,
+      "to_id": 115,
+      "type": "assist_diag"
+    },
+    {
+      "id": 73,
+      "from_id": 114,
+      "to_id": 116,
+      "type": "assist_diag"
+    },
+    {
+      "id": 74,
+      "from_id": 117,
+      "to_id": 118,
+      "type": "cause"
+    },
+    {
+      "id": 75,
+      "from_id": 118,
+      "to_id": 114,
+      "type": "cause"
+    },
+    {
+      "id": 76,
+      "from_id": 125,
+      "to_id": 126,
+      "type": "assist_diag"
+    },
+    {
+      "id": 77,
+      "from_id": 126,
+      "to_id": 127,
+      "type": "perf"
+    },
+    {
+      "id": 78,
+      "from_id": 126,
+      "to_id": 128,
+      "type": "perf"
+    },
+    {
+      "id": 79,
+      "from_id": 126,
+      "to_id": 129,
+      "type": "perf"
+    },
+    {
+      "id": 80,
+      "from_id": 130,
+      "to_id": 131,
+      "type": "guide_pre"
+    },
+    {
+      "id": 81,
+      "from_id": 131,
+      "to_id": 130,
+      "type": "treat"
+    },
+    {
+      "id": 82,
+      "from_id": 132,
+      "to_id": 133,
+      "type": "assist_diag"
+    },
+    {
+      "id": 83,
+      "from_id": 133,
+      "to_id": 134,
+      "type": "perf"
+    },
+    {
+      "id": 84,
+      "from_id": 135,
+      "to_id": 136,
+      "type": "comp"
+    },
+    {
+      "id": 85,
+      "from_id": 135,
+      "to_id": 134,
+      "type": "treat"
+    },
+    {
+      "id": 86,
+      "from_id": 136,
+      "to_id": 134,
+      "type": "treat"
+    },
+    {
+      "id": 87,
+      "from_id": 137,
+      "to_id": 138,
+      "type": "mapped_part"
+    },
+    {
+      "id": 88,
+      "from_id": 138,
+      "to_id": 139,
+      "type": "reflect"
+    },
+    {
+      "id": 89,
+      "from_id": 138,
+      "to_id": 140,
+      "type": "perf"
+    },
+    {
+      "id": 90,
+      "from_id": 141,
+      "to_id": 140,
+      "type": "treat"
+    },
+    {
+      "id": 91,
+      "from_id": 142,
+      "to_id": 143,
+      "type": "cause"
+    },
+    {
+      "id": 92,
+      "from_id": 142,
+      "to_id": 144,
+      "type": "cause"
+    },
+    {
+      "id": 93,
+      "from_id": 145,
+      "to_id": 146,
+      "type": "mapped_part"
+    },
+    {
+      "id": 94,
+      "from_id": 146,
+      "to_id": 147,
+      "type": "assist_diag"
+    },
+    {
+      "id": 95,
+      "from_id": 148,
+      "to_id": 147,
+      "type": "treat"
+    },
+    {
+      "id": 96,
+      "from_id": 149,
+      "to_id": 148,
+      "type": "comp"
+    },
+    {
+      "id": 97,
+      "from_id": 150,
+      "to_id": 148,
+      "type": "comp"
+    },
+    {
+      "id": 98,
+      "from_id": 151,
+      "to_id": 152,
+      "type": "treat"
+    },
+    {
+      "id": 99,
+      "from_id": 153,
+      "to_id": 154,
+      "type": "treat"
+    },
+    {
+      "id": 100,
+      "from_id": 155,
+      "to_id": 156,
+      "type": "assist_diag"
+    },
+    {
+      "id": 101,
+      "from_id": 156,
+      "to_id": 157,
+      "type": "perf"
+    },
+    {
+      "id": 102,
+      "from_id": 156,
+      "to_id": 158,
+      "type": "perf"
+    },
+    {
+      "id": 103,
+      "from_id": 156,
+      "to_id": 159,
+      "type": "perf"
+    },
+    {
+      "id": 104,
+      "from_id": 160,
+      "to_id": 155,
+      "type": "cause"
+    },
+    {
+      "id": 105,
+      "from_id": 161,
+      "to_id": 162,
+      "type": "comp"
+    },
+    {
+      "id": 106,
+      "from_id": 163,
+      "to_id": 164,
+      "type": "perf"
+    },
+    {
+      "id": 107,
+      "from_id": 165,
+      "to_id": 166,
+      "type": "comp"
+    },
+    {
+      "id": 108,
+      "from_id": 167,
+      "to_id": 168,
+      "type": "perf"
+    },
+    {
+      "id": 109,
+      "from_id": 167,
+      "to_id": 169,
+      "type": "perf"
+    },
+    {
+      "id": 110,
+      "from_id": 170,
+      "to_id": 167,
+      "type": "reflect"
+    },
+    {
+      "id": 111,
+      "from_id": 171,
+      "to_id": 172,
+      "type": "comp"
+    },
+    {
+      "id": 112,
+      "from_id": 173,
+      "to_id": 174,
+      "type": "assist_diag"
+    },
+    {
+      "id": 113,
+      "from_id": 174,
+      "to_id": 175,
+      "type": "mapped_part"
+    },
+    {
+      "id": 114,
+      "from_id": 175,
+      "to_id": 176,
+      "type": "perf"
+    },
+    {
+      "id": 115,
+      "from_id": 177,
+      "to_id": 178,
+      "type": "perf"
+    },
+    {
+      "id": 116,
+      "from_id": 173,
+      "to_id": 179,
+      "type": "perf"
+    },
+    {
+      "id": 117,
+      "from_id": 180,
+      "to_id": 181,
+      "type": "cause"
+    },
+    {
+      "id": 118,
+      "from_id": 181,
+      "to_id": 182,
+      "type": "cause"
+    },
+    {
+      "id": 119,
+      "from_id": 182,
+      "to_id": 183,
+      "type": "cause"
+    },
+    {
+      "id": 120,
+      "from_id": 184,
+      "to_id": 173,
+      "type": "reflect"
+    },
+    {
+      "id": 121,
+      "from_id": 185,
+      "to_id": 186,
+      "type": "comp"
+    },
+    {
+      "id": 122,
+      "from_id": 187,
+      "to_id": 188,
+      "type": "perf"
+    },
+    {
+      "id": 123,
+      "from_id": 187,
+      "to_id": 189,
+      "type": "perf"
+    },
+    {
+      "id": 124,
+      "from_id": 190,
+      "to_id": 187,
+      "type": "reflect"
+    },
+    {
+      "id": 125,
+      "from_id": 192,
+      "to_id": 193,
+      "type": "cause"
+    },
+    {
+      "id": 126,
+      "from_id": 195,
+      "to_id": 194,
+      "type": "guide_pre"
+    },
+    {
+      "id": 127,
+      "from_id": 199,
+      "to_id": 200,
+      "type": "assist_diag"
+    },
+    {
+      "id": 128,
+      "from_id": 201,
+      "to_id": 202,
+      "type": "mapped_part"
+    },
+    {
+      "id": 129,
+      "from_id": 203,
+      "to_id": 204,
+      "type": "cause"
+    },
+    {
+      "id": 130,
+      "from_id": 204,
+      "to_id": 203,
+      "type": "reflect"
+    },
+    {
+      "id": 131,
+      "from_id": 205,
+      "to_id": 206,
+      "type": "perf"
+    },
+    {
+      "id": 132,
+      "from_id": 207,
+      "to_id": 208,
+      "type": "perf"
+    },
+    {
+      "id": 133,
+      "from_id": 209,
+      "to_id": 210,
+      "type": "guide_pre"
+    },
+    {
+      "id": 134,
+      "from_id": 214,
+      "to_id": 215,
+      "type": "cause"
+    },
+    {
+      "id": 135,
+      "from_id": 216,
+      "to_id": 217,
+      "type": "cause"
+    },
+    {
+      "id": 136,
+      "from_id": 216,
+      "to_id": 218,
+      "type": "cause"
+    },
+    {
+      "id": 137,
+      "from_id": 219,
+      "to_id": 220,
+      "type": "treat"
+    },
+    {
+      "id": 138,
+      "from_id": 221,
+      "to_id": 223,
+      "type": "cause"
+    },
+    {
+      "id": 139,
+      "from_id": 223,
+      "to_id": 224,
+      "type": "perf"
+    },
+    {
+      "id": 140,
+      "from_id": 225,
+      "to_id": 226,
+      "type": "reflect"
+    },
+    {
+      "id": 141,
+      "from_id": 225,
+      "to_id": 226,
+      "type": "assist_diag"
+    },
+    {
+      "id": 142,
+      "from_id": 228,
+      "to_id": 229,
+      "type": "treat"
+    },
+    {
+      "id": 143,
+      "from_id": 230,
+      "to_id": 231,
+      "type": "perf"
+    },
+    {
+      "id": 144,
+      "from_id": 232,
+      "to_id": 233,
+      "type": "perf"
+    },
+    {
+      "id": 145,
+      "from_id": 234,
+      "to_id": 235,
+      "type": "oname"
+    },
+    {
+      "id": 146,
+      "from_id": 235,
+      "to_id": 236,
+      "type": "reflect"
+    },
+    {
+      "id": 147,
+      "from_id": 235,
+      "to_id": 237,
+      "type": "reflect"
+    },
+    {
+      "id": 148,
+      "from_id": 239,
+      "to_id": 238,
+      "type": "perf"
+    },
+    {
+      "id": 149,
+      "from_id": 240,
+      "to_id": 239,
+      "type": "treat"
+    },
+    {
+      "id": 150,
+      "from_id": 241,
+      "to_id": 242,
+      "type": "perf"
+    },
+    {
+      "id": 151,
+      "from_id": 244,
+      "to_id": 245,
+      "type": "perf"
+    },
+    {
+      "id": 152,
+      "from_id": 247,
+      "to_id": 248,
+      "type": "assist_diag"
+    },
+    {
+      "id": 153,
+      "from_id": 250,
+      "to_id": 252,
+      "type": "reflect"
+    },
+    {
+      "id": 154,
+      "from_id": 251,
+      "to_id": 252,
+      "type": "reflect"
+    },
+    {
+      "id": 155,
+      "from_id": 253,
+      "to_id": 254,
+      "type": "related"
+    },
+    {
+      "id": 156,
+      "from_id": 256,
+      "to_id": 257,
+      "type": "assist_diag"
+    },
+    {
+      "id": 157,
+      "from_id": 262,
+      "to_id": 261,
+      "type": "treat"
+    },
+    {
+      "id": 158,
+      "from_id": 263,
+      "to_id": 264,
+      "type": "assist_diag"
+    },
+    {
+      "id": 159,
+      "from_id": 263,
+      "to_id": 265,
+      "type": "assist_diag"
+    },
+    {
+      "id": 160,
+      "from_id": 266,
+      "to_id": 265,
+      "type": "reflect"
+    },
+    {
+      "id": 161,
+      "from_id": 267,
+      "to_id": 268,
+      "type": "guide_pre"
+    },
+    {
+      "id": 162,
+      "from_id": 271,
+      "to_id": 272,
+      "type": "perf"
+    },
+    {
+      "id": 163,
+      "from_id": 271,
+      "to_id": 273,
+      "type": "perf"
+    },
+    {
+      "id": 164,
+      "from_id": 271,
+      "to_id": 274,
+      "type": "perf"
+    },
+    {
+      "id": 165,
+      "from_id": 271,
+      "to_id": 275,
+      "type": "perf"
+    },
+    {
+      "id": 166,
+      "from_id": 271,
+      "to_id": 276,
+      "type": "perf"
+    },
+    {
+      "id": 167,
+      "from_id": 277,
+      "to_id": 271,
+      "type": "treat"
+    },
+    {
+      "id": 168,
+      "from_id": 278,
+      "to_id": 279,
+      "type": "assist_diag"
+    },
+    {
+      "id": 169,
+      "from_id": 279,
+      "to_id": 280,
+      "type": "perf"
+    },
+    {
+      "id": 170,
+      "from_id": 279,
+      "to_id": 281,
+      "type": "perf"
+    },
+    {
+      "id": 171,
+      "from_id": 279,
+      "to_id": 282,
+      "type": "perf"
+    },
+    {
+      "id": 172,
+      "from_id": 283,
+      "to_id": 279,
+      "type": "treat"
+    },
+    {
+      "id": 173,
+      "from_id": 285,
+      "to_id": 286,
+      "type": "reflect"
+    },
+    {
+      "id": 174,
+      "from_id": 285,
+      "to_id": 287,
+      "type": "reflect"
+    },
+    {
+      "id": 175,
+      "from_id": 288,
+      "to_id": 290,
+      "type": "reflect"
+    },
+    {
+      "id": 176,
+      "from_id": 288,
+      "to_id": 291,
+      "type": "reflect"
+    },
+    {
+      "id": 177,
+      "from_id": 293,
+      "to_id": 288,
+      "type": "cause"
+    },
+    {
+      "id": 178,
+      "from_id": 292,
+      "to_id": 293,
+      "type": "cause"
+    },
+    {
+      "id": 179,
+      "from_id": 294,
+      "to_id": 295,
+      "type": "comp"
+    },
+    {
+      "id": 180,
+      "from_id": 295,
+      "to_id": 288,
+      "type": "treat"
+    },
+    {
+      "id": 181,
+      "from_id": 296,
+      "to_id": 297,
+      "type": "reflect"
+    },
+    {
+      "id": 182,
+      "from_id": 296,
+      "to_id": 298,
+      "type": "perf"
+    },
+    {
+      "id": 183,
+      "from_id": 296,
+      "to_id": 299,
+      "type": "perf"
+    },
+    {
+      "id": 184,
+      "from_id": 296,
+      "to_id": 300,
+      "type": "perf"
+    },
+    {
+      "id": 185,
+      "from_id": 302,
+      "to_id": 296,
+      "type": "treat"
+    },
+    {
+      "id": 186,
+      "from_id": 303,
+      "to_id": 304,
+      "type": "assist_diag"
+    },
+    {
+      "id": 187,
+      "from_id": 303,
+      "to_id": 305,
+      "type": "mapped_part"
+    },
+    {
+      "id": 188,
+      "from_id": 303,
+      "to_id": 306,
+      "type": "guide_pre"
+    },
+    {
+      "id": 189,
+      "from_id": 306,
+      "to_id": 304,
+      "type": "treat"
+    },
+    {
+      "id": 190,
+      "from_id": 308,
+      "to_id": 307,
+      "type": "treat"
+    },
+    {
+      "id": 191,
+      "from_id": 309,
+      "to_id": 307,
+      "type": "treat"
+    },
+    {
+      "id": 192,
+      "from_id": 310,
+      "to_id": 307,
+      "type": "treat"
+    },
+    {
+      "id": 193,
+      "from_id": 312,
+      "to_id": 311,
+      "type": "treat"
+    },
+    {
+      "id": 194,
+      "from_id": 313,
+      "to_id": 314,
+      "type": "perf"
+    },
+    {
+      "id": 195,
+      "from_id": 313,
+      "to_id": 315,
+      "type": "assist_diag"
+    },
+    {
+      "id": 196,
+      "from_id": 313,
+      "to_id": 316,
+      "type": "related"
+    },
+    {
+      "id": 197,
+      "from_id": 313,
+      "to_id": 317,
+      "type": "assist_diag"
+    },
+    {
+      "id": 198,
+      "from_id": 318,
+      "to_id": 313,
+      "type": "reflect"
+    },
+    {
+      "id": 199,
+      "from_id": 319,
+      "to_id": 313,
+      "type": "reflect"
+    },
+    {
+      "id": 200,
+      "from_id": 323,
+      "to_id": 317,
+      "type": "perf"
+    },
+    {
+      "id": 201,
+      "from_id": 324,
+      "to_id": 317,
+      "type": "perf"
+    },
+    {
+      "id": 202,
+      "from_id": 325,
+      "to_id": 317,
+      "type": "perf"
+    },
+    {
+      "id": 203,
+      "from_id": 326,
+      "to_id": 317,
+      "type": "perf"
+    },
+    {
+      "id": 204,
+      "from_id": 327,
+      "to_id": 317,
+      "type": "perf"
+    },
+    {
+      "id": 205,
+      "from_id": 328,
+      "to_id": 317,
+      "type": "perf"
+    },
+    {
+      "id": 206,
+      "from_id": 329,
+      "to_id": 330,
+      "type": "cause"
+    },
+    {
+      "id": 207,
+      "from_id": 331,
+      "to_id": 332,
+      "type": "cause"
+    },
+    {
+      "id": 208,
+      "from_id": 333,
+      "to_id": 334,
+      "type": "cause"
+    },
+    {
+      "id": 209,
+      "from_id": 333,
+      "to_id": 330,
+      "type": "cause"
+    },
+    {
+      "id": 210,
+      "from_id": 335,
+      "to_id": 333,
+      "type": "perf"
+    },
+    {
+      "id": 211,
+      "from_id": 336,
+      "to_id": 333,
+      "type": "perf"
+    },
+    {
+      "id": 212,
+      "from_id": 337,
+      "to_id": 330,
+      "type": "treat"
+    },
+    {
+      "id": 213,
+      "from_id": 338,
+      "to_id": 334,
+      "type": "treat"
+    },
+    {
+      "id": 214,
+      "from_id": 339,
+      "to_id": 330,
+      "type": "treat"
+    },
+    {
+      "id": 215,
+      "from_id": 340,
+      "to_id": 332,
+      "type": "perf"
+    },
+    {
+      "id": 216,
+      "from_id": 341,
+      "to_id": 340,
+      "type": "treat"
+    },
+    {
+      "id": 217,
+      "from_id": 343,
+      "to_id": 331,
+      "type": "treat"
+    },
+    {
+      "id": 218,
+      "from_id": 345,
+      "to_id": 331,
+      "type": "treat"
+    },
+    {
+      "id": 219,
+      "from_id": 347,
+      "to_id": 346,
+      "type": "Food_to_avoid"
+    },
+    {
+      "id": 220,
+      "from_id": 348,
+      "to_id": 317,
+      "type": "pulse_diagnosis"
+    },
+    {
+      "id": 221,
+      "from_id": 349,
+      "to_id": 350,
+      "type": "treat"
+    },
+    {
+      "id": 222,
+      "from_id": 351,
+      "to_id": 352,
+      "type": "perf"
+    },
+    {
+      "id": 223,
+      "from_id": 353,
+      "to_id": 354,
+      "type": "assist_diag"
+    },
+    {
+      "id": 224,
+      "from_id": 356,
+      "to_id": 357,
+      "type": "reflect"
+    },
+    {
+      "id": 225,
+      "from_id": 356,
+      "to_id": 359,
+      "type": "guide_pre"
+    },
+    {
+      "id": 226,
+      "from_id": 356,
+      "to_id": 358,
+      "type": "mapped_part"
+    },
+    {
+      "id": 227,
+      "from_id": 361,
+      "to_id": 362,
+      "type": "assist_diag"
+    },
+    {
+      "id": 228,
+      "from_id": 364,
+      "to_id": 365,
+      "type": "reflect"
+    },
+    {
+      "id": 229,
+      "from_id": 364,
+      "to_id": 366,
+      "type": "reflect"
+    },
+    {
+      "id": 230,
+      "from_id": 364,
+      "to_id": 367,
+      "type": "guide_pre"
+    },
+    {
+      "id": 231,
+      "from_id": 368,
+      "to_id": 369,
+      "type": "treat"
+    },
+    {
+      "id": 232,
+      "from_id": 371,
+      "to_id": 372,
+      "type": "reflect"
+    },
+    {
+      "id": 233,
+      "from_id": 371,
+      "to_id": 373,
+      "type": "guide_pre"
+    },
+    {
+      "id": 234,
+      "from_id": 371,
+      "to_id": 374,
+      "type": "perf"
+    },
+    {
+      "id": 235,
+      "from_id": 371,
+      "to_id": 375,
+      "type": "perf"
+    },
+    {
+      "id": 236,
+      "from_id": 377,
+      "to_id": 378,
+      "type": "assist_diag"
+    },
+    {
+      "id": 237,
+      "from_id": 377,
+      "to_id": 380,
+      "type": "guide_pre"
+    },
+    {
+      "id": 238,
+      "from_id": 377,
+      "to_id": 381,
+      "type": "perf"
+    },
+    {
+      "id": 239,
+      "from_id": 377,
+      "to_id": 382,
+      "type": "perf"
+    },
+    {
+      "id": 240,
+      "from_id": 383,
+      "to_id": 384,
+      "type": "perf"
+    },
+    {
+      "id": 241,
+      "from_id": 383,
+      "to_id": 385,
+      "type": "perf"
+    },
+    {
+      "id": 242,
+      "from_id": 383,
+      "to_id": 386,
+      "type": "perf"
+    },
+    {
+      "id": 243,
+      "from_id": 383,
+      "to_id": 387,
+      "type": "guide_pre"
+    },
+    {
+      "id": 244,
+      "from_id": 387,
+      "to_id": 387,
+      "type": "treat"
+    },
+    {
+      "id": 245,
+      "from_id": 383,
+      "to_id": 388,
+      "type": "perf"
+    },
+    {
+      "id": 246,
+      "from_id": 383,
+      "to_id": 389,
+      "type": "perf"
+    },
+    {
+      "id": 247,
+      "from_id": 383,
+      "to_id": 390,
+      "type": "perf"
+    },
+    {
+      "id": 248,
+      "from_id": 383,
+      "to_id": 391,
+      "type": "perf"
+    },
+    {
+      "id": 249,
+      "from_id": 383,
+      "to_id": 392,
+      "type": "perf"
+    },
+    {
+      "id": 250,
+      "from_id": 383,
+      "to_id": 393,
+      "type": "perf"
+    },
+    {
+      "id": 251,
+      "from_id": 394,
+      "to_id": 395,
+      "type": "reflect"
+    },
+    {
+      "id": 252,
+      "from_id": 394,
+      "to_id": 396,
+      "type": "reflect"
+    },
+    {
+      "id": 253,
+      "from_id": 394,
+      "to_id": 397,
+      "type": "assist_diag"
+    },
+    {
+      "id": 254,
+      "from_id": 394,
+      "to_id": 398,
+      "type": "perf"
+    },
+    {
+      "id": 255,
+      "from_id": 394,
+      "to_id": 399,
+      "type": "perf"
+    },
+    {
+      "id": 256,
+      "from_id": 394,
+      "to_id": 400,
+      "type": "perf"
+    },
+    {
+      "id": 257,
+      "from_id": 394,
+      "to_id": 401,
+      "type": "perf"
+    },
+    {
+      "id": 258,
+      "from_id": 394,
+      "to_id": 402,
+      "type": "guide_pre"
+    },
+    {
+      "id": 259,
+      "from_id": 402,
+      "to_id": 401,
+      "type": "treat"
+    },
+    {
+      "id": 260,
+      "from_id": 394,
+      "to_id": 403,
+      "type": "perf"
+    },
+    {
+      "id": 261,
+      "from_id": 394,
+      "to_id": 404,
+      "type": "perf"
+    },
+    {
+      "id": 262,
+      "from_id": 394,
+      "to_id": 405,
+      "type": "perf"
+    },
+    {
+      "id": 263,
+      "from_id": 406,
+      "to_id": 407,
+      "type": "oname"
+    },
+    {
+      "id": 264,
+      "from_id": 406,
+      "to_id": 408,
+      "type": "reflect"
+    },
+    {
+      "id": 265,
+      "from_id": 406,
+      "to_id": 409,
+      "type": "reflect"
+    },
+    {
+      "id": 266,
+      "from_id": 406,
+      "to_id": 410,
+      "type": "perf"
+    },
+    {
+      "id": 267,
+      "from_id": 406,
+      "to_id": 411,
+      "type": "perf"
+    },
+    {
+      "id": 268,
+      "from_id": 406,
+      "to_id": 412,
+      "type": "guide_pre"
+    },
+    {
+      "id": 269,
+      "from_id": 412,
+      "to_id": 410,
+      "type": "treat"
+    },
+    {
+      "id": 270,
+      "from_id": 406,
+      "to_id": 413,
+      "type": "perf"
+    },
+    {
+      "id": 271,
+      "from_id": 406,
+      "to_id": 414,
+      "type": "guide_pre"
+    },
+    {
+      "id": 272,
+      "from_id": 414,
+      "to_id": 413,
+      "type": "treat"
+    },
+    {
+      "id": 273,
+      "from_id": 406,
+      "to_id": 415,
+      "type": "perf"
+    },
+    {
+      "id": 274,
+      "from_id": 415,
+      "to_id": 416,
+      "type": "cause"
+    },
+    {
+      "id": 275,
+      "from_id": 406,
+      "to_id": 417,
+      "type": "guide_pre"
+    },
+    {
+      "id": 276,
+      "from_id": 417,
+      "to_id": 416,
+      "type": "treat"
+    },
+    {
+      "id": 277,
+      "from_id": 406,
+      "to_id": 418,
+      "type": "assist_diag"
+    },
+    {
+      "id": 278,
+      "from_id": 406,
+      "to_id": 419,
+      "type": "guide_pre"
+    },
+    {
+      "id": 279,
+      "from_id": 419,
+      "to_id": 418,
+      "type": "treat"
+    },
+    {
+      "id": 280,
+      "from_id": 420,
+      "to_id": 421,
+      "type": "oname"
+    },
+    {
+      "id": 281,
+      "from_id": 422,
+      "to_id": 423,
+      "type": "cause"
+    },
+    {
+      "id": 282,
+      "from_id": 424,
+      "to_id": 423,
+      "type": "treat"
+    },
+    {
+      "id": 283,
+      "from_id": 425,
+      "to_id": 427,
+      "type": "perf"
+    },
+    {
+      "id": 284,
+      "from_id": 426,
+      "to_id": 427,
+      "type": "perf"
+    },
+    {
+      "id": 285,
+      "from_id": 428,
+      "to_id": 427,
+      "type": "treat"
+    },
+    {
+      "id": 286,
+      "from_id": 430,
+      "to_id": 431,
+      "type": "oname"
+    },
+    {
+      "id": 287,
+      "from_id": 431,
+      "to_id": 432,
+      "type": "assist_diag"
+    },
+    {
+      "id": 288,
+      "from_id": 431,
+      "to_id": 433,
+      "type": "perf"
+    },
+    {
+      "id": 289,
+      "from_id": 431,
+      "to_id": 434,
+      "type": "perf"
+    },
+    {
+      "id": 290,
+      "from_id": 431,
+      "to_id": 435,
+      "type": "perf"
+    },
+    {
+      "id": 291,
+      "from_id": 431,
+      "to_id": 436,
+      "type": "guide_pre"
+    },
+    {
+      "id": 292,
+      "from_id": 438,
+      "to_id": 439,
+      "type": "oname"
+    },
+    {
+      "id": 293,
+      "from_id": 439,
+      "to_id": 440,
+      "type": "reflect"
+    },
+    {
+      "id": 294,
+      "from_id": 439,
+      "to_id": 441,
+      "type": "mapped_part"
+    },
+    {
+      "id": 295,
+      "from_id": 439,
+      "to_id": 442,
+      "type": "assist_diag"
+    },
+    {
+      "id": 296,
+      "from_id": 439,
+      "to_id": 443,
+      "type": "guide_pre"
+    },
+    {
+      "id": 297,
+      "from_id": 445,
+      "to_id": 446,
+      "type": "oname"
+    },
+    {
+      "id": 298,
+      "from_id": 446,
+      "to_id": 447,
+      "type": "reflect"
+    },
+    {
+      "id": 299,
+      "from_id": 448,
+      "to_id": 449,
+      "type": "oname"
+    },
+    {
+      "id": 300,
+      "from_id": 449,
+      "to_id": 450,
+      "type": "reflect"
+    },
+    {
+      "id": 301,
+      "from_id": 449,
+      "to_id": 451,
+      "type": "reflect"
+    },
+    {
+      "id": 302,
+      "from_id": 449,
+      "to_id": 452,
+      "type": "guide_pre"
+    },
+    {
+      "id": 303,
+      "from_id": 454,
+      "to_id": 455,
+      "type": "reflect"
+    },
+    {
+      "id": 304,
+      "from_id": 454,
+      "to_id": 457,
+      "type": "perf"
+    },
+    {
+      "id": 305,
+      "from_id": 454,
+      "to_id": 458,
+      "type": "perf"
+    },
+    {
+      "id": 306,
+      "from_id": 454,
+      "to_id": 459,
+      "type": "perf"
+    },
+    {
+      "id": 307,
+      "from_id": 460,
+      "to_id": 455,
+      "type": "treat"
+    },
+    {
+      "id": 308,
+      "from_id": 463,
+      "to_id": 462,
+      "type": "treat"
+    },
+    {
+      "id": 309,
+      "from_id": 464,
+      "to_id": 463,
+      "type": "comp"
+    },
+    {
+      "id": 310,
+      "from_id": 465,
+      "to_id": 463,
+      "type": "comp"
+    },
+    {
+      "id": 311,
+      "from_id": 466,
+      "to_id": 463,
+      "type": "comp"
+    },
+    {
+      "id": 312,
+      "from_id": 467,
+      "to_id": 469,
+      "type": "related"
+    },
+    {
+      "id": 313,
+      "from_id": 467,
+      "to_id": 470,
+      "type": "assist_diag"
+    },
+    {
+      "id": 314,
+      "from_id": 471,
+      "to_id": 472,
+      "type": "treat"
+    },
+    {
+      "id": 315,
+      "from_id": 473,
+      "to_id": 474,
+      "type": "treat"
+    },
+    {
+      "id": 316,
+      "from_id": 475,
+      "to_id": 477,
+      "type": "treat"
+    },
+    {
+      "id": 317,
+      "from_id": 476,
+      "to_id": 477,
+      "type": "treat"
+    },
+    {
+      "id": 318,
+      "from_id": 478,
+      "to_id": 480,
+      "type": "perf"
+    },
+    {
+      "id": 319,
+      "from_id": 478,
+      "to_id": 481,
+      "type": "perf"
+    },
+    {
+      "id": 320,
+      "from_id": 482,
+      "to_id": 483,
+      "type": "comp"
+    },
+    {
+      "id": 321,
+      "from_id": 483,
+      "to_id": 482,
+      "type": "comp"
+    },
+    {
+      "id": 322,
+      "from_id": 484,
+      "to_id": 487,
+      "type": "cause"
+    },
+    {
+      "id": 323,
+      "from_id": 485,
+      "to_id": 487,
+      "type": "cause"
+    },
+    {
+      "id": 324,
+      "from_id": 486,
+      "to_id": 487,
+      "type": "cause"
+    },
+    {
+      "id": 325,
+      "from_id": 488,
+      "to_id": 487,
+      "type": "treat"
+    },
+    {
+      "id": 326,
+      "from_id": 489,
+      "to_id": 493,
+      "type": "reflect"
+    },
+    {
+      "id": 327,
+      "from_id": 489,
+      "to_id": 498,
+      "type": "assist_diag"
+    },
+    {
+      "id": 328,
+      "from_id": 494,
+      "to_id": 498,
+      "type": "perf"
+    },
+    {
+      "id": 329,
+      "from_id": 495,
+      "to_id": 498,
+      "type": "perf"
+    },
+    {
+      "id": 330,
+      "from_id": 496,
+      "to_id": 498,
+      "type": "perf"
+    },
+    {
+      "id": 331,
+      "from_id": 497,
+      "to_id": 498,
+      "type": "perf"
+    },
+    {
+      "id": 332,
+      "from_id": 500,
+      "to_id": 501,
+      "type": "guide_pre"
+    },
+    {
+      "id": 333,
+      "from_id": 502,
+      "to_id": 503,
+      "type": "perf"
+    },
+    {
+      "id": 334,
+      "from_id": 502,
+      "to_id": 504,
+      "type": "perf"
+    },
+    {
+      "id": 335,
+      "from_id": 502,
+      "to_id": 505,
+      "type": "reflect"
+    },
+    {
+      "id": 336,
+      "from_id": 502,
+      "to_id": 506,
+      "type": "guide_pre"
+    },
+    {
+      "id": 337,
+      "from_id": 506,
+      "to_id": 505,
+      "type": "treat"
+    },
+    {
+      "id": 338,
+      "from_id": 509,
+      "to_id": 508,
+      "type": "assist_diag"
+    },
+    {
+      "id": 339,
+      "from_id": 509,
+      "to_id": 510,
+      "type": "assist_diag"
+    },
+    {
+      "id": 340,
+      "from_id": 511,
+      "to_id": 512,
+      "type": "reflect"
+    },
+    {
+      "id": 341,
+      "from_id": 513,
+      "to_id": 514,
+      "type": "reflect"
+    },
+    {
+      "id": 342,
+      "from_id": 513,
+      "to_id": 515,
+      "type": "assist_diag"
+    },
+    {
+      "id": 343,
+      "from_id": 516,
+      "to_id": 518,
+      "type": "cause"
+    },
+    {
+      "id": 344,
+      "from_id": 517,
+      "to_id": 518,
+      "type": "cause"
+    },
+    {
+      "id": 345,
+      "from_id": 519,
+      "to_id": 518,
+      "type": "perf"
+    },
+    {
+      "id": 346,
+      "from_id": 520,
+      "to_id": 521,
+      "type": "reflect"
+    },
+    {
+      "id": 347,
+      "from_id": 520,
+      "to_id": 522,
+      "type": "perf"
+    },
+    {
+      "id": 348,
+      "from_id": 507,
+      "to_id": 509,
+      "type": "oname"
+    },
+    {
+      "id": 349,
+      "from_id": 525,
+      "to_id": 526,
+      "type": "reflect"
+    },
+    {
+      "id": 350,
+      "from_id": 525,
+      "to_id": 532,
+      "type": "guide_pre"
+    },
+    {
+      "id": 351,
+      "from_id": 524,
+      "to_id": 532,
+      "type": "guide_pre"
+    },
+    {
+      "id": 352,
+      "from_id": 534,
+      "to_id": 544,
+      "type": "guide_pre"
+    },
+    {
+      "id": 353,
+      "from_id": 534,
+      "to_id": 545,
+      "type": "guide_pre"
+    },
+    {
+      "id": 354,
+      "from_id": 538,
+      "to_id": 539,
+      "type": "mapped_part"
+    },
+    {
+      "id": 355,
+      "from_id": 538,
+      "to_id": 540,
+      "type": "reflect"
+    },
+    {
+      "id": 356,
+      "from_id": 538,
+      "to_id": 544,
+      "type": "guide_pre"
+    },
+    {
+      "id": 357,
+      "from_id": 541,
+      "to_id": 542,
+      "type": "perf"
+    },
+    {
+      "id": 358,
+      "from_id": 542,
+      "to_id": 543,
+      "type": "perf"
+    },
+    {
+      "id": 359,
+      "from_id": 527,
+      "to_id": 528,
+      "type": "perf"
+    },
+    {
+      "id": 360,
+      "from_id": 527,
+      "to_id": 529,
+      "type": "perf"
+    },
+    {
+      "id": 361,
+      "from_id": 527,
+      "to_id": 530,
+      "type": "perf"
+    },
+    {
+      "id": 362,
+      "from_id": 527,
+      "to_id": 531,
+      "type": "perf"
+    },
+    {
+      "id": 363,
+      "from_id": 526,
+      "to_id": 525,
+      "type": "assist_diag"
+    },
+    {
+      "id": 364,
+      "from_id": 535,
+      "to_id": 537,
+      "type": "perf"
+    },
+    {
+      "id": 365,
+      "from_id": 536,
+      "to_id": 537,
+      "type": "perf"
+    },
+    {
+      "id": 366,
+      "from_id": 547,
+      "to_id": 546,
+      "type": "oname"
+    },
+    {
+      "id": 367,
+      "from_id": 552,
+      "to_id": 553,
+      "type": "assist_diag"
+    },
+    {
+      "id": 368,
+      "from_id": 552,
+      "to_id": 554,
+      "type": "perf"
+    },
+    {
+      "id": 369,
+      "from_id": 552,
+      "to_id": 555,
+      "type": "perf"
+    },
+    {
+      "id": 370,
+      "from_id": 556,
+      "to_id": 553,
+      "type": "treat"
+    },
+    {
+      "id": 371,
+      "from_id": 558,
+      "to_id": 551,
+      "type": "cause"
+    },
+    {
+      "id": 372,
+      "from_id": 559,
+      "to_id": 558,
+      "type": "treat"
+    },
+    {
+      "id": 373,
+      "from_id": 562,
+      "to_id": 566,
+      "type": "reflect"
+    },
+    {
+      "id": 374,
+      "from_id": 562,
+      "to_id": 563,
+      "type": "perf"
+    },
+    {
+      "id": 375,
+      "from_id": 568,
+      "to_id": 567,
+      "type": "treat"
+    },
+    {
+      "id": 376,
+      "from_id": 569,
+      "to_id": 567,
+      "type": "treat"
+    },
+    {
+      "id": 377,
+      "from_id": 571,
+      "to_id": 570,
+      "type": "treat"
+    },
+    {
+      "id": 378,
+      "from_id": 574,
+      "to_id": 573,
+      "type": "treat"
+    },
+    {
+      "id": 379,
+      "from_id": 576,
+      "to_id": 577,
+      "type": "assist_diag"
+    },
+    {
+      "id": 380,
+      "from_id": 578,
+      "to_id": 579,
+      "type": "guide_pre"
+    },
+    {
+      "id": 381,
+      "from_id": 579,
+      "to_id": 580,
+      "type": "reflect"
+    },
+    {
+      "id": 382,
+      "from_id": 579,
+      "to_id": 581,
+      "type": "guide_pre"
+    },
+    {
+      "id": 383,
+      "from_id": 582,
+      "to_id": 583,
+      "type": "oname"
+    },
+    {
+      "id": 384,
+      "from_id": 583,
+      "to_id": 584,
+      "type": "reflect"
+    },
+    {
+      "id": 385,
+      "from_id": 583,
+      "to_id": 585,
+      "type": "guide_pre"
+    },
+    {
+      "id": 386,
+      "from_id": 586,
+      "to_id": 587,
+      "type": "oname"
+    },
+    {
+      "id": 387,
+      "from_id": 587,
+      "to_id": 588,
+      "type": "reflect"
+    },
+    {
+      "id": 388,
+      "from_id": 587,
+      "to_id": 589,
+      "type": "guide_pre"
+    },
+    {
+      "id": 389,
+      "from_id": 590,
+      "to_id": 594,
+      "type": "oname"
+    },
+    {
+      "id": 390,
+      "from_id": 591,
+      "to_id": 592,
+      "type": "perf"
+    },
+    {
+      "id": 391,
+      "from_id": 592,
+      "to_id": 593,
+      "type": "cause"
+    },
+    {
+      "id": 392,
+      "from_id": 593,
+      "to_id": 594,
+      "type": "reflect"
+    },
+    {
+      "id": 393,
+      "from_id": 593,
+      "to_id": 595,
+      "type": "perf"
+    },
+    {
+      "id": 394,
+      "from_id": 593,
+      "to_id": 596,
+      "type": "perf"
+    },
+    {
+      "id": 395,
+      "from_id": 593,
+      "to_id": 597,
+      "type": "perf"
+    },
+    {
+      "id": 396,
+      "from_id": 593,
+      "to_id": 598,
+      "type": "perf"
+    },
+    {
+      "id": 397,
+      "from_id": 593,
+      "to_id": 599,
+      "type": "guide_pre"
+    },
+    {
+      "id": 398,
+      "from_id": 600,
+      "to_id": 601,
+      "type": "oname"
+    },
+    {
+      "id": 399,
+      "from_id": 602,
+      "to_id": 604,
+      "type": "cause"
+    },
+    {
+      "id": 400,
+      "from_id": 603,
+      "to_id": 604,
+      "type": "cause"
+    },
+    {
+      "id": 401,
+      "from_id": 605,
+      "to_id": 623,
+      "type": "treat"
+    },
+    {
+      "id": 402,
+      "from_id": 610,
+      "to_id": 611,
+      "type": "oname"
+    },
+    {
+      "id": 403,
+      "from_id": 612,
+      "to_id": 613,
+      "type": "perf"
+    },
+    {
+      "id": 404,
+      "from_id": 614,
+      "to_id": 616,
+      "type": "cause"
+    },
+    {
+      "id": 405,
+      "from_id": 621,
+      "to_id": 622,
+      "type": "perf"
+    },
+    {
+      "id": 406,
+      "from_id": 622,
+      "to_id": 623,
+      "type": "guide_pre"
+    },
+    {
+      "id": 407,
+      "from_id": 624,
+      "to_id": 625,
+      "type": "perf"
+    },
+    {
+      "id": 408,
+      "from_id": 625,
+      "to_id": 626,
+      "type": "guide_pre"
+    },
+    {
+      "id": 409,
+      "from_id": 627,
+      "to_id": 628,
+      "type": "perf"
+    },
+    {
+      "id": 410,
+      "from_id": 627,
+      "to_id": 629,
+      "type": "perf"
+    },
+    {
+      "id": 411,
+      "from_id": 627,
+      "to_id": 630,
+      "type": "perf"
+    },
+    {
+      "id": 412,
+      "from_id": 627,
+      "to_id": 631,
+      "type": "perf"
+    },
+    {
+      "id": 413,
+      "from_id": 627,
+      "to_id": 632,
+      "type": "perf"
+    },
+    {
+      "id": 414,
+      "from_id": 627,
+      "to_id": 633,
+      "type": "perf"
+    },
+    {
+      "id": 415,
+      "from_id": 634,
+      "to_id": 627,
+      "type": "treat"
+    },
+    {
+      "id": 416,
+      "from_id": 636,
+      "to_id": 637,
+      "type": "perf"
+    },
+    {
+      "id": 417,
+      "from_id": 636,
+      "to_id": 638,
+      "type": "cause"
+    },
+    {
+      "id": 418,
+      "from_id": 636,
+      "to_id": 640,
+      "type": "pulse_diagnosis"
+    },
+    {
+      "id": 419,
+      "from_id": 636,
+      "to_id": 641,
+      "type": "pulse_diagnosis"
+    },
+    {
+      "id": 420,
+      "from_id": 636,
+      "to_id": 642,
+      "type": "perf"
+    },
+    {
+      "id": 421,
+      "from_id": 636,
+      "to_id": 643,
+      "type": "perf"
+    },
+    {
+      "id": 422,
+      "from_id": 644,
+      "to_id": 645,
+      "type": "assist_diag"
+    },
+    {
+      "id": 423,
+      "from_id": 644,
+      "to_id": 646,
+      "type": "assist_diag"
+    },
+    {
+      "id": 424,
+      "from_id": 647,
+      "to_id": 648,
+      "type": "perf"
+    },
+    {
+      "id": 425,
+      "from_id": 647,
+      "to_id": 649,
+      "type": "perf"
+    },
+    {
+      "id": 426,
+      "from_id": 647,
+      "to_id": 650,
+      "type": "perf"
+    },
+    {
+      "id": 427,
+      "from_id": 647,
+      "to_id": 651,
+      "type": "perf"
+    },
+    {
+      "id": 428,
+      "from_id": 647,
+      "to_id": 652,
+      "type": "assist_diag"
+    },
+    {
+      "id": 429,
+      "from_id": 653,
+      "to_id": 652,
+      "type": "treat"
+    },
+    {
+      "id": 430,
+      "from_id": 654,
+      "to_id": 655,
+      "type": "reflect"
+    },
+    {
+      "id": 431,
+      "from_id": 654,
+      "to_id": 656,
+      "type": "guide_pre"
+    },
+    {
+      "id": 432,
+      "from_id": 656,
+      "to_id": 657,
+      "type": "treat"
+    },
+    {
+      "id": 433,
+      "from_id": 658,
+      "to_id": 659,
+      "type": "perf"
+    },
+    {
+      "id": 434,
+      "from_id": 658,
+      "to_id": 660,
+      "type": "perf"
+    },
+    {
+      "id": 435,
+      "from_id": 659,
+      "to_id": 661,
+      "type": "perf"
+    },
+    {
+      "id": 436,
+      "from_id": 660,
+      "to_id": 661,
+      "type": "perf"
+    },
+    {
+      "id": 437,
+      "from_id": 662,
+      "to_id": 664,
+      "type": "assist_diag"
+    },
+    {
+      "id": 438,
+      "from_id": 663,
+      "to_id": 665,
+      "type": "perf"
+    },
+    {
+      "id": 439,
+      "from_id": 663,
+      "to_id": 666,
+      "type": "perf"
+    },
+    {
+      "id": 440,
+      "from_id": 663,
+      "to_id": 667,
+      "type": "perf"
+    },
+    {
+      "id": 441,
+      "from_id": 663,
+      "to_id": 668,
+      "type": "perf"
+    },
+    {
+      "id": 442,
+      "from_id": 663,
+      "to_id": 669,
+      "type": "guide_pre"
+    },
+    {
+      "id": 443,
+      "from_id": 670,
+      "to_id": 671,
+      "type": "perf"
+    },
+    {
+      "id": 444,
+      "from_id": 670,
+      "to_id": 672,
+      "type": "perf"
+    },
+    {
+      "id": 445,
+      "from_id": 672,
+      "to_id": 673,
+      "type": "guide_pre"
+    },
+    {
+      "id": 446,
+      "from_id": 672,
+      "to_id": 674,
+      "type": "guide_pre"
+    },
+    {
+      "id": 447,
+      "from_id": 675,
+      "to_id": 676,
+      "type": "assist_diag"
+    },
+    {
+      "id": 448,
+      "from_id": 675,
+      "to_id": 677,
+      "type": "assist_diag"
+    },
+    {
+      "id": 449,
+      "from_id": 678,
+      "to_id": 675,
+      "type": "cause"
+    },
+    {
+      "id": 450,
+      "from_id": 679,
+      "to_id": 675,
+      "type": "mapped_part"
+    },
+    {
+      "id": 451,
+      "from_id": 680,
+      "to_id": 681,
+      "type": "cause"
+    },
+    {
+      "id": 452,
+      "from_id": 682,
+      "to_id": 680,
+      "type": "treat"
+    },
+    {
+      "id": 453,
+      "from_id": 683,
+      "to_id": 680,
+      "type": "treat"
+    },
+    {
+      "id": 454,
+      "from_id": 684,
+      "to_id": 680,
+      "type": "treat"
+    },
+    {
+      "id": 455,
+      "from_id": 685,
+      "to_id": 681,
+      "type": "perf"
+    },
+    {
+      "id": 456,
+      "from_id": 686,
+      "to_id": 681,
+      "type": "perf"
+    },
+    {
+      "id": 457,
+      "from_id": 687,
+      "to_id": 681,
+      "type": "perf"
+    },
+    {
+      "id": 458,
+      "from_id": 688,
+      "to_id": 681,
+      "type": "assist_diag"
+    },
+    {
+      "id": 459,
+      "from_id": 689,
+      "to_id": 690,
+      "type": "perf"
+    },
+    {
+      "id": 460,
+      "from_id": 689,
+      "to_id": 691,
+      "type": "perf"
+    },
+    {
+      "id": 461,
+      "from_id": 689,
+      "to_id": 692,
+      "type": "perf"
+    },
+    {
+      "id": 462,
+      "from_id": 693,
+      "to_id": 694,
+      "type": "cause"
+    },
+    {
+      "id": 463,
+      "from_id": 695,
+      "to_id": 100,
+      "type": "guide_pre"
+    },
+    {
+      "id": 464,
+      "from_id": 697,
+      "to_id": 700,
+      "type": "reflect"
+    },
+    {
+      "id": 465,
+      "from_id": 697,
+      "to_id": 701,
+      "type": "reflect"
+    },
+    {
+      "id": 466,
+      "from_id": 697,
+      "to_id": 702,
+      "type": "reflect"
+    },
+    {
+      "id": 467,
+      "from_id": 703,
+      "to_id": 697,
+      "type": "treat"
+    },
+    {
+      "id": 468,
+      "from_id": 704,
+      "to_id": 706,
+      "type": "reflect"
+    },
+    {
+      "id": 469,
+      "from_id": 704,
+      "to_id": 707,
+      "type": "perf"
+    },
+    {
+      "id": 470,
+      "from_id": 704,
+      "to_id": 708,
+      "type": "perf"
+    },
+    {
+      "id": 471,
+      "from_id": 704,
+      "to_id": 709,
+      "type": "perf"
+    },
+    {
+      "id": 472,
+      "from_id": 704,
+      "to_id": 710,
+      "type": "perf"
+    },
+    {
+      "id": 473,
+      "from_id": 711,
+      "to_id": 704,
+      "type": "treat"
+    },
+    {
+      "id": 474,
+      "from_id": 712,
+      "to_id": 704,
+      "type": "treat"
+    },
+    {
+      "id": 475,
+      "from_id": 713,
+      "to_id": 704,
+      "type": "treat"
+    },
+    {
+      "id": 476,
+      "from_id": 714,
+      "to_id": 713,
+      "type": "comp"
+    },
+    {
+      "id": 477,
+      "from_id": 715,
+      "to_id": 716,
+      "type": "oname"
+    },
+    {
+      "id": 478,
+      "from_id": 716,
+      "to_id": 717,
+      "type": "reflect"
+    },
+    {
+      "id": 479,
+      "from_id": 716,
+      "to_id": 718,
+      "type": "reflect"
+    },
+    {
+      "id": 480,
+      "from_id": 716,
+      "to_id": 719,
+      "type": "guide_pre"
+    },
+    {
+      "id": 481,
+      "from_id": 720,
+      "to_id": 721,
+      "type": "oname"
+    },
+    {
+      "id": 482,
+      "from_id": 721,
+      "to_id": 722,
+      "type": "reflect"
+    },
+    {
+      "id": 483,
+      "from_id": 721,
+      "to_id": 723,
+      "type": "reflect"
+    },
+    {
+      "id": 484,
+      "from_id": 721,
+      "to_id": 724,
+      "type": "assist_diag"
+    },
+    {
+      "id": 485,
+      "from_id": 721,
+      "to_id": 725,
+      "type": "assist_diag"
+    },
+    {
+      "id": 486,
+      "from_id": 721,
+      "to_id": 726,
+      "type": "assist_diag"
+    },
+    {
+      "id": 487,
+      "from_id": 721,
+      "to_id": 727,
+      "type": "reflect"
+    },
+    {
+      "id": 488,
+      "from_id": 728,
+      "to_id": 729,
+      "type": "oname"
+    },
+    {
+      "id": 489,
+      "from_id": 729,
+      "to_id": 731,
+      "type": "reflect"
+    },
+    {
+      "id": 490,
+      "from_id": 729,
+      "to_id": 730,
+      "type": "perf"
+    },
+    {
+      "id": 491,
+      "from_id": 732,
+      "to_id": 733,
+      "type": "from"
+    },
+    {
+      "id": 492,
+      "from_id": 736,
+      "to_id": 737,
+      "type": "from"
+    },
+    {
+      "id": 493,
+      "from_id": 736,
+      "to_id": 738,
+      "type": "from"
+    },
+    {
+      "id": 494,
+      "from_id": 736,
+      "to_id": 739,
+      "type": "from"
+    },
+    {
+      "id": 495,
+      "from_id": 733,
+      "to_id": 734,
+      "type": "reflect"
+    },
+    {
+      "id": 496,
+      "from_id": 733,
+      "to_id": 735,
+      "type": "reflect"
+    },
+    {
+      "id": 497,
+      "from_id": 733,
+      "to_id": 738,
+      "type": "assist_diag"
+    },
+    {
+      "id": 498,
+      "from_id": 733,
+      "to_id": 739,
+      "type": "assist_diag"
+    },
+    {
+      "id": 499,
+      "from_id": 733,
+      "to_id": 740,
+      "type": "oname"
+    },
+    {
+      "id": 500,
+      "from_id": 741,
+      "to_id": 743,
+      "type": "perf"
+    },
+    {
+      "id": 501,
+      "from_id": 744,
+      "to_id": 741,
+      "type": "assist_diag"
+    },
+    {
+      "id": 502,
+      "from_id": 745,
+      "to_id": 746,
+      "type": "cause"
+    },
+    {
+      "id": 503,
+      "from_id": 751,
+      "to_id": 752,
+      "type": "assist_diag"
+    },
+    {
+      "id": 504,
+      "from_id": 751,
+      "to_id": 753,
+      "type": "reflect"
+    },
+    {
+      "id": 505,
+      "from_id": 754,
+      "to_id": 752,
+      "type": "treat"
+    },
+    {
+      "id": 506,
+      "from_id": 755,
+      "to_id": 752,
+      "type": "treat"
+    },
+    {
+      "id": 507,
+      "from_id": 756,
+      "to_id": 759,
+      "type": "assist_diag"
+    },
+    {
+      "id": 508,
+      "from_id": 757,
+      "to_id": 759,
+      "type": "assist_diag"
+    },
+    {
+      "id": 509,
+      "from_id": 758,
+      "to_id": 759,
+      "type": "perf"
+    },
+    {
+      "id": 510,
+      "from_id": 760,
+      "to_id": 761,
+      "type": "perf"
+    },
+    {
+      "id": 511,
+      "from_id": 762,
+      "to_id": 759,
+      "type": "treat"
+    },
+    {
+      "id": 512,
+      "from_id": 763,
+      "to_id": 759,
+      "type": "treat"
+    },
+    {
+      "id": 513,
+      "from_id": 764,
+      "to_id": 759,
+      "type": "treat"
+    },
+    {
+      "id": 514,
+      "from_id": 765,
+      "to_id": 661,
+      "type": "perf"
+    },
+    {
+      "id": 515,
+      "from_id": 766,
+      "to_id": 661,
+      "type": "perf"
+    },
+    {
+      "id": 516,
+      "from_id": 767,
+      "to_id": 661,
+      "type": "perf"
+    },
+    {
+      "id": 517,
+      "from_id": 768,
+      "to_id": 752,
+      "type": "assist_diag"
+    },
+    {
+      "id": 518,
+      "from_id": 769,
+      "to_id": 752,
+      "type": "assist_diag"
+    },
+    {
+      "id": 519,
+      "from_id": 770,
+      "to_id": 752,
+      "type": "assist_diag"
+    },
+    {
+      "id": 520,
+      "from_id": 771,
+      "to_id": 772,
+      "type": "guide_pre"
+    },
+    {
+      "id": 521,
+      "from_id": 773,
+      "to_id": 775,
+      "type": "guide_pre"
+    },
+    {
+      "id": 522,
+      "from_id": 778,
+      "to_id": 779,
+      "type": "reflect"
+    },
+    {
+      "id": 523,
+      "from_id": 778,
+      "to_id": 780,
+      "type": "assist_diag"
+    },
+    {
+      "id": 524,
+      "from_id": 778,
+      "to_id": 782,
+      "type": "guide_pre"
+    },
+    {
+      "id": 525,
+      "from_id": 778,
+      "to_id": 783,
+      "type": "guide_pre"
+    },
+    {
+      "id": 526,
+      "from_id": 785,
+      "to_id": 786,
+      "type": "reflect"
+    },
+    {
+      "id": 527,
+      "from_id": 785,
+      "to_id": 787,
+      "type": "guide_pre"
+    },
+    {
+      "id": 528,
+      "from_id": 789,
+      "to_id": 790,
+      "type": "reflect"
+    },
+    {
+      "id": 529,
+      "from_id": 789,
+      "to_id": 792,
+      "type": "guide_pre"
+    },
+    {
+      "id": 530,
+      "from_id": 793,
+      "to_id": 795,
+      "type": "guide_pre"
+    },
+    {
+      "id": 531,
+      "from_id": 794,
+      "to_id": 795,
+      "type": "guide_pre"
+    },
+    {
+      "id": 532,
+      "from_id": 799,
+      "to_id": 798,
+      "type": "reflect"
+    },
+    {
+      "id": 533,
+      "from_id": 799,
+      "to_id": 800,
+      "type": "guide_pre"
+    },
+    {
+      "id": 534,
+      "from_id": 801,
+      "to_id": 800,
+      "type": "comp"
+    },
+    {
+      "id": 535,
+      "from_id": 802,
+      "to_id": 803,
+      "type": "perf"
+    },
+    {
+      "id": 536,
+      "from_id": 802,
+      "to_id": 804,
+      "type": "perf"
+    },
+    {
+      "id": 537,
+      "from_id": 805,
+      "to_id": 806,
+      "type": "cause"
+    },
+    {
+      "id": 538,
+      "from_id": 805,
+      "to_id": 807,
+      "type": "cause"
+    },
+    {
+      "id": 539,
+      "from_id": 808,
+      "to_id": 807,
+      "type": "treat"
+    },
+    {
+      "id": 540,
+      "from_id": 809,
+      "to_id": 807,
+      "type": "treat"
+    },
+    {
+      "id": 541,
+      "from_id": 810,
+      "to_id": 811,
+      "type": "perf"
+    },
+    {
+      "id": 542,
+      "from_id": 810,
+      "to_id": 812,
+      "type": "perf"
+    },
+    {
+      "id": 543,
+      "from_id": 810,
+      "to_id": 813,
+      "type": "perf"
+    },
+    {
+      "id": 544,
+      "from_id": 814,
+      "to_id": 815,
+      "type": "cause"
+    },
+    {
+      "id": 545,
+      "from_id": 816,
+      "to_id": 815,
+      "type": "treat"
+    },
+    {
+      "id": 546,
+      "from_id": 817,
+      "to_id": 815,
+      "type": "treat"
+    },
+    {
+      "id": 547,
+      "from_id": 818,
+      "to_id": 819,
+      "type": "assist_diag"
+    },
+    {
+      "id": 548,
+      "from_id": 819,
+      "to_id": 820,
+      "type": "perf"
+    },
+    {
+      "id": 549,
+      "from_id": 819,
+      "to_id": 821,
+      "type": "perf"
+    },
+    {
+      "id": 550,
+      "from_id": 819,
+      "to_id": 822,
+      "type": "perf"
+    },
+    {
+      "id": 551,
+      "from_id": 819,
+      "to_id": 823,
+      "type": "perf"
+    },
+    {
+      "id": 552,
+      "from_id": 824,
+      "to_id": 819,
+      "type": "treat"
+    },
+    {
+      "id": 553,
+      "from_id": 825,
+      "to_id": 824,
+      "type": "comp"
+    },
+    {
+      "id": 554,
+      "from_id": 826,
+      "to_id": 824,
+      "type": "comp"
+    },
+    {
+      "id": 555,
+      "from_id": 827,
+      "to_id": 819,
+      "type": "treat"
+    },
+    {
+      "id": 556,
+      "from_id": 830,
+      "to_id": 834,
+      "type": "perf"
+    },
+    {
+      "id": 557,
+      "from_id": 831,
+      "to_id": 832,
+      "type": "belongto"
+    },
+    {
+      "id": 558,
+      "from_id": 831,
+      "to_id": 833,
+      "type": "belongto"
+    },
+    {
+      "id": 559,
+      "from_id": 831,
+      "to_id": 834,
+      "type": "reflect"
+    },
+    {
+      "id": 560,
+      "from_id": 835,
+      "to_id": 837,
+      "type": "perf"
+    },
+    {
+      "id": 561,
+      "from_id": 836,
+      "to_id": 837,
+      "type": "perf"
+    },
+    {
+      "id": 562,
+      "from_id": 838,
+      "to_id": 837,
+      "type": "treat"
+    },
+    {
+      "id": 563,
+      "from_id": 839,
+      "to_id": 838,
+      "type": "comp"
+    },
+    {
+      "id": 564,
+      "from_id": 840,
+      "to_id": 838,
+      "type": "comp"
+    },
+    {
+      "id": 565,
+      "from_id": 841,
+      "to_id": 842,
+      "type": "perf"
+    },
+    {
+      "id": 566,
+      "from_id": 842,
+      "to_id": 843,
+      "type": "assist_diag"
+    },
+    {
+      "id": 567,
+      "from_id": 843,
+      "to_id": 844,
+      "type": "perf"
+    },
+    {
+      "id": 568,
+      "from_id": 845,
+      "to_id": 843,
+      "type": "treat"
+    },
+    {
+      "id": 569,
+      "from_id": 846,
+      "to_id": 847,
+      "type": "reflect"
+    },
+    {
+      "id": 570,
+      "from_id": 847,
+      "to_id": 848,
+      "type": "guide_pre"
+    },
+    {
+      "id": 571,
+      "from_id": 849,
+      "to_id": 850,
+      "type": "perf"
+    },
+    {
+      "id": 572,
+      "from_id": 850,
+      "to_id": 851,
+      "type": "reflect"
+    },
+    {
+      "id": 573,
+      "from_id": 851,
+      "to_id": 852,
+      "type": "treat"
+    },
+    {
+      "id": 574,
+      "from_id": 853,
+      "to_id": 849,
+      "type": "acupoints"
+    },
+    {
+      "id": 575,
+      "from_id": 854,
+      "to_id": 849,
+      "type": "acupoints"
+    },
+    {
+      "id": 576,
+      "from_id": 855,
+      "to_id": 856,
+      "type": "perf"
+    },
+    {
+      "id": 577,
+      "from_id": 856,
+      "to_id": 857,
+      "type": "mapped_part"
+    },
+    {
+      "id": 578,
+      "from_id": 856,
+      "to_id": 858,
+      "type": "perf"
+    },
+    {
+      "id": 579,
+      "from_id": 859,
+      "to_id": 858,
+      "type": "treat"
+    },
+    {
+      "id": 580,
+      "from_id": 860,
+      "to_id": 859,
+      "type": "comp"
+    },
+    {
+      "id": 581,
+      "from_id": 861,
+      "to_id": 862,
+      "type": "perf"
+    },
+    {
+      "id": 582,
+      "from_id": 862,
+      "to_id": 863,
+      "type": "reflect"
+    },
+    {
+      "id": 583,
+      "from_id": 863,
+      "to_id": 864,
+      "type": "inandex"
+    },
+    {
+      "id": 584,
+      "from_id": 865,
+      "to_id": 866,
+      "type": "perf"
+    },
+    {
+      "id": 585,
+      "from_id": 866,
+      "to_id": 867,
+      "type": "cause"
+    },
+    {
+      "id": 586,
+      "from_id": 867,
+      "to_id": 868,
+      "type": "perf"
+    },
+    {
+      "id": 587,
+      "from_id": 869,
+      "to_id": 870,
+      "type": "perf"
+    },
+    {
+      "id": 588,
+      "from_id": 869,
+      "to_id": 871,
+      "type": "perf"
+    },
+    {
+      "id": 589,
+      "from_id": 872,
+      "to_id": 869,
+      "type": "treat"
+    },
+    {
+      "id": 590,
+      "from_id": 874,
+      "to_id": 875,
+      "type": "cause"
+    },
+    {
+      "id": 591,
+      "from_id": 875,
+      "to_id": 874,
+      "type": "perf"
+    },
+    {
+      "id": 592,
+      "from_id": 876,
+      "to_id": 874,
+      "type": "treat"
+    },
+    {
+      "id": 593,
+      "from_id": 877,
+      "to_id": 876,
+      "type": "comp"
+    },
+    {
+      "id": 594,
+      "from_id": 878,
+      "to_id": 876,
+      "type": "comp"
+    },
+    {
+      "id": 595,
+      "from_id": 880,
+      "to_id": 881,
+      "type": "perf"
+    },
+    {
+      "id": 596,
+      "from_id": 882,
+      "to_id": 880,
+      "type": "cause"
+    },
+    {
+      "id": 597,
+      "from_id": 882,
+      "to_id": 883,
+      "type": "perf"
+    },
+    {
+      "id": 598,
+      "from_id": 882,
+      "to_id": 884,
+      "type": "perf"
+    },
+    {
+      "id": 599,
+      "from_id": 882,
+      "to_id": 885,
+      "type": "perf"
+    },
+    {
+      "id": 600,
+      "from_id": 888,
+      "to_id": 889,
+      "type": "mapped_part"
+    },
+    {
+      "id": 601,
+      "from_id": 888,
+      "to_id": 890,
+      "type": "mapped_part"
+    },
+    {
+      "id": 602,
+      "from_id": 890,
+      "to_id": 891,
+      "type": "reflect"
+    },
+    {
+      "id": 603,
+      "from_id": 892,
+      "to_id": 893,
+      "type": "perf"
+    },
+    {
+      "id": 604,
+      "from_id": 892,
+      "to_id": 894,
+      "type": "perf"
+    },
+    {
+      "id": 605,
+      "from_id": 895,
+      "to_id": 896,
+      "type": "perf"
+    },
+    {
+      "id": 606,
+      "from_id": 897,
+      "to_id": 895,
+      "type": "treat"
+    },
+    {
+      "id": 607,
+      "from_id": 898,
+      "to_id": 899,
+      "type": "mapped_part"
+    },
+    {
+      "id": 608,
+      "from_id": 899,
+      "to_id": 900,
+      "type": "perf"
+    },
+    {
+      "id": 609,
+      "from_id": 899,
+      "to_id": 901,
+      "type": "perf"
+    },
+    {
+      "id": 610,
+      "from_id": 902,
+      "to_id": 899,
+      "type": "cause"
+    },
+    {
+      "id": 611,
+      "from_id": 903,
+      "to_id": 899,
+      "type": "cause"
+    },
+    {
+      "id": 612,
+      "from_id": 904,
+      "to_id": 875,
+      "type": "inandex"
+    },
+    {
+      "id": 613,
+      "from_id": 905,
+      "to_id": 907,
+      "type": "guide_pre"
+    },
+    {
+      "id": 614,
+      "from_id": 906,
+      "to_id": 907,
+      "type": "guide_pre"
+    },
+    {
+      "id": 615,
+      "from_id": 907,
+      "to_id": 908,
+      "type": "reflect"
+    },
+    {
+      "id": 616,
+      "from_id": 907,
+      "to_id": 909,
+      "type": "assist_diag"
+    },
+    {
+      "id": 617,
+      "from_id": 910,
+      "to_id": 911,
+      "type": "perf"
+    },
+    {
+      "id": 618,
+      "from_id": 910,
+      "to_id": 912,
+      "type": "perf"
+    },
+    {
+      "id": 619,
+      "from_id": 910,
+      "to_id": 913,
+      "type": "perf"
+    },
+    {
+      "id": 620,
+      "from_id": 910,
+      "to_id": 914,
+      "type": "perf"
+    },
+    {
+      "id": 621,
+      "from_id": 910,
+      "to_id": 915,
+      "type": "perf"
+    },
+    {
+      "id": 622,
+      "from_id": 916,
+      "to_id": 910,
+      "type": "cause"
+    },
+    {
+      "id": 623,
+      "from_id": 917,
+      "to_id": 910,
+      "type": "cause"
+    },
+    {
+      "id": 624,
+      "from_id": 918,
+      "to_id": 910,
+      "type": "guide_pre"
+    },
+    {
+      "id": 625,
+      "from_id": 919,
+      "to_id": 910,
+      "type": "guide_pre"
+    },
+    {
+      "id": 626,
+      "from_id": 920,
+      "to_id": 921,
+      "type": "perf"
+    },
+    {
+      "id": 627,
+      "from_id": 920,
+      "to_id": 922,
+      "type": "guide_pre"
+    },
+    {
+      "id": 628,
+      "from_id": 923,
+      "to_id": 924,
+      "type": "cause"
+    },
+    {
+      "id": 629,
+      "from_id": 923,
+      "to_id": 925,
+      "type": "perf"
+    },
+    {
+      "id": 630,
+      "from_id": 926,
+      "to_id": 923,
+      "type": "guide_pre"
+    },
+    {
+      "id": 631,
+      "from_id": 927,
+      "to_id": 926,
+      "type": "comp"
+    },
+    {
+      "id": 632,
+      "from_id": 927,
+      "to_id": 923,
+      "type": "guide_med"
+    },
+    {
+      "id": 633,
+      "from_id": 923,
+      "to_id": 928,
+      "type": "mapped_part"
+    },
+    {
+      "id": 634,
+      "from_id": 929,
+      "to_id": 930,
+      "type": "assist_diag"
+    },
+    {
+      "id": 635,
+      "from_id": 931,
+      "to_id": 930,
+      "type": "assist_diag"
+    },
+    {
+      "id": 636,
+      "from_id": 932,
+      "to_id": 930,
+      "type": "treat"
+    },
+    {
+      "id": 637,
+      "from_id": 933,
+      "to_id": 930,
+      "type": "treat"
+    },
+    {
+      "id": 638,
+      "from_id": 934,
+      "to_id": 930,
+      "type": "treat"
+    },
+    {
+      "id": 639,
+      "from_id": 935,
+      "to_id": 936,
+      "type": "reflect"
+    },
+    {
+      "id": 640,
+      "from_id": 937,
+      "to_id": 938,
+      "type": "perf"
+    },
+    {
+      "id": 641,
+      "from_id": 937,
+      "to_id": 939,
+      "type": "perf"
+    },
+    {
+      "id": 642,
+      "from_id": 937,
+      "to_id": 940,
+      "type": "perf"
+    },
+    {
+      "id": 643,
+      "from_id": 941,
+      "to_id": 942,
+      "type": "reflect"
+    },
+    {
+      "id": 644,
+      "from_id": 941,
+      "to_id": 943,
+      "type": "reflect"
+    },
+    {
+      "id": 645,
+      "from_id": 944,
+      "to_id": 943,
+      "type": "reflect"
+    },
+    {
+      "id": 646,
+      "from_id": 945,
+      "to_id": 946,
+      "type": "reflect"
+    },
+    {
+      "id": 647,
+      "from_id": 947,
+      "to_id": 941,
+      "type": "treat"
+    },
+    {
+      "id": 648,
+      "from_id": 948,
+      "to_id": 941,
+      "type": "treat"
+    },
+    {
+      "id": 649,
+      "from_id": 950,
+      "to_id": 951,
+      "type": "assist_diag"
+    },
+    {
+      "id": 650,
+      "from_id": 952,
+      "to_id": 951,
+      "type": "cause"
+    },
+    {
+      "id": 651,
+      "from_id": 953,
+      "to_id": 951,
+      "type": "cause"
+    },
+    {
+      "id": 652,
+      "from_id": 954,
+      "to_id": 951,
+      "type": "cause"
+    },
+    {
+      "id": 653,
+      "from_id": 955,
+      "to_id": 951,
+      "type": "cause"
+    },
+    {
+      "id": 654,
+      "from_id": 956,
+      "to_id": 950,
+      "type": "reflect"
+    },
+    {
+      "id": 655,
+      "from_id": 956,
+      "to_id": 957,
+      "type": "cause"
+    },
+    {
+      "id": 656,
+      "from_id": 958,
+      "to_id": 959,
+      "type": "mapped_part"
+    },
+    {
+      "id": 657,
+      "from_id": 960,
+      "to_id": 950,
+      "type": "assist_diag"
+    },
+    {
+      "id": 658,
+      "from_id": 961,
+      "to_id": 950,
+      "type": "assist_diag"
+    },
+    {
+      "id": 659,
+      "from_id": 962,
+      "to_id": 950,
+      "type": "assist_diag"
+    },
+    {
+      "id": 660,
+      "from_id": 963,
+      "to_id": 950,
+      "type": "assist_diag"
+    },
+    {
+      "id": 661,
+      "from_id": 968,
+      "to_id": 969,
+      "type": "cause"
+    },
+    {
+      "id": 662,
+      "from_id": 970,
+      "to_id": 964,
+      "type": "perf"
+    },
+    {
+      "id": 663,
+      "from_id": 964,
+      "to_id": 971,
+      "type": "guide_pre"
+    },
+    {
+      "id": 664,
+      "from_id": 971,
+      "to_id": 972,
+      "type": "comp"
+    },
+    {
+      "id": 665,
+      "from_id": 971,
+      "to_id": 973,
+      "type": "comp"
+    },
+    {
+      "id": 666,
+      "from_id": 974,
+      "to_id": 976,
+      "type": "treat"
+    },
+    {
+      "id": 667,
+      "from_id": 975,
+      "to_id": 976,
+      "type": "treat"
+    },
+    {
+      "id": 668,
+      "from_id": 976,
+      "to_id": 977,
+      "type": "treat"
+    },
+    {
+      "id": 669,
+      "from_id": 978,
+      "to_id": 982,
+      "type": "guide_pre"
+    },
+    {
+      "id": 670,
+      "from_id": 978,
+      "to_id": 983,
+      "type": "guide_pre"
+    },
+    {
+      "id": 671,
+      "from_id": 982,
+      "to_id": 984,
+      "type": "comp"
+    },
+    {
+      "id": 672,
+      "from_id": 982,
+      "to_id": 985,
+      "type": "comp"
+    },
+    {
+      "id": 673,
+      "from_id": 982,
+      "to_id": 986,
+      "type": "comp"
+    },
+    {
+      "id": 674,
+      "from_id": 983,
+      "to_id": 984,
+      "type": "comp"
+    },
+    {
+      "id": 675,
+      "from_id": 983,
+      "to_id": 985,
+      "type": "comp"
+    },
+    {
+      "id": 676,
+      "from_id": 983,
+      "to_id": 986,
+      "type": "comp"
+    },
+    {
+      "id": 677,
+      "from_id": 987,
+      "to_id": 988,
+      "type": "treat"
+    },
+    {
+      "id": 678,
+      "from_id": 992,
+      "to_id": 989,
+      "type": "cause"
+    },
+    {
+      "id": 679,
+      "from_id": 993,
+      "to_id": 989,
+      "type": "cause"
+    },
+    {
+      "id": 680,
+      "from_id": 989,
+      "to_id": 994,
+      "type": "perf"
+    },
+    {
+      "id": 681,
+      "from_id": 989,
+      "to_id": 995,
+      "type": "perf"
+    },
+    {
+      "id": 682,
+      "from_id": 989,
+      "to_id": 996,
+      "type": "perf"
+    },
+    {
+      "id": 683,
+      "from_id": 997,
+      "to_id": 989,
+      "type": "treat"
+    },
+    {
+      "id": 684,
+      "from_id": 998,
+      "to_id": 1002,
+      "type": "assist_diag"
+    },
+    {
+      "id": 685,
+      "from_id": 1002,
+      "to_id": 1003,
+      "type": "perf"
+    },
+    {
+      "id": 686,
+      "from_id": 1002,
+      "to_id": 1004,
+      "type": "perf"
+    },
+    {
+      "id": 687,
+      "from_id": 1002,
+      "to_id": 1005,
+      "type": "perf"
+    },
+    {
+      "id": 688,
+      "from_id": 1002,
+      "to_id": 1006,
+      "type": "perf"
+    },
+    {
+      "id": 689,
+      "from_id": 1007,
+      "to_id": 1002,
+      "type": "treat"
+    },
+    {
+      "id": 690,
+      "from_id": 1008,
+      "to_id": 1002,
+      "type": "treat"
+    },
+    {
+      "id": 691,
+      "from_id": 1009,
+      "to_id": 1010,
+      "type": "oname"
+    },
+    {
+      "id": 692,
+      "from_id": 1010,
+      "to_id": 1011,
+      "type": "reflect"
+    },
+    {
+      "id": 693,
+      "from_id": 1010,
+      "to_id": 1014,
+      "type": "reflect"
+    },
+    {
+      "id": 694,
+      "from_id": 1013,
+      "to_id": 1014,
+      "type": "cause"
+    },
+    {
+      "id": 695,
+      "from_id": 1015,
+      "to_id": 1016,
+      "type": "guide_pre"
+    },
+    {
+      "id": 696,
+      "from_id": 1016,
+      "to_id": 1017,
+      "type": "treat"
+    },
+    {
+      "id": 697,
+      "from_id": 1018,
+      "to_id": 1021,
+      "type": "guide_pre"
+    },
+    {
+      "id": 698,
+      "from_id": 1019,
+      "to_id": 1021,
+      "type": "guide_pre"
+    },
+    {
+      "id": 699,
+      "from_id": 1020,
+      "to_id": 1021,
+      "type": "guide_pre"
+    },
+    {
+      "id": 700,
+      "from_id": 1021,
+      "to_id": 1022,
+      "type": "guide_pre"
+    },
+    {
+      "id": 701,
+      "from_id": 1023,
+      "to_id": 1026,
+      "type": "oname"
+    },
+    {
+      "id": 702,
+      "from_id": 1023,
+      "to_id": 1027,
+      "type": "oname"
+    },
+    {
+      "id": 703,
+      "from_id": 1024,
+      "to_id": 1025,
+      "type": "cause"
+    },
+    {
+      "id": 704,
+      "from_id": 1025,
+      "to_id": 1026,
+      "type": "perf"
+    },
+    {
+      "id": 705,
+      "from_id": 1026,
+      "to_id": 1027,
+      "type": "assist_diag"
+    },
+    {
+      "id": 706,
+      "from_id": 1027,
+      "to_id": 1028,
+      "type": "guide_pre"
+    },
+    {
+      "id": 707,
+      "from_id": 1029,
+      "to_id": 1030,
+      "type": "guide_pre"
+    },
+    {
+      "id": 708,
+      "from_id": 1031,
+      "to_id": 1032,
+      "type": "oname"
+    },
+    {
+      "id": 709,
+      "from_id": 1032,
+      "to_id": 1033,
+      "type": "reflect"
+    },
+    {
+      "id": 710,
+      "from_id": 1032,
+      "to_id": 1034,
+      "type": "reflect"
+    },
+    {
+      "id": 711,
+      "from_id": 1033,
+      "to_id": 1034,
+      "type": "cause"
+    },
+    {
+      "id": 712,
+      "from_id": 1032,
+      "to_id": 1035,
+      "type": "guide_pre"
+    },
+    {
+      "id": 713,
+      "from_id": 1035,
+      "to_id": 1036,
+      "type": "treat"
+    },
+    {
+      "id": 714,
+      "from_id": 1035,
+      "to_id": 1037,
+      "type": "treat"
+    },
+    {
+      "id": 715,
+      "from_id": 1035,
+      "to_id": 1038,
+      "type": "treat"
+    },
+    {
+      "id": 716,
+      "from_id": 1039,
+      "to_id": 1040,
+      "type": "oname"
+    },
+    {
+      "id": 717,
+      "from_id": 1039,
+      "to_id": 1041,
+      "type": "oname"
+    },
+    {
+      "id": 718,
+      "from_id": 1040,
+      "to_id": 1042,
+      "type": "reflect"
+    },
+    {
+      "id": 719,
+      "from_id": 1041,
+      "to_id": 1042,
+      "type": "reflect"
+    },
+    {
+      "id": 720,
+      "from_id": 1042,
+      "to_id": 1043,
+      "type": "perf"
+    },
+    {
+      "id": 721,
+      "from_id": 1042,
+      "to_id": 1044,
+      "type": "mapped_part"
+    },
+    {
+      "id": 722,
+      "from_id": 1044,
+      "to_id": 1045,
+      "type": "perf"
+    },
+    {
+      "id": 723,
+      "from_id": 1044,
+      "to_id": 1046,
+      "type": "perf"
+    },
+    {
+      "id": 724,
+      "from_id": 1041,
+      "to_id": 1047,
+      "type": "guide_pre"
+    },
+    {
+      "id": 725,
+      "from_id": 1047,
+      "to_id": 1048,
+      "type": "comp"
+    },
+    {
+      "id": 726,
+      "from_id": 1049,
+      "to_id": 1050,
+      "type": "guide_pre"
+    },
+    {
+      "id": 727,
+      "from_id": 1051,
+      "to_id": 1053,
+      "type": "cause"
+    },
+    {
+      "id": 728,
+      "from_id": 1052,
+      "to_id": 1053,
+      "type": "cause"
+    },
+    {
+      "id": 729,
+      "from_id": 1052,
+      "to_id": 1054,
+      "type": "cause"
+    },
+    {
+      "id": 730,
+      "from_id": 1057,
+      "to_id": 1053,
+      "type": "cause"
+    },
+    {
+      "id": 731,
+      "from_id": 1058,
+      "to_id": 1054,
+      "type": "cause"
+    },
+    {
+      "id": 732,
+      "from_id": 1055,
+      "to_id": 1057,
+      "type": "reflect"
+    },
+    {
+      "id": 733,
+      "from_id": 1056,
+      "to_id": 1058,
+      "type": "reflect"
+    },
+    {
+      "id": 734,
+      "from_id": 1059,
+      "to_id": 1053,
+      "type": "treat"
+    },
+    {
+      "id": 735,
+      "from_id": 1059,
+      "to_id": 1054,
+      "type": "treat"
+    },
+    {
+      "id": 736,
+      "from_id": 1060,
+      "to_id": 1061,
+      "type": "reflect"
+    },
+    {
+      "id": 737,
+      "from_id": 1060,
+      "to_id": 1062,
+      "type": "assist_diag"
+    },
+    {
+      "id": 738,
+      "from_id": 1063,
+      "to_id": 1062,
+      "type": "treat"
+    },
+    {
+      "id": 739,
+      "from_id": 1064,
+      "to_id": 1067,
+      "type": "assist_diag"
+    },
+    {
+      "id": 740,
+      "from_id": 1065,
+      "to_id": 1067,
+      "type": "reflect"
+    },
+    {
+      "id": 741,
+      "from_id": 1066,
+      "to_id": 1067,
+      "type": "perf"
+    },
+    {
+      "id": 742,
+      "from_id": 1068,
+      "to_id": 1067,
+      "type": "treat"
+    },
+    {
+      "id": 743,
+      "from_id": 1069,
+      "to_id": 1067,
+      "type": "treat"
+    },
+    {
+      "id": 744,
+      "from_id": 1071,
+      "to_id": 1075,
+      "type": "reflect"
+    },
+    {
+      "id": 745,
+      "from_id": 1072,
+      "to_id": 1075,
+      "type": "reflect"
+    },
+    {
+      "id": 746,
+      "from_id": 1073,
+      "to_id": 1075,
+      "type": "reflect"
+    },
+    {
+      "id": 747,
+      "from_id": 1074,
+      "to_id": 1075,
+      "type": "reflect"
+    },
+    {
+      "id": 748,
+      "from_id": 1077,
+      "to_id": 1076,
+      "type": "treat"
+    },
+    {
+      "id": 749,
+      "from_id": 1078,
+      "to_id": 1077,
+      "type": "comp"
+    },
+    {
+      "id": 750,
+      "from_id": 1078,
+      "to_id": 1079,
+      "type": "treat"
+    },
+    {
+      "id": 751,
+      "from_id": 1080,
+      "to_id": 1081,
+      "type": "assist_diag"
+    },
+    {
+      "id": 752,
+      "from_id": 1082,
+      "to_id": 1083,
+      "type": "cause"
+    },
+    {
+      "id": 753,
+      "from_id": 1083,
+      "to_id": 1084,
+      "type": "perf"
+    },
+    {
+      "id": 754,
+      "from_id": 1085,
+      "to_id": 1086,
+      "type": "comp"
+    },
+    {
+      "id": 755,
+      "from_id": 1085,
+      "to_id": 1087,
+      "type": "comp"
+    },
+    {
+      "id": 756,
+      "from_id": 1085,
+      "to_id": 1088,
+      "type": "comp"
+    },
+    {
+      "id": 757,
+      "from_id": 1085,
+      "to_id": 1089,
+      "type": "comp"
+    },
+    {
+      "id": 758,
+      "from_id": 1090,
+      "to_id": 1084,
+      "type": "treat"
+    },
+    {
+      "id": 759,
+      "from_id": 1094,
+      "to_id": 1096,
+      "type": "reflect"
+    },
+    {
+      "id": 760,
+      "from_id": 1094,
+      "to_id": 1097,
+      "type": "assist_diag"
+    },
+    {
+      "id": 761,
+      "from_id": 1094,
+      "to_id": 1098,
+      "type": "assist_diag"
+    },
+    {
+      "id": 762,
+      "from_id": 1099,
+      "to_id": 1096,
+      "type": "treat"
+    },
+    {
+      "id": 763,
+      "from_id": 1100,
+      "to_id": 1101,
+      "type": "reflect"
+    },
+    {
+      "id": 764,
+      "from_id": 1100,
+      "to_id": 1102,
+      "type": "reflect"
+    },
+    {
+      "id": 765,
+      "from_id": 1100,
+      "to_id": 1103,
+      "type": "reflect"
+    },
+    {
+      "id": 766,
+      "from_id": 1100,
+      "to_id": 1104,
+      "type": "reflect"
+    },
+    {
+      "id": 767,
+      "from_id": 1106,
+      "to_id": 1100,
+      "type": "pulse_diagnosis"
+    },
+    {
+      "id": 768,
+      "from_id": 1107,
+      "to_id": 1100,
+      "type": "perf"
+    },
+    {
+      "id": 769,
+      "from_id": 1108,
+      "to_id": 1100,
+      "type": "perf"
+    },
+    {
+      "id": 770,
+      "from_id": 1109,
+      "to_id": 1110,
+      "type": "assist_diag"
+    },
+    {
+      "id": 771,
+      "from_id": 1109,
+      "to_id": 1111,
+      "type": "Food_to_avoid"
+    },
+    {
+      "id": 772,
+      "from_id": 1112,
+      "to_id": 1113,
+      "type": "reflect"
+    },
+    {
+      "id": 773,
+      "from_id": 1114,
+      "to_id": 1109,
+      "type": "pulse_diagnosis"
+    },
+    {
+      "id": 774,
+      "from_id": 1115,
+      "to_id": 1109,
+      "type": "pulse_diagnosis"
+    },
+    {
+      "id": 775,
+      "from_id": 1116,
+      "to_id": 1109,
+      "type": "perf"
+    },
+    {
+      "id": 776,
+      "from_id": 1117,
+      "to_id": 1109,
+      "type": "perf"
+    },
+    {
+      "id": 777,
+      "from_id": 1118,
+      "to_id": 1109,
+      "type": "perf"
+    },
+    {
+      "id": 778,
+      "from_id": 1119,
+      "to_id": 1120,
+      "type": "comp"
+    },
+    {
+      "id": 779,
+      "from_id": 1119,
+      "to_id": 1121,
+      "type": "comp"
+    },
+    {
+      "id": 780,
+      "from_id": 1121,
+      "to_id": 1122,
+      "type": "guide_med"
+    },
+    {
+      "id": 781,
+      "from_id": 1123,
+      "to_id": 1125,
+      "type": "reflect"
+    },
+    {
+      "id": 782,
+      "from_id": 1123,
+      "to_id": 1126,
+      "type": "mapped_part"
+    },
+    {
+      "id": 783,
+      "from_id": 1124,
+      "to_id": 1125,
+      "type": "reflect"
+    },
+    {
+      "id": 784,
+      "from_id": 1124,
+      "to_id": 1126,
+      "type": "mapped_part"
+    },
+    {
+      "id": 785,
+      "from_id": 1127,
+      "to_id": 1128,
+      "type": "comp"
+    },
+    {
+      "id": 786,
+      "from_id": 1127,
+      "to_id": 1129,
+      "type": "comp"
+    },
+    {
+      "id": 787,
+      "from_id": 1129,
+      "to_id": 1124,
+      "type": "guide_med"
+    },
+    {
+      "id": 788,
+      "from_id": 1128,
+      "to_id": 1124,
+      "type": "guide_med"
+    },
+    {
+      "id": 789,
+      "from_id": 1131,
+      "to_id": 1130,
+      "type": "guide_med"
+    },
+    {
+      "id": 790,
+      "from_id": 1132,
+      "to_id": 1133,
+      "type": "reflect"
+    },
+    {
+      "id": 791,
+      "from_id": 1132,
+      "to_id": 1134,
+      "type": "assist_diag"
+    },
+    {
+      "id": 792,
+      "from_id": 1134,
+      "to_id": 1135,
+      "type": "perf"
+    },
+    {
+      "id": 793,
+      "from_id": 1135,
+      "to_id": 1136,
+      "type": "cause"
+    },
+    {
+      "id": 794,
+      "from_id": 1136,
+      "to_id": 1137,
+      "type": "cause"
+    },
+    {
+      "id": 795,
+      "from_id": 1136,
+      "to_id": 1138,
+      "type": "cause"
+    },
+    {
+      "id": 796,
+      "from_id": 1136,
+      "to_id": 1139,
+      "type": "cause"
+    },
+    {
+      "id": 797,
+      "from_id": 1139,
+      "to_id": 1140,
+      "type": "cause"
+    },
+    {
+      "id": 798,
+      "from_id": 1141,
+      "to_id": 1142,
+      "type": "cause"
+    },
+    {
+      "id": 799,
+      "from_id": 1141,
+      "to_id": 1143,
+      "type": "cause"
+    },
+    {
+      "id": 800,
+      "from_id": 1144,
+      "to_id": 1146,
+      "type": "guide_pre"
+    },
+    {
+      "id": 801,
+      "from_id": 1144,
+      "to_id": 1147,
+      "type": "guide_pre"
+    },
+    {
+      "id": 802,
+      "from_id": 1145,
+      "to_id": 1146,
+      "type": "guide_pre"
+    },
+    {
+      "id": 803,
+      "from_id": 1145,
+      "to_id": 1147,
+      "type": "guide_pre"
+    },
+    {
+      "id": 804,
+      "from_id": 1148,
+      "to_id": 1149,
+      "type": "reflect"
+    },
+    {
+      "id": 805,
+      "from_id": 1150,
+      "to_id": 1146,
+      "type": "guide_pre"
+    },
+    {
+      "id": 806,
+      "from_id": 1150,
+      "to_id": 1147,
+      "type": "guide_pre"
+    },
+    {
+      "id": 807,
+      "from_id": 1151,
+      "to_id": 1152,
+      "type": "mapped_part"
+    },
+    {
+      "id": 808,
+      "from_id": 1151,
+      "to_id": 1153,
+      "type": "reflect"
+    },
+    {
+      "id": 809,
+      "from_id": 1154,
+      "to_id": 1155,
+      "type": "reflect"
+    },
+    {
+      "id": 810,
+      "from_id": 1154,
+      "to_id": 1156,
+      "type": "perf"
+    },
+    {
+      "id": 811,
+      "from_id": 1157,
+      "to_id": 1158,
+      "type": "comp"
+    },
+    {
+      "id": 812,
+      "from_id": 1157,
+      "to_id": 1159,
+      "type": "comp"
+    },
+    {
+      "id": 813,
+      "from_id": 1160,
+      "to_id": 1161,
+      "type": "guide_pre"
+    },
+    {
+      "id": 814,
+      "from_id": 1160,
+      "to_id": 1162,
+      "type": "guide_pre"
+    },
+    {
+      "id": 815,
+      "from_id": 1163,
+      "to_id": 1164,
+      "type": "cause"
+    },
+    {
+      "id": 816,
+      "from_id": 1163,
+      "to_id": 1165,
+      "type": "perf"
+    },
+    {
+      "id": 817,
+      "from_id": 1163,
+      "to_id": 1166,
+      "type": "perf"
+    },
+    {
+      "id": 818,
+      "from_id": 1163,
+      "to_id": 1167,
+      "type": "mapped_part"
+    },
+    {
+      "id": 819,
+      "from_id": 1172,
+      "to_id": 1173,
+      "type": "assist_diag"
+    },
+    {
+      "id": 820,
+      "from_id": 1174,
+      "to_id": 1175,
+      "type": "assist_diag"
+    },
+    {
+      "id": 821,
+      "from_id": 1176,
+      "to_id": 1177,
+      "type": "assist_diag"
+    },
+    {
+      "id": 822,
+      "from_id": 1179,
+      "to_id": 1180,
+      "type": "oname"
+    },
+    {
+      "id": 823,
+      "from_id": 1180,
+      "to_id": 1181,
+      "type": "perf"
+    },
+    {
+      "id": 824,
+      "from_id": 1180,
+      "to_id": 1182,
+      "type": "perf"
+    },
+    {
+      "id": 825,
+      "from_id": 1182,
+      "to_id": 1183,
+      "type": "guide_pre"
+    },
+    {
+      "id": 826,
+      "from_id": 1182,
+      "to_id": 1184,
+      "type": "guide_pre"
+    },
+    {
+      "id": 827,
+      "from_id": 1185,
+      "to_id": 1188,
+      "type": "reflect"
+    },
+    {
+      "id": 828,
+      "from_id": 1188,
+      "to_id": 1189,
+      "type": "guide_med"
+    },
+    {
+      "id": 829,
+      "from_id": 1190,
+      "to_id": 1191,
+      "type": "treat"
+    },
+    {
+      "id": 830,
+      "from_id": 1192,
+      "to_id": 1193,
+      "type": "assist_diag"
+    },
+    {
+      "id": 831,
+      "from_id": 1194,
+      "to_id": 1195,
+      "type": "perf"
+    },
+    {
+      "id": 832,
+      "from_id": 1194,
+      "to_id": 1196,
+      "type": "guide_med"
+    },
+    {
+      "id": 833,
+      "from_id": 1197,
+      "to_id": 1192,
+      "type": "cause"
+    },
+    {
+      "id": 834,
+      "from_id": 1199,
+      "to_id": 1198,
+      "type": "treat"
+    },
+    {
+      "id": 835,
+      "from_id": 1200,
+      "to_id": 1201,
+      "type": "assist_diag"
+    },
+    {
+      "id": 836,
+      "from_id": 1202,
+      "to_id": 1203,
+      "type": "reflect"
+    },
+    {
+      "id": 837,
+      "from_id": 1203,
+      "to_id": 1204,
+      "type": "cause"
+    },
+    {
+      "id": 838,
+      "from_id": 1205,
+      "to_id": 1206,
+      "type": "guide_med"
+    },
+    {
+      "id": 839,
+      "from_id": 1207,
+      "to_id": 1208,
+      "type": "cause"
+    },
+    {
+      "id": 840,
+      "from_id": 1209,
+      "to_id": 1210,
+      "type": "reflect"
+    },
+    {
+      "id": 841,
+      "from_id": 1210,
+      "to_id": 1211,
+      "type": "guide_med"
+    },
+    {
+      "id": 842,
+      "from_id": 1211,
+      "to_id": 1212,
+      "type": "treat"
+    },
+    {
+      "id": 843,
+      "from_id": 1213,
+      "to_id": 1214,
+      "type": "assist_diag"
+    },
+    {
+      "id": 844,
+      "from_id": 1215,
+      "to_id": 1216,
+      "type": "perf"
+    },
+    {
+      "id": 845,
+      "from_id": 1216,
+      "to_id": 1217,
+      "type": "guide_med"
+    },
+    {
+      "id": 846,
+      "from_id": 1217,
+      "to_id": 1218,
+      "type": "treat"
+    },
+    {
+      "id": 847,
+      "from_id": 1219,
+      "to_id": 1220,
+      "type": "perf"
+    },
+    {
+      "id": 848,
+      "from_id": 1220,
+      "to_id": 1221,
+      "type": "reflect"
+    },
+    {
+      "id": 849,
+      "from_id": 1222,
+      "to_id": 1221,
+      "type": "treat"
+    },
+    {
+      "id": 850,
+      "from_id": 1223,
+      "to_id": 1221,
+      "type": "treat"
+    },
+    {
+      "id": 851,
+      "from_id": 1224,
+      "to_id": 1225,
+      "type": "from"
+    },
+    {
+      "id": 852,
+      "from_id": 1226,
+      "to_id": 1227,
+      "type": "perf"
+    },
+    {
+      "id": 853,
+      "from_id": 1228,
+      "to_id": 1229,
+      "type": "perf"
+    },
+    {
+      "id": 854,
+      "from_id": 1230,
+      "to_id": 1231,
+      "type": "perf"
+    },
+    {
+      "id": 855,
+      "from_id": 1232,
+      "to_id": 1233,
+      "type": "perf"
+    },
+    {
+      "id": 856,
+      "from_id": 1232,
+      "to_id": 1234,
+      "type": "perf"
+    },
+    {
+      "id": 857,
+      "from_id": 1235,
+      "to_id": 1232,
+      "type": "cause"
+    },
+    {
+      "id": 858,
+      "from_id": 1236,
+      "to_id": 1237,
+      "type": "assist_diag"
+    },
+    {
+      "id": 859,
+      "from_id": 1238,
+      "to_id": 1237,
+      "type": "treat"
+    },
+    {
+      "id": 860,
+      "from_id": 1239,
+      "to_id": 1240,
+      "type": "comp"
+    },
+    {
+      "id": 861,
+      "from_id": 1241,
+      "to_id": 1242,
+      "type": "perf"
+    },
+    {
+      "id": 862,
+      "from_id": 1243,
+      "to_id": 1232,
+      "type": "perf"
+    },
+    {
+      "id": 863,
+      "from_id": 1244,
+      "to_id": 1246,
+      "type": "assist_diag"
+    },
+    {
+      "id": 864,
+      "from_id": 1245,
+      "to_id": 1246,
+      "type": "assist_diag"
+    },
+    {
+      "id": 865,
+      "from_id": 1247,
+      "to_id": 1246,
+      "type": "cause"
+    },
+    {
+      "id": 866,
+      "from_id": 1248,
+      "to_id": 1246,
+      "type": "perf"
+    }
+  ],
+  "success_count": 37,
+  "fail_count": 0,
+  "failed_segments": []
+}

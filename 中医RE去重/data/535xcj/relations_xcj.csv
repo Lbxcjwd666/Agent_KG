@@ -1,0 +1,10 @@
+id,from_id,to_id,type
+1,2,3,from
+2,4,3,from
+3,5,3,from
+4,6,3,from
+5,8,9,mapped_part
+6,18,19,from
+7,18,20,from
+8,21,23,perf
+9,22,24,perf

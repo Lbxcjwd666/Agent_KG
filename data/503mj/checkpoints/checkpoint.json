@@ -1,0 +1,562 @@
+{
+  "last_segment": 1,
+  "batch_num": 1,
+  "entity_id_counter": 102,
+  "relation_id_counter": 10,
+  "entities": {
+    "人身之脉_BDP": {
+      "id": 1,
+      "text": "人身之脉",
+      "label": "BDP"
+    },
+    "荣卫_BEC": {
+      "id": 2,
+      "text": "荣卫",
+      "label": "BEC"
+    },
+    "荣者阴血_CON": {
+      "id": 3,
+      "text": "荣者阴血",
+      "label": "CON"
+    },
+    "卫者阳气_CON": {
+      "id": 4,
+      "text": "卫者阳气",
+      "label": "CON"
+    },
+    "手太阴经_MER": {
+      "id": 5,
+      "text": "手太阴经",
+      "label": "MER"
+    },
+    "肺_VIS": {
+      "id": 6,
+      "text": "肺",
+      "label": "VIS"
+    },
+    "小肠_VIS": {
+      "id": 7,
+      "text": "小肠",
+      "label": "VIS"
+    },
+    "心_VIS": {
+      "id": 8,
+      "text": "心",
+      "label": "VIS"
+    },
+    "肝_VIS": {
+      "id": 9,
+      "text": "肝",
+      "label": "VIS"
+    },
+    "胆_VIS": {
+      "id": 10,
+      "text": "胆",
+      "label": "VIS"
+    },
+    "肾_VIS": {
+      "id": 11,
+      "text": "肾",
+      "label": "VIS"
+    },
+    "膀胱_VIS": {
+      "id": 12,
+      "text": "膀胱",
+      "label": "VIS"
+    },
+    "大肠_VIS": {
+      "id": 14,
+      "text": "大肠",
+      "label": "VIS"
+    },
+    "脾_VIS": {
+      "id": 15,
+      "text": "脾",
+      "label": "VIS"
+    },
+    "胃_VIS": {
+      "id": 16,
+      "text": "胃",
+      "label": "VIS"
+    },
+    "命门_VIS": {
+      "id": 17,
+      "text": "命门",
+      "label": "VIS"
+    },
+    "三焦_VIS": {
+      "id": 18,
+      "text": "三焦",
+      "label": "VIS"
+    },
+    "浮脉_PUL": {
+      "id": 19,
+      "text": "浮脉",
+      "label": "PUL"
+    },
+    "沉脉_PUL": {
+      "id": 20,
+      "text": "沉脉",
+      "label": "PUL"
+    },
+    "迟脉_PUL": {
+      "id": 21,
+      "text": "迟脉",
+      "label": "PUL"
+    },
+    "数脉_PUL": {
+      "id": 22,
+      "text": "数脉",
+      "label": "PUL"
+    },
+    "芤脉_PUL": {
+      "id": 23,
+      "text": "芤脉",
+      "label": "PUL"
+    },
+    "洪脉_PUL": {
+      "id": 24,
+      "text": "洪脉",
+      "label": "PUL"
+    },
+    "实脉_PUL": {
+      "id": 25,
+      "text": "实脉",
+      "label": "PUL"
+    },
+    "微脉_PUL": {
+      "id": 26,
+      "text": "微脉",
+      "label": "PUL"
+    },
+    "伏脉_PUL": {
+      "id": 27,
+      "text": "伏脉",
+      "label": "PUL"
+    },
+    "缓脉_PUL": {
+      "id": 28,
+      "text": "缓脉",
+      "label": "PUL"
+    },
+    "涩脉_PUL": {
+      "id": 29,
+      "text": "涩脉",
+      "label": "PUL"
+    },
+    "紧脉_PUL": {
+      "id": 30,
+      "text": "紧脉",
+      "label": "PUL"
+    },
+    "弦脉_PUL": {
+      "id": 31,
+      "text": "弦脉",
+      "label": "PUL"
+    },
+    "长脉_PUL": {
+      "id": 32,
+      "text": "长脉",
+      "label": "PUL"
+    },
+    "短脉_PUL": {
+      "id": 33,
+      "text": "短脉",
+      "label": "PUL"
+    },
+    "促脉_PUL": {
+      "id": 34,
+      "text": "促脉",
+      "label": "PUL"
+    },
+    "结脉_PUL": {
+      "id": 35,
+      "text": "结脉",
+      "label": "PUL"
+    },
+    "代脉_PUL": {
+      "id": 36,
+      "text": "代脉",
+      "label": "PUL"
+    },
+    "牢脉_PUL": {
+      "id": 37,
+      "text": "牢脉",
+      "label": "PUL"
+    },
+    "动脉_PUL": {
+      "id": 38,
+      "text": "动脉",
+      "label": "PUL"
+    },
+    "细脉_PUL": {
+      "id": 39,
+      "text": "细脉",
+      "label": "PUL"
+    },
+    "散脉_PUL": {
+      "id": 40,
+      "text": "散脉",
+      "label": "PUL"
+    },
+    "中风_DIS": {
+      "id": 41,
+      "text": "中风",
+      "label": "DIS"
+    },
+    "痰气_BEC": {
+      "id": 42,
+      "text": "痰气",
+      "label": "BEC"
+    },
+    "寒中太阳_DIS": {
+      "id": 43,
+      "text": "寒中太阳",
+      "label": "DIS"
+    },
+    "阳明_SYN": {
+      "id": 44,
+      "text": "阳明",
+      "label": "SYN"
+    },
+    "少阳_SYN": {
+      "id": 45,
+      "text": "少阳",
+      "label": "SYN"
+    },
+    "太阴_SYN": {
+      "id": 46,
+      "text": "太阴",
+      "label": "SYN"
+    },
+    "少阴_SYN": {
+      "id": 47,
+      "text": "少阴",
+      "label": "SYN"
+    },
+    "厥阴_SYN": {
+      "id": 48,
+      "text": "厥阴",
+      "label": "SYN"
+    },
+    "伤寒_DIS": {
+      "id": 49,
+      "text": "伤寒",
+      "label": "DIS"
+    },
+    "湿温病_DIS": {
+      "id": 51,
+      "text": "湿温病",
+      "label": "DIS"
+    },
+    "温病_DIS": {
+      "id": 52,
+      "text": "温病",
+      "label": "DIS"
+    },
+    "暑_BEC": {
+      "id": 53,
+      "text": "暑",
+      "label": "BEC"
+    },
+    "湿_BEC": {
+      "id": 54,
+      "text": "湿",
+      "label": "BEC"
+    },
+    "疟_DIS": {
+      "id": 55,
+      "text": "疟",
+      "label": "DIS"
+    },
+    "痹_DIS": {
+      "id": 56,
+      "text": "痹",
+      "label": "DIS"
+    },
+    "香港脚_DIS": {
+      "id": 57,
+      "text": "香港脚",
+      "label": "DIS"
+    },
+    "腰痛_SYM": {
+      "id": 58,
+      "text": "腰痛",
+      "label": "SYM"
+    },
+    "足痛_SYM": {
+      "id": 59,
+      "text": "足痛",
+      "label": "SYM"
+    },
+    "痿病_DIS": {
+      "id": 60,
+      "text": "痿病",
+      "label": "DIS"
+    },
+    "疝_DIS": {
+      "id": 61,
+      "text": "疝",
+      "label": "DIS"
+    },
+    "积聚_DIS": {
+      "id": 62,
+      "text": "积聚",
+      "label": "DIS"
+    },
+    "眩晕_SYM": {
+      "id": 63,
+      "text": "眩晕",
+      "label": "SYM"
+    },
+    "霍乱_DIS": {
+      "id": 64,
+      "text": "霍乱",
+      "label": "DIS"
+    },
+    "咳嗽_SYM": {
+      "id": 65,
+      "text": "咳嗽",
+      "label": "SYM"
+    },
+    "便秘_SIG": {
+      "id": 66,
+      "text": "便秘",
+      "label": "SIG"
+    },
+    "遗精_SYM": {
+      "id": 67,
+      "text": "遗精",
+      "label": "SYM"
+    },
+    "白浊_SYM": {
+      "id": 68,
+      "text": "白浊",
+      "label": "SYM"
+    },
+    "小便难_SIG": {
+      "id": 69,
+      "text": "小便难",
+      "label": "SIG"
+    },
+    "水肿_DIS": {
+      "id": 70,
+      "text": "水肿",
+      "label": "DIS"
+    },
+    "胀满_SYM": {
+      "id": 71,
+      "text": "胀满",
+      "label": "SYM"
+    },
+    "胸痞_SYM": {
+      "id": 72,
+      "text": "胸痞",
+      "label": "SYM"
+    },
+    "积_DIS": {
+      "id": 73,
+      "text": "积",
+      "label": "DIS"
+    },
+    "聚_DIS": {
+      "id": 74,
+      "text": "聚",
+      "label": "DIS"
+    },
+    "食不消化_BEC": {
+      "id": 75,
+      "text": "食不消化",
+      "label": "BEC"
+    },
+    "吐泻_SIG": {
+      "id": 76,
+      "text": "吐泻",
+      "label": "SIG"
+    },
+    "泄泻_DIS": {
+      "id": 77,
+      "text": "泄泻",
+      "label": "DIS"
+    },
+    "痢_DIS": {
+      "id": 78,
+      "text": "痢",
+      "label": "DIS"
+    },
+    "五疽_DIS": {
+      "id": 79,
+      "text": "五疽",
+      "label": "DIS"
+    },
+    "骨蒸劳热_DIS": {
+      "id": 80,
+      "text": "骨蒸劳热",
+      "label": "DIS"
+    },
+    "头痛_SYM": {
+      "id": 81,
+      "text": "头痛",
+      "label": "SYM"
+    },
+    "痈疽_DIS": {
+      "id": 82,
+      "text": "痈疽",
+      "label": "DIS"
+    },
+    "肺痈_DIS": {
+      "id": 83,
+      "text": "肺痈",
+      "label": "DIS"
+    },
+    "肺痿_DIS": {
+      "id": 84,
+      "text": "肺痿",
+      "label": "DIS"
+    },
+    "肠痈_DIS": {
+      "id": 85,
+      "text": "肠痈",
+      "label": "DIS"
+    },
+    "有子_DIS": {
+      "id": 86,
+      "text": "有子",
+      "label": "DIS"
+    },
+    "半产漏下_DIS": {
+      "id": 87,
+      "text": "半产漏下",
+      "label": "DIS"
+    },
+    "惊疳_DIS": {
+      "id": 88,
+      "text": "惊疳",
+      "label": "DIS"
+    },
+    "变蒸_DIS": {
+      "id": 89,
+      "text": "变蒸",
+      "label": "DIS"
+    },
+    "春弦_PUL": {
+      "id": 90,
+      "text": "春弦",
+      "label": "PUL"
+    },
+    "夏名钩脉_PUL": {
+      "id": 91,
+      "text": "夏名钩脉",
+      "label": "PUL"
+    },
+    "秋则为毛_PUL": {
+      "id": 92,
+      "text": "秋则为毛",
+      "label": "PUL"
+    },
+    "冬则为石_PUL": {
+      "id": 93,
+      "text": "冬则为石",
+      "label": "PUL"
+    },
+    "肝木_VIS": {
+      "id": 94,
+      "text": "肝木",
+      "label": "VIS"
+    },
+    "心火_VIS": {
+      "id": 95,
+      "text": "心火",
+      "label": "VIS"
+    },
+    "脾土_VIS": {
+      "id": 96,
+      "text": "脾土",
+      "label": "VIS"
+    },
+    "肺金_VIS": {
+      "id": 97,
+      "text": "肺金",
+      "label": "VIS"
+    },
+    "肾水_VIS": {
+      "id": 98,
+      "text": "肾水",
+      "label": "VIS"
+    },
+    "脉诀_LIT": {
+      "id": 99,
+      "text": "脉诀",
+      "label": "LIT"
+    },
+    "崔嘉彦_ACU": {
+      "id": 100,
+      "text": "崔嘉彦",
+      "label": "ACU"
+    },
+    "宋_CON": {
+      "id": 101,
+      "text": "宋",
+      "label": "CON"
+    }
+  },
+  "relations": [
+    {
+      "id": 1,
+      "from_id": 2,
+      "to_id": 1,
+      "type": "cause"
+    },
+    {
+      "id": 2,
+      "from_id": 3,
+      "to_id": 2,
+      "type": "oname"
+    },
+    {
+      "id": 3,
+      "from_id": 4,
+      "to_id": 2,
+      "type": "oname"
+    },
+    {
+      "id": 4,
+      "from_id": 5,
+      "to_id": 6,
+      "type": "inandex"
+    },
+    {
+      "id": 5,
+      "from_id": 6,
+      "to_id": 7,
+      "type": "inandex"
+    },
+    {
+      "id": 6,
+      "from_id": 14,
+      "to_id": 6,
+      "type": "inandex"
+    },
+    {
+      "id": 7,
+      "from_id": 41,
+      "to_id": 19,
+      "type": "abpulse"
+    },
+    {
+      "id": 8,
+      "from_id": 44,
+      "to_id": 32,
+      "type": "abpulse"
+    },
+    {
+      "id": 9,
+      "from_id": 45,
+      "to_id": 31,
+      "type": "abpulse"
+    }
+  ],
+  "success_count": 1,
+  "fail_count": 0,
+  "failed_segments": []
+}
