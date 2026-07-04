@@ -44,18 +44,21 @@ class RegimenAgent(BaseAgent):
         diagnosis_result = payload.get("diagnosis", {})
         kg_context = payload.get("kg_context", "")
         entities = payload.get("entities", [])
+        subgraph = payload.get("subgraph", {})
 
         syndrome = diagnosis_result.get("syndrome", {})
         syndrome_name = ""
         if isinstance(syndrome.get("primary"), dict):
             syndrome_name = syndrome["primary"].get("name", "")
 
-        # 查找体质实体
         constitution = self._find_entity_by_type(entities, "CON")
 
-        # KG查询饮食养生
         regimen_kg = ""
-        if self.kg:
+        if subgraph:
+            regimen_kg = self._format_subgraph(subgraph)
+        elif kg_context:
+            regimen_kg = kg_context
+        elif self.kg:
             regimen_kg = self._query_regimen(syndrome_name, constitution, entities)
 
         prompt = self._build_prompt(syndrome_name, constitution, regimen_kg, kg_context)
@@ -75,7 +78,7 @@ class RegimenAgent(BaseAgent):
             "lifestyle": result.get("lifestyle", {}),
             "seasonal_notes": result.get("seasonal_notes", ""),
             "overall_confidence": result.get("overall_confidence", 0.8),
-            "kg_context_used": bool(regimen_kg)
+            "kg_context_used": bool(regimen_kg) or bool(kg_context)
         }
 
     def _find_entity_by_type(self, entities: list, target_type: str) -> str:
@@ -83,6 +86,21 @@ class RegimenAgent(BaseAgent):
             if ent.get("label", ent.get("type", "")) == target_type:
                 return ent.get("text", "")
         return ""
+
+    def _format_subgraph(self, subgraph: Dict) -> str:
+        """格式化专属子图为自然语言"""
+        parts = []
+        for entity_text, data in subgraph.items():
+            if not isinstance(data, dict):
+                continue
+            entity_type = data.get("type", "")
+            parts.append(f"【{entity_text}（{entity_type}）】")
+            for key, values in data.get("relations", {}).items():
+                if not values:
+                    continue
+                names = [v.get("text", "") for v in values[:5]]
+                parts.append(f"  {key}: {', '.join(names)}")
+        return "\n".join(parts)
 
     def _query_regimen(self, syndrome_name: str, constitution: str,
                        entities: list) -> str:

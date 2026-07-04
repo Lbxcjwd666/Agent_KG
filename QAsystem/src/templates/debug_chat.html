@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>中医智能问诊系统</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f172a; color: #e2e8f0; height: 100vh; display: flex; flex-direction: column; }
+
+.header { background: #1e293b; border-bottom: 1px solid #334155; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.header-left { display: flex; align-items: center; gap: 12px; }
+.header h1 { font-size: 18px; color: #38bdf8; font-weight: 600; }
+.header-badge { font-size: 11px; padding: 3px 8px; border-radius: 10px; background: #1e3a5f; color: #7dd3fc; }
+.header-right { display: flex; gap: 8px; }
+.header-btn { padding: 6px 14px; border-radius: 6px; border: 1px solid #334155; background: #1e293b; color: #94a3b8; font-size: 13px; cursor: pointer; transition: all 0.15s; }
+.header-btn:hover { border-color: #38bdf8; color: #38bdf8; }
+.header-btn.active { border-color: #38bdf8; color: #38bdf8; background: #0c4a6e; }
+
+.main { flex: 1; display: flex; overflow: hidden; }
+
+.chat-area { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.chat-messages { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.chat-messages::-webkit-scrollbar { width: 6px; }
+.chat-messages::-webkit-scrollbar-track { background: transparent; }
+.chat-messages::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+
+.welcome { text-align: center; padding: 60px 20px; color: #475569; }
+.welcome .icon { font-size: 56px; margin-bottom: 16px; }
+.welcome h2 { color: #94a3b8; font-size: 20px; margin-bottom: 8px; }
+.welcome p { font-size: 14px; line-height: 1.6; }
+
+.msg { display: flex; gap: 12px; max-width: 85%; animation: fadeIn 0.3s; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.msg.user { align-self: flex-end; flex-direction: row-reverse; }
+.msg-avatar { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.msg.user .msg-avatar { background: #1e3a5f; }
+.msg.assistant .msg-avatar { background: #166534; }
+.msg-body { flex: 1; min-width: 0; }
+.msg-name { font-size: 12px; color: #64748b; margin-bottom: 4px; }
+.msg.user .msg-name { text-align: right; }
+.msg-bubble { padding: 12px 16px; border-radius: 12px; font-size: 14px; line-height: 1.7; word-break: break-word; white-space: pre-wrap; }
+.msg.user .msg-bubble { background: #1e3a5f; color: #e2e8f0; border-bottom-right-radius: 4px; }
+.msg.assistant .msg-bubble { background: #1e293b; color: #cbd5e1; border: 1px solid #334155; border-bottom-left-radius: 4px; }
+
+.msg-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+.msg-meta-tag { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: #0f172a; color: #94a3b8; border: 1px solid #334155; }
+
+.typing-indicator { display: flex; gap: 4px; padding: 8px 0; }
+.typing-dot { width: 8px; height: 8px; border-radius: 50%; background: #38bdf8; animation: typingBounce 1.4s infinite; }
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typingBounce { 0%,60%,100% { transform: translateY(0); } 30% { transform: translateY(-6px); } }
+
+.input-area { padding: 16px 20px; background: #1e293b; border-top: 1px solid #334155; flex-shrink: 0; }
+.input-row { display: flex; gap: 10px; align-items: flex-end; }
+.input-row textarea { flex: 1; padding: 12px 16px; border-radius: 12px; border: 1px solid #334155; background: #0f172a; color: #e2e8f0; font-size: 15px; line-height: 1.5; resize: none; outline: none; font-family: inherit; max-height: 120px; min-height: 46px; }
+.input-row textarea:focus { border-color: #38bdf8; }
+.send-btn { padding: 12px 20px; border-radius: 12px; border: none; background: #38bdf8; color: #0f172a; font-weight: 600; cursor: pointer; font-size: 15px; white-space: nowrap; transition: background 0.15s; }
+.send-btn:hover { background: #7dd3fc; }
+.send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.input-hint { font-size: 12px; color: #475569; margin-top: 6px; }
+
+.debug-panel { width: 420px; background: #0f172a; border-left: 1px solid #334155; display: flex; flex-direction: column; overflow: hidden; transition: width 0.3s; }
+.debug-panel.hidden { width: 0; border-left: none; }
+.debug-header { padding: 12px 16px; background: #1e293b; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+.debug-header h3 { font-size: 14px; color: #38bdf8; }
+.debug-close { background: none; border: none; color: #94a3b8; font-size: 18px; cursor: pointer; }
+.debug-body { flex: 1; min-height: 0; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.debug-body::-webkit-scrollbar { width: 6px; }
+.debug-body::-webkit-scrollbar-track { background: transparent; }
+.debug-body::-webkit-scrollbar-thumb { background: #475569; border-radius: 3px; }
+.debug-body::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+.debug-status { text-align: center; color: #94a3b8; font-size: 13px; padding: 8px; background: #1e293b; border-radius: 8px; flex-shrink: 0; }
+.debug-status.error { color: #f87171; }
+
+.dag-flow { display: flex; flex-direction: column; align-items: center; gap: 6px; flex-shrink: 0; }
+.dag-row { display: flex; gap: 10px; justify-content: center; align-items: flex-start; }
+.dag-arrow { text-align: center; color: #475569; font-size: 16px; line-height: 1; padding: 1px 0; }
+.dag-arrow.parallel { display: flex; justify-content: center; gap: 50px; }
+
+.agent-node { background: #1e293b; border: 2px solid #334155; border-radius: 10px; padding: 10px 14px; min-width: 140px; cursor: pointer; transition: all 0.2s; }
+.agent-node:hover { border-color: #38bdf8; transform: translateY(-1px); }
+.agent-node.selected { border-color: #38bdf8; box-shadow: 0 0 0 3px rgba(56,189,248,0.3); }
+.agent-node.done { border-color: #22c55e; }
+.agent-node.failed { border-color: #ef4444; }
+.agent-node.skipped { border-color: #64748b; opacity: 0.5; }
+.agent-node.running { border-color: #38bdf8; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(56,189,248,0.4); } 50% { box-shadow: 0 0 0 6px rgba(56,189,248,0); } }
+.agent-name { font-weight: 600; font-size: 12px; margin-bottom: 4px; display: flex; align-items: center; gap: 4px; }
+.agent-icon { font-size: 14px; }
+.agent-status { font-size: 10px; padding: 1px 6px; border-radius: 8px; font-weight: 500; }
+.agent-status.done { background: #166534; color: #86efac; }
+.agent-status.failed { background: #7f1d1d; color: #fca5a5; }
+.agent-status.skipped { background: #374151; color: #9ca3af; }
+.agent-status.running { background: #1e3a5f; color: #7dd3fc; }
+.agent-duration { font-size: 11px; color: #64748b; margin-top: 2px; }
+.agent-summary { font-size: 11px; color: #94a3b8; margin-top: 2px; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.section-panel { background: #1e293b; border-radius: 10px; border: 1px solid #334155; overflow: hidden; flex-shrink: 0; }
+.section-header { padding: 10px 14px; background: #334155; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+.section-header h4 { font-size: 13px; color: #38bdf8; }
+.section-header .toggle-icon { color: #94a3b8; font-size: 12px; transition: transform 0.2s; }
+.section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+.section-body { padding: 14px; }
+.section-body.collapsed { display: none; }
+
+.checkpoint-timeline { display: flex; flex-direction: column; gap: 8px; }
+.checkpoint-item { display: flex; gap: 8px; align-items: flex-start; padding: 8px 10px; background: #0f172a; border-radius: 6px; border-left: 3px solid #334155; font-size: 12px; }
+.checkpoint-item.action-continue { border-left-color: #22c55e; }
+.checkpoint-item.action-wait_user { border-left-color: #f59e0b; }
+.checkpoint-item.action-add_task { border-left-color: #8b5cf6; }
+.checkpoint-item.action-skip { border-left-color: #64748b; }
+.checkpoint-item.action-done { border-left-color: #38bdf8; }
+.cp-step { font-weight: 600; min-width: 70px; }
+.cp-badge { font-size: 10px; padding: 1px 6px; border-radius: 8px; font-weight: 600; }
+.cp-badge.continue { background: #166534; color: #86efac; }
+.cp-badge.wait_user { background: #78350f; color: #fbbf24; }
+.cp-badge.add_task { background: #4c1d95; color: #c4b5fd; }
+.cp-badge.skip { background: #374151; color: #9ca3af; }
+.cp-badge.done { background: #1e3a5f; color: #7dd3fc; }
+.cp-reason { color: #94a3b8; flex: 1; }
+
+.split-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.split-card { background: #0f172a; border-radius: 6px; padding: 10px; border: 1px solid #334155; }
+.split-card h5 { font-size: 12px; margin-bottom: 6px; }
+.split-card h5.formula { color: #f472b6; }
+.split-card h5.acupuncture { color: #34d399; }
+.split-card h5.regimen { color: #fbbf24; }
+.split-count { font-size: 18px; font-weight: 700; color: #e2e8f0; }
+
+.debate-round { background: #0f172a; border-radius: 6px; padding: 10px; margin-bottom: 8px; border: 1px solid #334155; font-size: 12px; }
+.debate-round-num { font-weight: 600; color: #f87171; }
+.debate-resolved { font-size: 11px; padding: 2px 6px; border-radius: 4px; display: inline-block; }
+.debate-resolved.yes { background: #166534; color: #86efac; }
+.debate-resolved.no { background: #7f1d1d; color: #fca5a5; }
+
+.inquiry-card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 12px 16px; margin-top: 8px; }
+.inquiry-card-title { font-weight: 600; color: #fbbf24; font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.inquiry-q-item { padding: 6px 10px; margin-bottom: 4px; background: #0f172a; border-radius: 6px; font-size: 13px; color: #cbd5e1; border-left: 3px solid #38bdf8; line-height: 1.5; }
+.inquiry-hint { margin-top: 10px; font-size: 12px; color: #7dd3fc; display: flex; align-items: center; gap: 4px; }
+.inquiry-result-card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 12px 16px; margin-top: 8px; }
+.inquiry-result-confirmed { font-size: 14px; color: #86efac; margin-bottom: 8px; }
+.inquiry-result-excluded { font-size: 14px; color: #fca5a5; margin-bottom: 8px; }
+.inquiry-result-excluded-list { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+.inquiry-match-detail { padding: 8px 12px; background: #0f172a; border-radius: 6px; margin-bottom: 6px; border-left: 3px solid #22c55e; }
+.inquiry-match-name { font-weight: 600; color: #e2e8f0; font-size: 14px; }
+.inquiry-match-conf { font-size: 12px; color: #fbbf24; margin-left: 8px; }
+.inquiry-match-syms { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+.input-inquiry-hint { padding: 8px 16px; background: #78350f; border-radius: 8px 8px 0 0; font-size: 13px; color: #fbbf24; display: flex; align-items: center; gap: 6px; }
+
+.detail-panel { background: #1e293b; border-radius: 10px; border: 1px solid #334155; flex-shrink: 0; }
+.detail-header { padding: 10px 14px; background: #334155; display: flex; justify-content: space-between; align-items: center; border-radius: 10px 10px 0 0; }
+.detail-header h4 { font-size: 13px; color: #38bdf8; }
+.detail-close { background: none; border: none; color: #94a3b8; font-size: 18px; cursor: pointer; }
+.detail-body { display: flex; flex-direction: column; gap: 8px; }
+.detail-col { padding: 12px; overflow: auto; max-height: 500px; border: 1px solid #1e293b; border-radius: 6px; background: #0f172a; }
+.detail-col:first-child { border-bottom: 1px solid #334155; }
+.detail-col h5 { font-size: 11px; color: #64748b; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+.detail-col pre { font-size: 11px; line-height: 1.5; white-space: pre-wrap; word-break: break-all; color: #cbd5e1; font-family: "Cascadia Code", "Fira Code", monospace; }
+
+.dynamic-task-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.dynamic-task-card { background: #0f172a; border-radius: 6px; padding: 8px 12px; border: 1px solid #8b5cf6; font-size: 12px; }
+.dynamic-task-id { font-weight: 600; color: #c4b5fd; }
+.dynamic-task-info { color: #94a3b8; margin-top: 2px; font-size: 11px; }
+
+.reasoning-chain { display: flex; flex-direction: column; gap: 6px; }
+.reasoning-step { background: #0f172a; border-radius: 8px; border: 1px solid #334155; overflow: hidden; transition: all 0.2s; }
+.reasoning-step:hover { border-color: #475569; }
+.reasoning-step-header { padding: 8px 12px; display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.reasoning-step-header:hover { background: #1e293b; }
+.reasoning-step-icon { font-size: 14px; flex-shrink: 0; }
+.reasoning-step-name { font-weight: 600; font-size: 12px; color: #e2e8f0; flex: 1; }
+.reasoning-step-status { font-size: 10px; padding: 1px 6px; border-radius: 8px; font-weight: 500; }
+.reasoning-step-status.done { background: #166534; color: #86efac; }
+.reasoning-step-status.running { background: #1e3a5f; color: #7dd3fc; }
+.reasoning-step-status.pending { background: #374151; color: #9ca3af; }
+.reasoning-step-status.failed { background: #7f1d1d; color: #fca5a5; }
+.reasoning-step-toggle { color: #64748b; font-size: 10px; transition: transform 0.2s; }
+.reasoning-step.expanded .reasoning-step-toggle { transform: rotate(90deg); }
+.reasoning-step-body { display: none; padding: 8px 12px; border-top: 1px solid #1e293b; }
+.reasoning-step.expanded .reasoning-step-body { display: block; }
+.reasoning-step-summary { font-size: 12px; color: #cbd5e1; line-height: 1.6; white-space: pre-wrap; margin-bottom: 8px; }
+.reasoning-step-data { font-size: 11px; color: #94a3b8; }
+.reasoning-step-data summary { cursor: pointer; font-weight: 600; color: #7dd3fc; margin-bottom: 4px; }
+.reasoning-step-data pre { background: #0f172a; padding: 8px; border-radius: 4px; overflow-x: auto; max-height: 200px; overflow-y: auto; font-family: "Cascadia Code", "Fira Code", monospace; font-size: 10px; line-height: 1.4; color: #cbd5e1; white-space: pre-wrap; word-break: break-all; }
+
+.inquiry-chat-card { background: #1e293b; border: 1px solid #f59e0b; border-radius: 12px; padding: 16px; margin-top: 8px; }
+.inquiry-chat-title { font-weight: 700; color: #fbbf24; font-size: 15px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.inquiry-disease-block { margin-bottom: 10px; }
+.inquiry-disease-name { font-weight: 600; color: #38bdf8; font-size: 13px; margin-bottom: 6px; padding: 4px 8px; background: #0c4a6e; border-radius: 4px; display: inline-block; }
+.inquiry-question-item { padding: 8px 12px; margin-bottom: 4px; background: #0f172a; border-radius: 8px; font-size: 13px; color: #cbd5e1; border-left: 3px solid #f59e0b; line-height: 1.6; display: flex; align-items: flex-start; gap: 8px; }
+.inquiry-question-num { color: #f59e0b; font-weight: 700; flex-shrink: 0; }
+.inquiry-prompt { margin-top: 12px; padding: 10px 14px; background: #78350f; border-radius: 8px; font-size: 13px; color: #fbbf24; display: flex; align-items: center; gap: 8px; }
+
+.inquiry-eval-card { background: #1e293b; border: 1px solid #22c55e; border-radius: 12px; padding: 16px; margin-top: 8px; }
+.inquiry-eval-title { font-weight: 700; color: #86efac; font-size: 15px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.inquiry-eval-confirmed { padding: 6px 10px; background: #166534; border-radius: 6px; font-size: 13px; color: #86efac; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.inquiry-eval-excluded { padding: 6px 10px; background: #7f1d1d; border-radius: 6px; font-size: 13px; color: #fca5a5; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.inquiry-eval-detail { padding: 8px 12px; background: #0f172a; border-radius: 6px; margin-bottom: 6px; border-left: 3px solid #22c55e; font-size: 12px; }
+.inquiry-eval-detail-name { font-weight: 600; color: #e2e8f0; }
+.inquiry-eval-detail-conf { color: #fbbf24; margin-left: 8px; }
+.inquiry-eval-detail-syms { color: #94a3b8; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="header-left">
+        <h1>中医智能问诊系统</h1>
+        <span class="header-badge">Multi-Agent</span>
+    </div>
+    <div class="header-right">
+        <button class="header-btn" id="btnNewChat" onclick="newChat()">新对话</button>
+        <button class="header-btn active" id="btnDebug" onclick="toggleDebug()">调试面板</button>
+    </div>
+</div>
+<div class="main">
+    <div class="chat-area">
+        <div class="chat-messages" id="chatMessages">
+            <div class="welcome">
+                <div class="icon">🏥</div>
+                <h2>中医智能问诊系统</h2>
+                <p>基于多Agent协作与知识图谱增强的中医临床决策支持系统<br>请输入您的健康问题，如：感冒头痛怎么办、我口苦心烦易怒</p>
+            </div>
+        </div>
+        <div class="input-area">
+            <div id="inquiryHint" class="input-inquiry-hint" style="display:none">📋 请输入您的症状描述来回答问诊问题</div>
+            <div class="input-row">
+                <textarea id="questionInput" placeholder="输入您的中医问题..." rows="1" onkeydown="handleKeyDown(event)" oninput="autoResize(this)"></textarea>
+                <button class="send-btn" id="sendBtn" onclick="sendMessage()">发送</button>
+            </div>
+            <div class="input-hint">按 Enter 发送，Shift+Enter 换行</div>
+        </div>
+    </div>
+    <div class="debug-panel" id="debugPanel">
+        <div class="debug-header">
+            <h3>Agent 协作流程</h3>
+            <button class="debug-close" onclick="toggleDebug()">&times;</button>
+        </div>
+        <div class="debug-body" id="debugBody">
+            <div class="debug-status" id="debugStatus">等待提问...</div>
+            <div id="dagFlow" class="dag-flow"></div>
+            <div id="reasoningPanel" class="section-panel" style="display:none">
+                <div class="section-header" onclick="toggleSection('reasoningPanel')"><h4>🧠 推理链</h4><span class="toggle-icon">▼</span></div>
+                <div class="section-body"><div id="reasoningChain" class="reasoning-chain"></div></div>
+            </div>
+            <div id="checkpointPanel" class="section-panel" style="display:none"></div>
+            <div id="splitPanel" class="section-panel" style="display:none"></div>
+            <div id="debatePanel" class="section-panel" style="display:none"></div>
+            <div id="dynamicPanel" class="section-panel" style="display:none"></div>
+            <div id="detailPanel" class="detail-panel" style="display:none"></div>
+        </div>
+    </div>
+</div>
+<script>
+const AGENT_META = {
+    orchestrator: { icon: "🎯", label: "协调者" },
+    entity_recognition: { icon: "🏷️", label: "实体识别" },
+    kg_query: { icon: "🗂️", label: "KG查询" },
+    diagnosis: { icon: "🩺", label: "辨证推理" },
+    diagnosis_inquiry: { icon: "📋", label: "问诊生成" },
+    formula: { icon: "💊", label: "方剂推荐" },
+    acupuncture: { icon: "📍", label: "针灸方案" },
+    regimen: { icon: "🥗", label: "养生建议" },
+    review: { icon: "✅", label: "审核校验" },
+    kg_supplement: { icon: "🔍", label: "KG补充查询" },
+};
+
+let chatHistory = [];
+const CHAT_STORAGE_KEY = "tcm_chat_history";
+function saveChatToStorage() { try { localStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify(chatHistory)); } catch(e) {} }
+function loadChatFromStorage() { try { const s = localStorage.getItem(CHAT_STORAGE_KEY); if (s) chatHistory = JSON.parse(s); } catch(e) { chatHistory = []; } }
+function renderChatHistory() {
+    const msgs = document.getElementById("chatMessages");
+    msgs.innerHTML = "";
+    for (const msg of chatHistory) {
+        const div = document.createElement("div");
+        div.className = "msg " + msg.role;
+        const time = msg.time || "";
+        if (msg.role === "user") {
+            div.innerHTML = '<div class="msg-avatar">👤</div><div class="msg-body"><div class="msg-name">您 ' + time + '</div><div class="msg-bubble">' + escapeHtml(msg.content) + '</div></div>';
+        } else {
+            div.innerHTML = '<div class="msg-avatar">🤖</div><div class="msg-body"><div class="msg-name">中医AI ' + time + '</div><div class="msg-bubble">' + escapeHtml(msg.content) + '</div>' + (msg.meta ? '<div class="msg-meta">' + msg.meta.map(t=>'<span class="msg-meta-tag">'+t+'</span>').join("") + '</div>' : '') + '</div>';
+        }
+        msgs.appendChild(div);
+    }
+    msgs.scrollTop = msgs.scrollHeight;
+}
+let traceData = [];
+let selectedAgent = null;
+let pendingConfirm = null;
+let inquiryPending = null;
+let inquiryRound = 0;
+let checkedSymptoms = {};
+let lastResponse = {};
+let debugVisible = true;
+let isProcessing = false;
+let reasoningSteps = [];
+let agentIntermediateResults = {};
+let currentPhase = "";
+
+function handleKeyDown(e) {
+    if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+    }
+}
+
+function autoResize(el) {
+    el.style.height = "auto";
+    el.style.height = Math.min(el.scrollHeight, 120) + "px";
+}
+
+function toggleDebug() {
+    debugVisible = !debugVisible;
+    const panel = document.getElementById("debugPanel");
+    const btn = document.getElementById("btnDebug");
+    if (debugVisible) {
+        panel.classList.remove("hidden");
+        btn.classList.add("active");
+    } else {
+        panel.classList.add("hidden");
+        btn.classList.remove("active");
+    }
+}
+
+function newChat() {
+    chatHistory = [];
+    localStorage.removeItem(CHAT_STORAGE_KEY);
+    traceData = [];
+    selectedAgent = null;
+    pendingConfirm = null;
+    inquiryPending = null;
+    inquiryRound = 0;
+    lastResponse = {};
+    isProcessing = false;
+    reasoningSteps = [];
+    agentIntermediateResults = {};
+    currentPhase = "";
+    const msgs = document.getElementById("chatMessages");
+    msgs.innerHTML = '<div class="welcome"><div class="icon">🏥</div><h2>中医智能问诊系统</h2><p>基于多Agent协作与知识图谱增强的中医临床决策支持系统<br>请输入您的健康问题，如：感冒头痛怎么办、我口苦心烦易怒</p></div>';
+    document.getElementById("debugStatus").textContent = "等待提问...";
+    document.getElementById("dagFlow").innerHTML = "";
+    document.getElementById("reasoningPanel").style.display = "none";
+    document.getElementById("checkpointPanel").style.display = "none";
+    document.getElementById("splitPanel").style.display = "none";
+    document.getElementById("debatePanel").style.display = "none";
+    document.getElementById("dynamicPanel").style.display = "none";
+    document.getElementById("detailPanel").style.display = "none";
+    document.getElementById("inquiryHint").style.display = "none";
+    document.getElementById("questionInput").placeholder = "输入您的中医问题...";
+    document.getElementById("sendBtn").disabled = false;
+}
+
+function addUserMessage(text) {
+    const msgs = document.getElementById("chatMessages");
+    const welcome = msgs.querySelector(".welcome");
+    if (welcome) welcome.remove();
+    const div = document.createElement("div");
+    div.className = "msg user";
+    const time = new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" });
+    div.innerHTML = '<div class="msg-avatar">👤</div><div class="msg-body"><div class="msg-name">您 ' + time + '</div><div class="msg-bubble">' + escapeHtml(text) + '</div></div>';
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+    chatHistory.push({ role: "user", content: text, time: new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" }) });
+    saveChatToStorage();
+}
+
+function addAssistantPlaceholder() {
+    const msgs = document.getElementById("chatMessages");
+    const div = document.createElement("div");
+    div.className = "msg assistant";
+    div.id = "currentResponse";
+    const time = new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" });
+    div.innerHTML = '<div class="msg-avatar">🤖</div><div class="msg-body"><div class="msg-name">中医AI ' + time + '</div><div class="msg-bubble"><div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div></div><div class="msg-meta" id="currentMeta"></div></div>';
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+    return div;
+}
+
+function appendAssistantToken(token) {
+    const resp = document.getElementById("currentResponse");
+    if (!resp) return;
+    const bubble = resp.querySelector(".msg-bubble");
+    if (bubble.querySelector(".typing-indicator")) {
+        bubble.textContent = "";
+    }
+    bubble.textContent += token;
+    const msgs = document.getElementById("chatMessages");
+    msgs.scrollTop = msgs.scrollHeight;
+}
+
+function finalizeAssistantMessage(metaTags) {
+    const resp = document.getElementById("currentResponse");
+    if (!resp) return;
+    resp.removeAttribute("id");
+    if (metaTags) {
+        const meta = resp.querySelector(".msg-meta");
+        if (meta) meta.innerHTML = metaTags.map(t => '<span class="msg-meta-tag">' + t + '</span>').join("");
+    }
+    const bubble = resp.querySelector(".msg-bubble");
+    chatHistory.push({ role: "assistant", content: bubble.textContent, time: new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" }), meta: metaTags || [] });
+    saveChatToStorage();
+}
+
+function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+async function sendMessage() {
+    const input = document.getElementById("questionInput");
+    const q = input.value.trim();
+    if (!q || isProcessing) return;
+
+    input.value = "";
+    input.style.height = "auto";
+
+    if (inquiryPending) {
+        submitInquiryFromChat(q);
+        return;
+    }
+
+    isProcessing = true;
+    document.getElementById("sendBtn").disabled = true;
+
+    addUserMessage(q);
+    addAssistantPlaceholder();
+
+    traceData = [];
+    selectedAgent = null;
+    pendingConfirm = null;
+    checkedSymptoms = {};
+    lastResponse = {};
+    reasoningSteps = [];
+    agentIntermediateResults = {};
+    currentPhase = "";
+    inquiryRound = 0;
+    document.getElementById("detailPanel").style.display = "none";
+    document.getElementById("reasoningPanel").style.display = "none";
+    document.getElementById("checkpointPanel").style.display = "none";
+    document.getElementById("splitPanel").style.display = "none";
+    document.getElementById("debatePanel").style.display = "none";
+    document.getElementById("dynamicPanel").style.display = "none";
+    document.getElementById("inquiryHint").style.display = "none";
+    document.getElementById("questionInput").placeholder = "输入您的中医问题...";
+    renderDag();
+
+    const statusEl = document.getElementById("debugStatus");
+
+    function setDebugStatus(msg, isError) {
+        statusEl.textContent = msg;
+        statusEl.className = "debug-status" + (isError ? " error" : "");
+    }
+
+    try {
+        setDebugStatus("🔄 正在连接...");
+        const resp = await fetch("/api/agent/debug", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question: q }),
+        });
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let fullBuffer = "";
+        let finalResult = null;
+        let metaTags = [];
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            fullBuffer += decoder.decode(value, { stream: true });
+            const blocks = fullBuffer.split("\n\n");
+            fullBuffer = blocks.pop() || "";
+
+            for (const block of blocks) {
+                if (!block.trim()) continue;
+                const eventRegex = /event:\s*(\S+)\s*\ndata:\s*(.+?)\s*$/gs;
+                let match;
+                while ((match = eventRegex.exec(block)) !== null) {
+                    const eventType = match[1];
+                    const eventData = match[2];
+                    let data;
+                    try { data = JSON.parse(eventData); } catch(e) { continue; }
+
+                    switch (eventType) {
+                        case "phase":
+                            currentPhase = data.name || "";
+                            setDebugStatus("🔄 " + data.name);
+                            addReasoningStep("_phase", "Phase " + data.phase, "🔄 " + data.name, "running", { phase: data.phase, name: data.name });
+                            break;
+                        case "agent_start": {
+                            const startLabel = AGENT_META[data.agent]?.label || data.agent;
+                            const startIcon = AGENT_META[data.agent]?.icon || "▶️";
+                            setDebugStatus("▶️ " + startLabel + " 执行中...");
+                            addReasoningStep(data.agent, startLabel, startIcon + " " + startLabel + " 开始执行...", "running", data);
+                            break;
+                        }
+                        case "agent_done": {
+                            const label = AGENT_META[data.agent]?.label || data.agent;
+                            const icon = AGENT_META[data.agent]?.icon || "✅";
+                            const dur = data.duration_ms ? " (" + (data.duration_ms/1000).toFixed(1) + "s)" : "";
+                            if (data.status === "done" || data.agent) {
+                                setDebugStatus("✅ " + label + " 完成" + dur);
+                                const existingIdx = traceData.findIndex(t => t.agent === data.agent);
+                                const entry = {
+                                    agent: data.agent,
+                                    task_id: data.task_id || data.agent,
+                                    status: data.status || "done",
+                                    depends_on: [],
+                                    duration_ms: data.duration_ms || 0,
+                                    input: {},
+                                    output: data
+                                };
+                                if (existingIdx >= 0) {
+                                    traceData[existingIdx] = { ...traceData[existingIdx], ...entry };
+                                } else {
+                                    traceData.push(entry);
+                                }
+                                agentIntermediateResults[data.agent] = data;
+                                const summaryText = data.summary || getSummary(data.agent, data);
+                                updateReasoningStep(data.agent, "done", icon + " " + label + " 完成" + dur, summaryText, data);
+                                renderDag();
+                            }
+                            break;
+                        }
+                        case "plan_update":
+                            setDebugStatus("📋 追加: " + (data.added_tasks || []).join(", "));
+                            addReasoningStep("_plan_" + Date.now(), "动态任务", "📋 追加任务: " + (data.added_tasks || []).join(", "), "done", data);
+                            break;
+                        case "inquiry":
+                            inquiryPending = data;
+                            inquiryRound++;
+                            setDebugStatus("📋 需要问诊确认 (第" + inquiryRound + "轮)");
+                            addReasoningStep("inquiry_" + inquiryRound, "问诊确认", "📋 第" + inquiryRound + "轮问诊 — 发现" + (data.candidate_diseases||[]).length + "个候选疾病", "running", data);
+                            showInquiryInChat(data);
+                            break;
+                        case "debate_start":
+                            setDebugStatus("⚖️ 辩论开始 (" + (data.total_conflicts||0) + " 冲突)");
+                            addReasoningStep("_debate_start", "辩论启动", "⚖️ 发现" + (data.total_conflicts||0) + "个冲突，启动辩论", "running", data);
+                            break;
+                        case "debate_round":
+                            setDebugStatus("⚖️ 第" + data.round + "轮 — " + (AGENT_META[data.agent]?.label || data.agent) + " " + (data.status === "reconsidering" ? "重新推理..." : "辩论中"));
+                            break;
+                        case "debate_resolved":
+                            if (data.result === "consensus") {
+                                setDebugStatus("✅ 辩论达成共识 (" + data.rounds + " 轮)");
+                                updateReasoningStep("_debate_start", "done", "⚖️ 辩论达成共识 (" + data.rounds + "轮)", "共识已达成", data);
+                            } else {
+                                setDebugStatus("⚖️ 辩论由审核Agent仲裁 (" + (data.reason || "") + ")");
+                                updateReasoningStep("_debate_start", "done", "⚖️ 辩论由审核Agent仲裁", data.reason || "", data);
+                            }
+                            break;
+                        case "debate_end":
+                            setDebugStatus("✅ 辩论完成 (" + (data.total_rounds||0) + " 轮)");
+                            break;
+                        case "final_result":
+                            finalResult = data;
+                            break;
+                        case "answer_token":
+                            appendAssistantToken(data.token || "");
+                            break;
+                        case "done": {
+                            if (finalResult) {
+                                traceData = finalResult.trace || [];
+                                lastResponse = finalResult;
+                                if (finalResult.agent_results) {
+                                    for (const [k, v] of Object.entries(finalResult.agent_results)) {
+                                        if (!agentIntermediateResults[k]) agentIntermediateResults[k] = { summary: v };
+                                    }
+                                }
+                                const intent = finalResult.intent || "";
+                                const complexity = finalResult.complexity || "";
+                                if (intent) metaTags.push("意图:" + intent);
+                                if (complexity) metaTags.push("复杂度:" + complexity);
+                                if (finalResult.checkpoint_decisions && finalResult.checkpoint_decisions.length) {
+                                    metaTags.push("决策点:" + finalResult.checkpoint_decisions.length);
+                                }
+                                if (finalResult.debate_log && finalResult.debate_log.length) {
+                                    metaTags.push("辩论:" + finalResult.debate_log.length + "轮");
+                                }
+                                if (inquiryRound > 0) {
+                                    metaTags.push("问诊:" + inquiryRound + "轮");
+                                }
+                                setDebugStatus("✅ 完成" + (intent ? " | " + intent : ""));
+                                renderCheckpoints(finalResult.checkpoint_decisions || []);
+                                renderSubgraphSplit(finalResult.subgraph_split || {});
+                                renderDebate(finalResult.debate_log || []);
+                                renderDynamicTasks(finalResult.dynamic_tasks || []);
+                                renderReasoningChain();
+                                renderDag();
+                            }
+                            finalizeAssistantMessage(metaTags);
+                            break;
+                        }
+                        case "error":
+                            setDebugStatus("❌ " + (data.error || "错误"), true);
+                            appendAssistantToken("\n\n抱歉，处理时遇到错误：" + (data.error || "未知错误"));
+                            finalizeAssistantMessage([]);
+                            break;
+                    }
+                }
+            }
+        }
+    } catch (e) {
+        setDebugStatus("❌ 连接失败: " + e.message, true);
+        const resp = document.getElementById("currentResponse");
+        if (resp) {
+            appendAssistantToken("\n\n连接失败：" + e.message);
+            finalizeAssistantMessage([]);
+        }
+    } finally {
+        isProcessing = false;
+        document.getElementById("sendBtn").disabled = false;
+        document.getElementById("questionInput").focus();
+    }
+}
+
+function continueAfterInquiry() {
+    if (!pendingConfirm) return;
+    const confirmed = pendingConfirm._confirmedDiseases || [];
+    doConfirm(confirmed);
+}
+
+function skipConfirm() {
+    if (!pendingConfirm) return;
+    const candidates = pendingConfirm.candidate_diseases || [];
+    const confirmedDiseases = candidates.slice(0, 2).map(c => typeof c === 'string' ? c : (c.disease || c.name || ''));
+    doConfirm(confirmedDiseases);
+}
+
+async function doConfirm(confirmedDiseases) {
+    document.getElementById("sendBtn").disabled = true;
+    isProcessing = true;
+    document.getElementById("debugStatus").textContent = "🔄 根据确认结果继续...";
+
+    addAssistantPlaceholder();
+
+    addReasoningStep("_confirm", "疾病确认", "✅ 确认疾病: " + confirmedDiseases.join("、") + "，继续执行管线", "running", { confirmed_diseases: confirmedDiseases });
+
+    try {
+        const resp = await fetch("/api/agent/debug/confirm", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                question: inquiryPending ? inquiryPending.question : pendingConfirm.question,
+                session_id: inquiryPending ? inquiryPending.session_id : pendingConfirm.session_id,
+                confirmed_diseases: confirmedDiseases,
+                entities: inquiryPending ? inquiryPending.entities : pendingConfirm.entities
+            }),
+        });
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        const data = await resp.json();
+        if (data.error) throw new Error(data.error);
+        traceData = data.trace || [];
+        lastResponse = data;
+        if (data.agent_results) {
+            for (const [k, v] of Object.entries(data.agent_results)) {
+                if (!agentIntermediateResults[k]) agentIntermediateResults[k] = { summary: v };
+            }
+        }
+        let metaTags = [];
+        if (confirmedDiseases && confirmedDiseases.length) metaTags.push("确认: " + confirmedDiseases.join("、"));
+        if (data.intent) metaTags.push("意图:" + data.intent);
+        if (data.complexity) metaTags.push("复杂度:" + data.complexity);
+        if (inquiryRound > 0) metaTags.push("问诊:" + inquiryRound + "轮");
+        document.getElementById("debugStatus").textContent = "✅ 完成" + (data.intent ? " | " + data.intent : "");
+        renderCheckpoints(data.checkpoint_decisions || []);
+        renderSubgraphSplit(data.subgraph_split || {});
+        renderDebate(data.debate_log || []);
+        renderDynamicTasks(data.dynamic_tasks || []);
+
+        updateReasoningStep("_confirm", "done", "✅ 确认后管线执行完成", "确认: " + confirmedDiseases.join("、"), data);
+
+        const answerText = data.final_answer || data.answer || "";
+        if (answerText) {
+            const chunkSize = 4;
+            for (let i = 0; i < answerText.length; i += chunkSize) {
+                appendAssistantToken(answerText.slice(i, i + chunkSize));
+                if (i % 40 === 0) await new Promise(r => setTimeout(r, 10));
+            }
+        }
+        finalizeAssistantMessage(metaTags);
+    } catch (e) {
+        document.getElementById("debugStatus").textContent = "❌ " + e.message;
+        document.getElementById("debugStatus").className = "debug-status error";
+        appendAssistantToken("\n\n确认后继续时出错：" + e.message);
+        finalizeAssistantMessage([]);
+    }
+    isProcessing = false;
+    document.getElementById("sendBtn").disabled = false;
+    inquiryPending = null;
+    pendingConfirm = null;
+    renderReasoningChain();
+    renderDag();
+}
+
+function showInquiryInChat(data) {
+    const msgs = document.getElementById("chatMessages");
+    const welcome = msgs.querySelector(".welcome");
+    if (welcome) welcome.remove();
+
+    let resp = document.getElementById("currentResponse");
+    if (!resp) {
+        resp = addAssistantPlaceholder();
+    } else {
+        const bubble = resp.querySelector(".msg-bubble");
+        if (bubble.querySelector(".typing-indicator")) bubble.textContent = "";
+    }
+
+    const bubble = resp.querySelector(".msg-bubble");
+    bubble.textContent = "";
+
+    const card = document.createElement("div");
+    card.className = "inquiry-chat-card";
+
+    let cardHtml = '<div class="inquiry-chat-title">📋 第' + inquiryRound + '轮问诊 — 需要进一步了解您的症状</div>';
+
+    const inquiries = data.inquiries || [];
+    let qNum = 1;
+    for (const inq of inquiries) {
+        const diseaseName = inq.disease || "";
+        const questions = inq.questions || [];
+        cardHtml += '<div class="inquiry-disease-block">';
+        if (diseaseName) {
+            cardHtml += '<div class="inquiry-disease-name">🔍 候选疾病：' + escapeHtml(diseaseName) + '</div>';
+        }
+        for (const q of questions) {
+            cardHtml += '<div class="inquiry-question-item"><span class="inquiry-question-num">' + (qNum++) + '.</span> ' + escapeHtml(q) + '</div>';
+        }
+        cardHtml += '</div>';
+    }
+
+    const candidates = data.candidate_diseases || [];
+    if (candidates.length > 0) {
+        cardHtml += '<div style="margin-top:8px;font-size:12px;color:#94a3b8;">候选疾病：';
+        cardHtml += candidates.map(c => {
+            const name = typeof c === 'string' ? c : (c.disease || c.name || '');
+            return '<span style="color:#38bdf8;margin-right:6px;">' + escapeHtml(name) + '</span>';
+        }).join("");
+        cardHtml += '</div>';
+    }
+
+    cardHtml += '<div class="inquiry-prompt">💬 请在下方输入您的症状描述来回答问诊问题</div>';
+    card.innerHTML = cardHtml;
+    bubble.appendChild(card);
+
+    resp.removeAttribute("id");
+    const meta = resp.querySelector(".msg-meta");
+    if (meta) meta.innerHTML = '<span class="msg-meta-tag">问诊第' + inquiryRound + '轮</span>';
+    chatHistory.push({
+        role: "assistant",
+        content: "[问诊卡片] 第" + inquiryRound + "轮问诊",
+        time: new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" }),
+        meta: ["问诊第" + inquiryRound + "轮"]
+    });
+    saveChatToStorage();
+
+    const hintEl = document.getElementById("inquiryHint");
+    if (hintEl) hintEl.style.display = "flex";
+    const inputEl = document.getElementById("questionInput");
+    inputEl.placeholder = "请输入您的症状描述...";
+    inputEl.focus();
+}
+
+async function submitInquiryFromChat(answer) {
+    if (!inquiryPending) return;
+
+    addUserMessage(answer);
+    addAssistantPlaceholder();
+
+    isProcessing = true;
+    document.getElementById("sendBtn").disabled = true;
+    const hintEl = document.getElementById("inquiryHint");
+    if (hintEl) hintEl.style.display = "none";
+    document.getElementById("questionInput").placeholder = "输入您的中医问题...";
+    document.getElementById("debugStatus").textContent = "🔍 辨证Agent正在评估您的回答...";
+
+    try {
+        const resp = await fetch("/api/agent/debug/inquiry-evaluate", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                question: inquiryPending.question,
+                session_id: inquiryPending.session_id,
+                candidate_diseases: inquiryPending.candidate_diseases,
+                user_answers: answer,
+                entities: inquiryPending.entities
+            }),
+        });
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        const data = await resp.json();
+        if (data.error) throw new Error(data.error);
+
+        const confirmed = data.confirmed_diseases || [];
+        const excluded = data.excluded_diseases || [];
+        const result = data.confirmation_result || {};
+
+        const respEl = document.getElementById("currentResponse");
+        const bubble = respEl ? respEl.querySelector(".msg-bubble") : null;
+        if (bubble) {
+            if (bubble.querySelector(".typing-indicator")) bubble.textContent = "";
+            bubble.textContent = "";
+
+            const evalCard = document.createElement("div");
+            evalCard.className = "inquiry-eval-card";
+            let evalHtml = '<div class="inquiry-eval-title">🔍 第' + inquiryRound + '轮问诊评估结果</div>';
+
+            if (confirmed.length > 0) {
+                evalHtml += '<div class="inquiry-eval-confirmed">✅ 确认疾病：' + confirmed.map(c => escapeHtml(typeof c === 'string' ? c : c)).join("、") + '</div>';
+                if (result.confirmed_diseases) {
+                    for (const cd of result.confirmed_diseases) {
+                        evalHtml += '<div class="inquiry-eval-detail">';
+                        evalHtml += '<span class="inquiry-eval-detail-name">' + escapeHtml(cd.name || "") + '</span>';
+                        evalHtml += '<span class="inquiry-eval-detail-conf">置信度 ' + Math.round((cd.confidence||0)*100) + '%</span>';
+                        if (cd.matched_symptoms && cd.matched_symptoms.length) {
+                            evalHtml += '<div class="inquiry-eval-detail-syms">匹配症状：' + cd.matched_symptoms.map(s => escapeHtml(s)).join("、") + '</div>';
+                        }
+                        evalHtml += '</div>';
+                    }
+                }
+            } else {
+                evalHtml += '<div class="inquiry-eval-excluded">❌ 未能确认候选疾病</div>';
+            }
+            if (excluded.length > 0) {
+                evalHtml += '<div class="inquiry-eval-excluded">🚫 排除疾病：' + excluded.map(c => escapeHtml(typeof c === 'string' ? c : c)).join("、") + '</div>';
+            }
+            evalHtml += '<div style="margin-top:8px;font-size:12px;color:#94a3b8;">正在继续生成诊疗方案...</div>';
+            evalCard.innerHTML = evalHtml;
+            bubble.appendChild(evalCard);
+        }
+
+        respEl.removeAttribute("id");
+        const meta = respEl.querySelector(".msg-meta");
+        if (meta) meta.innerHTML = '<span class="msg-meta-tag">问诊评估</span>';
+        chatHistory.push({
+            role: "assistant",
+            content: "[问诊评估] 确认:" + confirmed.join(",") + " 排除:" + excluded.join(","),
+            time: new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" }),
+            meta: ["问诊评估"]
+        });
+        saveChatToStorage();
+
+        updateReasoningStep("inquiry_" + inquiryRound, "done", "📋 第" + inquiryRound + "轮问诊完成", "确认:" + confirmed.join(",") + " 排除:" + excluded.join(","), data);
+
+        if (confirmed.length > 0) {
+            inquiryPending._confirmedDiseases = confirmed;
+            doConfirm(confirmed);
+        } else {
+            const candidates = inquiryPending.candidate_diseases || [];
+            const defaultDiseases = candidates.slice(0, 2).map(c => typeof c === 'string' ? c : (c.disease || c.name || ''));
+            doConfirm(defaultDiseases);
+        }
+        document.getElementById("debugStatus").textContent = "✅ 问诊评估完成 — " + (confirmed.length > 0 ? "确认: " + confirmed.join("、") : "未确认疾病");
+    } catch (e) {
+        document.getElementById("debugStatus").textContent = "❌ 评估错误: " + e.message;
+        document.getElementById("debugStatus").className = "debug-status error";
+        appendAssistantToken("\n\n评估时遇到错误：" + e.message);
+        finalizeAssistantMessage([]);
+        isProcessing = false;
+        document.getElementById("sendBtn").disabled = false;
+    }
+    inquiryPending = null;
+}
+
+function getSummary(agent, output) {
+    if (!output) return "无输出";
+    if (output.summary) return output.summary;
+    const o = output;
+    switch(agent) {
+        case "orchestrator": return "意图: " + (o.intent || "未知") + ", 复杂度: " + (o.complexity || "未知");
+        case "entity_recognition": {
+            const cnt = o.entity_count || 0;
+            const ls = o.linking_stats;
+            if (ls) return cnt + " 个实体 (精确:" + (ls.exact_match||0) + " 别名:" + (ls.alias_match||0) + " 向量:" + (ls.vector_match||0) + ")";
+            return cnt + " 个实体";
+        }
+        case "kg_query": {
+            const rc = o.relation_count || 0;
+            const ec = o.entity_count || 0;
+            return rc + "条关系, " + ec + "个实体" + (o.has_results ? "" : " (无结果)");
+        }
+        case "diagnosis": {
+            if (o.need_inquiry) return "需要问诊确认";
+            const s = o.syndrome && o.syndrome.primary;
+            return s ? s.name + " (" + Math.round((s.confidence||0)*100) + "%)" : "辨证完成";
+        }
+        case "formula": { const f = o.primary_formula; return f ? (f.name || "方剂完成") : "方剂完成"; }
+        case "acupuncture": { const pts = o.primary_points || []; return pts.length ? "主穴: " + pts.map(p=>p.name||p).join(",") : "针灸完成"; }
+        case "regimen": return o.dietary_advice ? "养生建议完成" : "无建议";
+        case "review": { const c = (o.conflicts||[]).length; return c ? c + " 个冲突" : "审核通过"; }
+        default: return "";
+    }
+}
+
+function renderDag() {
+    const container = document.getElementById("dagFlow");
+    if (!traceData.length) { container.innerHTML = ""; return; }
+    const rows = [
+        ["orchestrator"],
+        ["entity_recognition"],
+        ["kg_query"],
+        ["diagnosis"],
+        ["formula", "acupuncture", "regimen"],
+        ["review"],
+    ];
+    const inquiryTask = traceData.find(x => x.agent === "diagnosis_inquiry");
+    if (inquiryTask && inquiryTask.status !== "skipped") {
+        rows.splice(3, 0, ["diagnosis_inquiry"]);
+    }
+    let html = "";
+    for (let ri = 0; ri < rows.length; ri++) {
+        const row = rows[ri];
+        const isParallel = row.length > 1;
+        html += '<div class="dag-row">';
+        for (const agent of row) {
+            const t = traceData.find(x => x.agent === agent);
+            const meta = AGENT_META[agent] || { icon: "📋", label: agent };
+            const status = t ? t.status : "pending";
+            const dur = t ? t.duration_ms : 0;
+            const summary = t ? getSummary(agent, t.output) : "等待中";
+            html += '<div class="agent-node ' + status + (selectedAgent===agent?' selected':'') + '" onclick="selectAgent(\'' + agent + '\')">';
+            html += '<div class="agent-name"><span class="agent-icon">' + meta.icon + '</span>' + meta.label;
+            html += ' <span class="agent-status ' + status + '">' + status + '</span></div>';
+            if (dur > 0) html += '<div class="agent-duration">' + (dur/1000).toFixed(1) + 's</div>';
+            html += '<div class="agent-summary">' + summary + '</div>';
+            html += '</div>';
+        }
+        html += '</div>';
+        if (ri < rows.length - 1) {
+            html += '<div class="dag-arrow' + (isParallel ? ' parallel' : '') + '">↓</div>';
+        }
+    }
+    container.innerHTML = html;
+}
+
+function selectAgent(agent) {
+    selectedAgent = agent;
+    renderDag();
+    const t = traceData.find(x => x.agent === agent);
+    const meta = AGENT_META[agent] || { icon: "📋", label: agent };
+    const panel = document.getElementById("detailPanel");
+    panel.style.display = "block";
+
+    let headerHtml = '<div class="detail-header"><h4>' + meta.icon + ' ' + meta.label + '</h4>' +
+        '<button class="detail-close" onclick="closeDetail()">&times;</button></div>';
+
+    let bodyHtml = '<div class="detail-body">';
+
+    if (t && t.duration_ms) {
+        bodyHtml += '<div style="margin-bottom:8px;font-size:12px;color:#94a3b8;">⏱ 耗时 ' + (t.duration_ms/1000).toFixed(2) + 's</div>';
+    }
+
+    const agentSummary = lastResponse && lastResponse.agent_results && lastResponse.agent_results[agent];
+    if (agentSummary) {
+        bodyHtml += '<div style="margin-bottom:12px;padding:8px 12px;background:#0f172a;border-radius:6px;border-left:3px solid #38bdf8;font-size:13px;color:#e2e8f0;line-height:1.6;white-space:pre-wrap;">' + escapeHtml(agentSummary) + '</div>';
+    }
+
+    const intermediateData = agentIntermediateResults[agent];
+    if (intermediateData && intermediateData.summary) {
+        bodyHtml += '<div style="margin-bottom:12px;padding:8px 12px;background:#0f172a;border-radius:6px;border-left:3px solid #22c55e;font-size:12px;color:#86efac;line-height:1.6;white-space:pre-wrap;">✅ ' + escapeHtml(intermediateData.summary) + '</div>';
+    }
+
+    const inputObj = t && t.input && Object.keys(t.input).length ? t.input : null;
+    let outputObj = t && t.output ? t.output : null;
+
+    if (!outputObj && intermediateData) {
+        outputObj = intermediateData;
+    }
+
+    if (inputObj || outputObj) {
+        bodyHtml += '<div style="display:flex;flex-direction:column;gap:8px;">';
+        if (inputObj) {
+            bodyHtml += '<div class="detail-col"><h5>Input</h5><pre>' + formatJson(inputObj) + '</pre></div>';
+        }
+        if (outputObj) {
+            const displayOutput = {};
+            for (const [k, v] of Object.entries(outputObj)) {
+                if (k !== "agent" && k !== "status" && k !== "task_id") {
+                    displayOutput[k] = v;
+                }
+            }
+            bodyHtml += '<div class="detail-col"><h5>Output</h5><pre>' + formatJson(displayOutput) + '</pre></div>';
+        }
+        bodyHtml += '</div>';
+    } else if (!agentSummary) {
+        bodyHtml += '<div style="color:#64748b;font-size:13px;">该Agent的详细数据将在执行完成后可用</div>';
+    }
+
+    bodyHtml += '</div>';
+    panel.innerHTML = headerHtml + bodyHtml;
+}
+
+function closeDetail() {
+    selectedAgent = null;
+    document.getElementById("detailPanel").style.display = "none";
+    renderDag();
+}
+
+function formatJson(obj) {
+    if (!obj) return "null";
+    try { return JSON.stringify(obj, null, 2); } catch(e) { return String(obj); }
+}
+
+function toggleSection(panelId) {
+    const panel = document.getElementById(panelId);
+    const header = panel.querySelector('.section-header');
+    const body = panel.querySelector('.section-body');
+    if (header && body) { header.classList.toggle('collapsed'); body.classList.toggle('collapsed'); }
+}
+
+const ACTION_LABELS = { continue: "继续", wait_user: "等待用户", add_task: "追加任务", skip: "跳过", done: "结束" };
+
+function renderCheckpoints(decisions) {
+    const panel = document.getElementById("checkpointPanel");
+    if (!decisions.length) { panel.style.display = "none"; return; }
+    panel.style.display = "block";
+    let html = '<div class="section-header" onclick="toggleSection(\'checkpointPanel\')"><h4>🎯 调度决策</h4><span class="toggle-icon">▼</span></div>';
+    html += '<div class="section-body"><div class="checkpoint-timeline">';
+    for (const d of decisions) {
+        const meta = AGENT_META[d.step] || { icon: "📋", label: d.step };
+        const action = d.action || "continue";
+        html += '<div class="checkpoint-item action-' + action + '">';
+        html += '<div class="cp-step">' + meta.icon + ' ' + meta.label + '</div>';
+        html += '<span class="cp-badge ' + action + '">' + (ACTION_LABELS[action] || action) + '</span>';
+        html += '<div class="cp-reason">' + (d.reason || "—") + '</div>';
+        html += '</div>';
+    }
+    html += '</div></div>';
+    panel.innerHTML = html;
+}
+
+function renderSubgraphSplit(split) {
+    const panel = document.getElementById("splitPanel");
+    if (!split || !Object.keys(split).length) { panel.style.display = "none"; return; }
+    panel.style.display = "block";
+    const icons = { formula: "💊", acupuncture: "📍", regimen: "🥗" };
+    const labels = { formula: "方剂子图", acupuncture: "针灸子图", regimen: "养生子图" };
+    let html = '<div class="section-header" onclick="toggleSection(\'splitPanel\')"><h4>🔀 子图拆分</h4><span class="toggle-icon">▼</span></div>';
+    html += '<div class="section-body"><div class="split-grid">';
+    for (const [key, data] of Object.entries(split)) {
+        const entities = data.entities || [];
+        html += '<div class="split-card">';
+        html += '<h5 class="' + key + '">' + (icons[key]||"") + ' ' + (labels[key]||key) + '</h5>';
+        html += '<div class="split-count">' + (data.entity_count || entities.length || 0) + ' 实体</div>';
+        if (entities.length > 0) {
+            html += '<div style="margin-top:4px;font-size:11px;color:#94a3b8;max-height:60px;overflow:hidden;">';
+            html += entities.slice(0, 5).map(e => typeof e === 'string' ? e : (e.name || e.text || '')).join('、');
+            if (entities.length > 5) html += '...';
+            html += '</div>';
+        }
+        html += '</div>';
+    }
+    html += '</div></div>';
+    panel.innerHTML = html;
+}
+
+function renderDebate(log) {
+    const panel = document.getElementById("debatePanel");
+    if (!log || !log.length) { panel.style.display = "none"; return; }
+    panel.style.display = "block";
+    let html = '<div class="section-header" onclick="toggleSection(\'debatePanel\')"><h4>⚖️ 辩论过程</h4><span class="toggle-icon">▼</span></div>';
+    html += '<div class="section-body">';
+    for (const r of log) {
+        const conflictType = r.conflict_type || "";
+        const args = r.arguments || [];
+        const resolved = r.resolved;
+        html += '<div class="debate-round">';
+        html += '<span class="debate-round-num">第' + r.round + '轮</span> ';
+        if (conflictType) html += '<span style="color:#fbbf24;font-size:11px;margin-left:6px;">冲突: ' + conflictType + '</span> ';
+        html += '<span class="debate-resolved ' + (resolved ? "yes" : "no") + '">' + (resolved ? "已解决" : "未解决") + '</span>';
+        if (args.length > 0) {
+            html += '<div style="margin-top:6px;">';
+            for (const arg of args) {
+                const agentLabel = AGENT_META[arg.agent]?.label || arg.agent;
+                const agentIcon = AGENT_META[arg.agent]?.icon || "📋";
+                html += '<div style="padding:4px 8px;margin-bottom:3px;background:#0f172a;border-radius:4px;font-size:11px;border-left:2px solid ' + (arg.role === "defend" ? "#22c55e" : "#ef4444") + ';">';
+                html += agentIcon + ' ' + agentLabel + ': ';
+                html += '<span style="color:#cbd5e1;">' + (arg.claim || arg.revised_claim || "—").substring(0, 120) + '</span>';
+                html += '</div>';
+            }
+            html += '</div>';
+        }
+        html += '</div>';
+    }
+    html += '</div>';
+    panel.innerHTML = html;
+}
+
+function renderDynamicTasks(tasks) {
+    const panel = document.getElementById("dynamicPanel");
+    if (!tasks || !tasks.length) { panel.style.display = "none"; return; }
+    panel.style.display = "block";
+    let html = '<div class="section-header" onclick="toggleSection(\'dynamicPanel\')"><h4>➕ 动态任务</h4><span class="toggle-icon">▼</span></div>';
+    html += '<div class="section-body"><div class="dynamic-task-list">';
+    for (const t of tasks) {
+        const meta = AGENT_META[t.agent] || { icon: "📋", label: t.agent };
+        html += '<div class="dynamic-task-card">';
+        html += '<div class="dynamic-task-id">' + meta.icon + ' ' + t.task_id + '</div>';
+        html += '<div class="dynamic-task-info">' + meta.label + ' | ' + (t.status || "") + '</div>';
+        html += '</div>';
+    }
+    html += '</div></div>';
+    panel.innerHTML = html;
+}
+
+function addReasoningStep(id, label, title, status, data) {
+    const existing = reasoningSteps.find(s => s.id === id);
+    if (existing) {
+        existing.title = title;
+        existing.status = status;
+        existing.data = data;
+        return;
+    }
+    reasoningSteps.push({
+        id: id,
+        label: label,
+        title: title,
+        status: status,
+        summary: "",
+        data: data,
+        expanded: false
+    });
+    renderReasoningChain();
+}
+
+function updateReasoningStep(id, status, title, summary, data) {
+    const step = reasoningSteps.find(s => s.id === id);
+    if (step) {
+        step.status = status;
+        if (title) step.title = title;
+        if (summary) step.summary = summary;
+        if (data) step.data = data;
+    }
+    renderReasoningChain();
+}
+
+function renderReasoningChain() {
+    const panel = document.getElementById("reasoningPanel");
+    const container = document.getElementById("reasoningChain");
+    if (!reasoningSteps.length) {
+        panel.style.display = "none";
+        return;
+    }
+    panel.style.display = "block";
+
+    let html = "";
+    for (let i = 0; i < reasoningSteps.length; i++) {
+        const step = reasoningSteps[i];
+        const isExpanded = step.expanded;
+        const statusClass = step.status || "pending";
+        const icon = AGENT_META[step.id]?.icon || (step.id.startsWith("_phase") ? "🔄" : step.id.startsWith("_plan") ? "📋" : step.id.startsWith("_debate") ? "⚖️" : step.id.startsWith("inquiry") ? "📋" : "▶️");
+
+        html += '<div class="reasoning-step' + (isExpanded ? ' expanded' : '') + '" data-step-id="' + step.id + '">';
+        html += '<div class="reasoning-step-header" onclick="toggleReasoningStep(\'' + step.id + '\')">';
+        html += '<span class="reasoning-step-icon">' + icon + '</span>';
+        html += '<span class="reasoning-step-name">' + escapeHtml(step.title) + '</span>';
+        html += '<span class="reasoning-step-status ' + statusClass + '">' + statusClass + '</span>';
+        html += '<span class="reasoning-step-toggle">▶</span>';
+        html += '</div>';
+
+        html += '<div class="reasoning-step-body">';
+        if (step.summary) {
+            html += '<div class="reasoning-step-summary">' + escapeHtml(step.summary) + '</div>';
+        }
+        if (step.data && typeof step.data === "object") {
+            const displayKeys = Object.keys(step.data).filter(k =>
+                k !== "agent" && k !== "status" && k !== "task_id" &&
+                !(typeof step.data[k] === "object" && JSON.stringify(step.data[k]).length > 2000)
+            );
+            if (displayKeys.length > 0) {
+                html += '<details class="reasoning-step-data"><summary>详细数据 (' + displayKeys.length + ' 字段)</summary>';
+                html += '<pre>' + formatJsonFiltered(step.data, displayKeys) + '</pre>';
+                html += '</details>';
+            }
+        }
+        html += '</div>';
+        html += '</div>';
+    }
+    container.innerHTML = html;
+}
+
+function toggleReasoningStep(id) {
+    const step = reasoningSteps.find(s => s.id === id);
+    if (step) {
+        step.expanded = !step.expanded;
+        renderReasoningChain();
+    }
+}
+
+function formatJsonFiltered(obj, keys) {
+    if (!obj) return "null";
+    try {
+        const filtered = {};
+        for (const k of keys) {
+            if (obj.hasOwnProperty(k)) filtered[k] = obj[k];
+        }
+        return JSON.stringify(filtered, null, 2);
+    } catch(e) { return String(obj); }
+}
+
+loadChatFromStorage();
+if (chatHistory.length > 0) {
+    renderChatHistory();
+}
+document.getElementById("questionInput").focus();
+</script>
+</body>
+</html>

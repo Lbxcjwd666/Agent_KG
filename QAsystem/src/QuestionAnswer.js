@@ -35,6 +35,7 @@ const initialState = {
     status: 'idle',         // idle | loading | streaming | done | error
     currentAnswer: '',
     entities: [],
+    linkingStats: null,
     kgContext: '',
     visualizationData: null,
     reasoningPath: [],
@@ -55,6 +56,7 @@ function reducer(state, action) {
                 status: 'loading',
                 currentAnswer: '',
                 entities: [],
+                linkingStats: null,
                 kgContext: '',
                 visualizationData: null,
                 reasoningPath: [],
@@ -64,7 +66,10 @@ function reducer(state, action) {
             };
 
         case 'ENTITIES_RECEIVED':
-            return { ...state, entities: action.payload };
+            return { ...state, entities: action.payload.entities || [], linkingStats: action.payload.linkingStats || null };
+
+        case 'LINKING_STATS_RECEIVED':
+            return { ...state, linkingStats: action.payload };
 
         case 'KG_DONE':
             return { ...state, kgContext: action.payload, status: 'streaming' };
@@ -77,6 +82,7 @@ function reducer(state, action) {
                 question: state.inputValue,
                 answer: state.currentAnswer,
                 entities: state.entities,
+                linking_stats: state.linkingStats,
                 kg_context: state.kgContext || null,
                 visualization_data: action.payload.visualizationData || null,
                 reasoning_path: action.payload.reasoningPath || [],
@@ -180,7 +186,18 @@ const QuestionAnswer = () => {
                             const data = JSON.parse(raw);
                             switch (eventType) {
                                 case 'entity_done':
-                                    dispatch({ type: 'ENTITIES_RECEIVED', payload: data.entities || [] });
+                                    dispatch({ type: 'ENTITIES_RECEIVED', payload: { entities: data.entities || [] } });
+                                    break;
+                                case 'agent_done':
+                                    if (data.agent === 'entity_recognition') {
+                                        dispatch({
+                                            type: 'ENTITIES_RECEIVED',
+                                            payload: {
+                                                entities: data.entities || [],
+                                                linkingStats: data.linking_stats || null,
+                                            }
+                                        });
+                                    }
                                     break;
                                 case 'kg_done':
                                     // kg_context is built progressively; we signal streaming start here
@@ -327,9 +344,26 @@ const QuestionAnswer = () => {
                                     <strong>识别实体:</strong> {qa.entities.map((e, i) => (
                                         <span key={i} className={`entity-tag entity-${e.type}`} title={e.type}>
                                             <span className="entity-icon" aria-hidden="true">&#9679;</span>
-                                            {e.text} ({e.type})
+                                            {e.original_text && e.original_text !== e.text ? (
+                                                <>{e.original_text} → {e.text}</>
+                                            ) : (
+                                                e.text
+                                            )}
+                                            {e.matched_via && e.matched_via !== 'exact' && (
+                                                <span className="linking-method">{e.matched_via}</span>
+                                            )}
+                                            <span className="entity-type-label">({e.type})</span>
                                         </span>
                                     ))}
+                                    {qa.linking_stats && (
+                                        <div className="linking-stats">
+                                            <span className="stat-item stat-exact">精确 {qa.linking_stats.exact_match || 0}</span>
+                                            <span className="stat-item stat-alias">别名 {qa.linking_stats.alias_match || 0}</span>
+                                            <span className="stat-item stat-vector">向量 {qa.linking_stats.vector_match || 0}</span>
+                                            <span className="stat-item stat-fuzzy">模糊 {qa.linking_stats.fuzzy_match || 0}</span>
+                                            <span className="stat-item stat-unlinked">未链接 {qa.linking_stats.unlinked || 0}</span>
+                                        </div>
+                                    )}
                                 </div>
                             )}
                             <div className="qa-answer">
@@ -379,9 +413,26 @@ const QuestionAnswer = () => {
                                     <strong>识别实体:</strong> {state.entities.map((e, i) => (
                                         <span key={i} className={`entity-tag entity-${e.type}`} title={e.type}>
                                             <span className="entity-icon" aria-hidden="true">&#9679;</span>
-                                            {e.text} ({e.type})
+                                            {e.original_text && e.original_text !== e.text ? (
+                                                <>{e.original_text} → {e.text}</>
+                                            ) : (
+                                                e.text
+                                            )}
+                                            {e.matched_via && e.matched_via !== 'exact' && (
+                                                <span className="linking-method">{e.matched_via}</span>
+                                            )}
+                                            <span className="entity-type-label">({e.type})</span>
                                         </span>
                                     ))}
+                                    {state.linkingStats && (
+                                        <div className="linking-stats">
+                                            <span className="stat-item stat-exact">精确 {state.linkingStats.exact_match || 0}</span>
+                                            <span className="stat-item stat-alias">别名 {state.linkingStats.alias_match || 0}</span>
+                                            <span className="stat-item stat-vector">向量 {state.linkingStats.vector_match || 0}</span>
+                                            <span className="stat-item stat-fuzzy">模糊 {state.linkingStats.fuzzy_match || 0}</span>
+                                            <span className="stat-item stat-unlinked">未链接 {state.linkingStats.unlinked || 0}</span>
+                                        </div>
+                                    )}
                                 </div>
                             )}
                             <div className="qa-answer">

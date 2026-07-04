@@ -4,9 +4,11 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://192.168.100.104:5000',
+      target: 'http://localhost:5000',
       changeOrigin: true,
       pathRewrite: (path, req) => `/api${path}`,
+      timeout: 300000,
+      proxyTimeout: 300000,
     })
   );
 };

@@ -71,6 +71,44 @@
     font-size: 12px;
 }
 
+.entity-type-label {
+    opacity: 0.8;
+    margin-left: 2px;
+}
+
+.linking-method {
+    display: inline-block;
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.linking-stats {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dashed rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.stat-item {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: white;
+}
+
+.stat-exact { background: #4CAF50; }
+.stat-alias { background: #2196F3; }
+.stat-vector { background: #9C27B0; }
+.stat-fuzzy { background: #FF9800; }
+.stat-unlinked { background: #9E9E9E; }
+
 .qa-kg-info {
     margin-top: 15px;
     padding-top: 15px;

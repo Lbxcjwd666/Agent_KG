@@ -26,6 +26,46 @@ class KnowledgeGraphEnhancer:
         if self.driver:
             self.driver.close()
     
+    def resolve_entity_text(self, entity_text: str, entity_type: str) -> str:
+        """
+        解析实体文本: 精确匹配 → 去空格匹配 → CONTAINS模糊匹配 → 向量检索
+        返回数据库中实际存在的节点text，找不到则返回原文
+        """
+        label = self.entity_types.get(entity_type, entity_type)
+
+        with self.driver.session() as session:
+            # 1. 精确匹配
+            result = session.run(
+                f"MATCH (n:{label} {{text: $text}}) RETURN n.text AS t LIMIT 1",
+                text=entity_text
+            )
+            record = result.single()
+            if record:
+                return record["t"]
+
+            # 2. 去空格匹配
+            cleaned = entity_text.replace(" ", "").replace("\u3000", "")
+            result = session.run(
+                f"MATCH (n:{label}) WHERE replace(n.text, ' ', '') = $cleaned "
+                f"RETURN n.text AS t LIMIT 1",
+                cleaned=cleaned
+            )
+            record = result.single()
+            if record:
+                return record["t"]
+
+            # 3. CONTAINS 模糊匹配
+            result = session.run(
+                f"MATCH (n:{label}) WHERE n.text CONTAINS $text OR $text CONTAINS n.text "
+                f"RETURN n.text AS t LIMIT 1",
+                text=entity_text
+            )
+            record = result.single()
+            if record:
+                return record["t"]
+
+        return entity_text
+
     def query_entities_by_type(self, entity_text: str, entity_type: str) -> List[Dict]:
         """根据实体类型查询实体"""
         label = self.entity_types.get(entity_type, entity_type)
@@ -46,6 +86,7 @@ class KnowledgeGraphEnhancer:
         严格按照关系设计表进行查询
         """
         label = self.entity_types.get(entity_type, entity_type)
+        entity_text = self.resolve_entity_text(entity_text, entity_type)
         results = {}
         
         with self.driver.session() as session:
@@ -183,8 +224,49 @@ class KnowledgeGraphEnhancer:
                                 data = [record.data() for record in result]
                                 if data:
                                     results[f"{relation_name}_from_{head_label}"] = data
-        
+
         return results
+
+    def find_diseases_by_symptoms(self, symptom_texts: List[str]) -> Dict:
+        """
+        多症状→疾病交集查询
+        返回: {"shared": [交集疾病], "ranked": [(疾病, 命中症状数)], "mapping": {症状: [疾病]}}
+        """
+        symptom_to_diseases = {}
+        for sym_text in symptom_texts:
+            resolved = self.resolve_entity_text(sym_text, "症状")
+            with self.driver.session() as session:
+                result = session.run(
+                    "MATCH (d:DIS)-[:perf]->(s:SYM {text: $text}) RETURN d.text AS name",
+                    text=resolved
+                )
+                diseases = [r["name"] for r in result if r["name"]]
+            symptom_to_diseases[sym_text] = diseases
+
+        all_disease_sets = [set(v) for v in symptom_to_diseases.values() if v]
+        shared = list(set.intersection(*all_disease_sets)) if len(all_disease_sets) > 1 else []
+
+        from collections import Counter
+        disease_counter = Counter()
+        for diseases in symptom_to_diseases.values():
+            disease_counter.update(diseases)
+        ranked = disease_counter.most_common(10)
+
+        return {
+            "shared": shared,
+            "ranked": ranked,
+            "mapping": symptom_to_diseases
+        }
+
+    def get_disease_symptoms(self, disease_text: str) -> List[str]:
+        """查询疾病的所有症状"""
+        resolved = self.resolve_entity_text(disease_text, "疾病")
+        with self.driver.session() as session:
+            result = session.run(
+                "MATCH (d:DIS {text: $text})-[:perf]->(s:SYM) RETURN s.text AS name",
+                text=resolved
+            )
+            return [r["name"] for r in result if r["name"]]
 
     # L1 核心关系：直接影响临床决策
     L1_CORE_RELATIONS = {"治疗", "组成", "表现", "导致", "归属于"}
@@ -214,6 +296,7 @@ class KnowledgeGraphEnhancer:
         params = {}
 
         for idx, (entity_text, entity_type, relation_name) in enumerate(queries):
+            entity_text = self.resolve_entity_text(entity_text, entity_type)
             label = self.entity_types.get(entity_type, entity_type)
             if not label or label not in self.entity_types.values():
                 continue
@@ -324,12 +407,12 @@ class KnowledgeGraphEnhancer:
     def query_relations_layered(self, entity_text: str, entity_type: str,
                                 layer: str = "L1") -> Dict:
         """
-        分层查询：L1只查核心关系，L2查扩展关系
+        分层查询：L1只查核心关系，L2查核心+扩展关系，ALL查全部
 
         Args:
             entity_text: 实体文本
             entity_type: 实体类型
-            layer: "L1" (核心), "L2" (扩展), "ALL" (全部)
+            layer: "L1" (核心), "L2" (核心+扩展), "ALL" (全部)
 
         Returns:
             查询结果字典
@@ -337,21 +420,24 @@ class KnowledgeGraphEnhancer:
         if layer == "L1":
             target_relations = list(self.L1_CORE_RELATIONS)
         elif layer == "L2":
-            target_relations = list(self.L2_EXTENDED_RELATIONS)
+            target_relations = list(self.L1_CORE_RELATIONS | self.L2_EXTENDED_RELATIONS)
         else:
-            target_relations = None  # 查全部，回退到原方法
+            target_relations = None
 
         if target_relations is None:
             return self.query_relations(entity_text, entity_type)
 
         queries = [(entity_text, entity_type, r) for r in target_relations]
-        return self.query_relations_batch(queries)
+        results = self.query_relations_batch(queries)
+
+        return results
 
     def query_multi_hop(self, entity_text: str, entity_type: str, max_hops: int = 2) -> Dict:
         """
         多跳查询 - 查询实体的多跳关系
         """
         label = self.entity_types.get(entity_type, entity_type)
+        entity_text = self.resolve_entity_text(entity_text, entity_type)
         results = {}
         
         with self.driver.session() as session:

@@ -2,9 +2,13 @@
 千问API调用模块
 """
 
+import os
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+
 import requests
 import json
 import re
+import time
 from typing import List, Dict, Optional, Generator
 from config import QWEN_API_CONFIG, ENTITY_TYPES
 import urllib3
@@ -71,6 +75,68 @@ class QwenAPI:
         # 验证模型配置
         self._validate_model()
     
+    _local_model = None
+
+    def _get_local_model(self, model_name: str):
+        if QwenAPI._local_model is None:
+            from sentence_transformers import SentenceTransformer
+            import torch
+
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+            QwenAPI._local_model = SentenceTransformer(
+                f"BAAI/{model_name}", device=device
+            )
+        return QwenAPI._local_model
+
+    def _get_embeddings_local(self, texts: List[str], model: str) -> List[List[float]]:
+        try:
+            encoder = self._get_local_model(model)
+            embeddings = encoder.encode(texts, normalize_embeddings=True, show_progress_bar=False)
+            return embeddings.tolist()
+        except Exception as e:
+            raise Exception(f"本地Embedding失败: {str(e)}")
+
+    def _get_embeddings_api(self, texts: List[str], model: str,
+                            dimensions: int) -> List[List[float]]:
+        url = f"{self.base_url}/embeddings"
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+
+        data = {
+            "model": model,
+            "input": texts,
+            "dimensions": dimensions
+        }
+
+        try:
+            response = requests.post(url, headers=headers, json=data, timeout=60, verify=False)
+            if response.status_code != 200:
+                error_detail = response.text
+                raise Exception(f"Embedding API请求失败 (HTTP {response.status_code}): {error_detail}")
+
+            result = response.json()
+
+            if "data" in result:
+                embeddings = [item["embedding"] for item in sorted(result["data"], key=lambda x: x["index"])]
+                return embeddings
+            else:
+                raise Exception(f"Embedding API返回格式错误: {result}")
+        except requests.exceptions.RequestException as e:
+            raise Exception(f"Embedding API请求失败: {str(e)}")
+
+    def get_embeddings(self, texts: List[str], model: str = "text-embedding-v1",
+                       dimensions: int = 1024) -> List[List[float]]:
+        from config import VECTOR_INDEX_CONFIG
+        provider = VECTOR_INDEX_CONFIG.get("embedding_provider", "api")
+
+        if provider == "local":
+            return self._get_embeddings_local(texts, model)
+        else:
+            return self._get_embeddings_api(texts, model, dimensions)
+
     def _validate_model(self):
         """验证模型配置是否合理"""
         if self.model in self.UNSUPPORTED_MODELS:
@@ -108,7 +174,7 @@ class QwenAPI:
         }
         
         try:
-            response = requests.post(url, headers=headers, json=data, timeout=30, verify=False)
+            response = requests.post(url, headers=headers, json=data, timeout=120, verify=False)
             response.raise_for_status()
             
             result = response.json()
@@ -151,7 +217,7 @@ class QwenAPI:
 
         try:
             response = requests.post(url, headers=headers, json=data,
-                                     timeout=60, stream=True, verify=False)
+                                     timeout=180, stream=True, verify=False)
             response.raise_for_status()
 
             for line in response.iter_lines(decode_unicode=True):

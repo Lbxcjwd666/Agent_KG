@@ -1,0 +1,4 @@
+@echo off
+set PYTHONPATH=d:\Inovation\TCM-QAsystem\QAsystem\src
+cd /d d:\Inovation\TCM-QAsystem\QAsystem\src
+D:\Install\miniconda3\envs\QA-system\python.exe -c "import sys; sys.path.insert(0, r'd:\Inovation\TCM-QAsystem\QAsystem\src'); from app import app; print('Import OK')" > d:\Inovation\TCM-QAsystem\QAsystem\test_output.txt 2>&1

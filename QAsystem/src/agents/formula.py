@@ -49,6 +49,7 @@ class FormulaAgent(BaseAgent):
         kg_context = payload.get("kg_context", "")
         entities = payload.get("entities", [])
         question = payload.get("question", "")
+        subgraph = payload.get("subgraph", {})
 
         syndrome = diagnosis_result.get("syndrome", {})
         syndrome_name = ""
@@ -59,12 +60,14 @@ class FormulaAgent(BaseAgent):
 
         treatment = diagnosis_result.get("treatment_principle", "")
 
-        # KG查询方剂
         formula_kg = ""
-        if self.kg and syndrome_name:
+        if subgraph:
+            formula_kg = self._format_subgraph(subgraph)
+        elif kg_context:
+            formula_kg = kg_context
+        elif self.kg and syndrome_name:
             formula_kg = self._query_formulas(syndrome_name, entities)
 
-        # LLM方剂推荐
         prompt = self._build_prompt(syndrome_name, treatment, formula_kg,
                                     kg_context, question)
         messages = [
@@ -78,7 +81,6 @@ class FormulaAgent(BaseAgent):
         if not result:
             return self._fallback(syndrome_name, treatment)
 
-        # 结构化禁忌检查
         contraindications = result.get("contraindications", [])
         if self.kg:
             contraindications = self._check_contraindications(
@@ -92,11 +94,26 @@ class FormulaAgent(BaseAgent):
             "contraindications": contraindications,
             "preparation": result.get("preparation", ""),
             "overall_confidence": result.get("overall_confidence", 0.8),
-            "kg_context_used": bool(formula_kg)
+            "kg_context_used": bool(formula_kg) or bool(kg_context)
         }
 
+    def _format_subgraph(self, subgraph: Dict) -> str:
+        """格式化专属子图为自然语言"""
+        parts = []
+        for entity_text, data in subgraph.items():
+            if not isinstance(data, dict):
+                continue
+            entity_type = data.get("type", "")
+            parts.append(f"【{entity_text}（{entity_type}）】")
+            for key, values in data.get("relations", {}).items():
+                if not values:
+                    continue
+                names = [v.get("text", "") for v in values[:5]]
+                parts.append(f"  {key}: {', '.join(names)}")
+        return "\n".join(parts)
+
     def _query_formulas(self, syndrome_name: str, entities: list) -> str:
-        """查询KG获取方剂信息"""
+        """查询KG获取方剂信息（仅在无kg_context时调用）"""
         parts = []
         try:
             # 查询证候的treat关系 → 方剂

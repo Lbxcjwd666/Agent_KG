@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "question": "我最近头痛，口干口苦，心烦易怒，舌红苔黄，脉弦数，请问这是什么证？该怎么治疗？",
+    "category": "肝胆证候",
+    "difficulty": "complex",
+    "expected_entities": ["头痛", "口干", "口苦", "心烦易怒", "舌红苔黄", "脉弦数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 2,
+    "question": "患者女性，35岁，面色萎黄，头晕目眩，心悸失眠，食欲不振，舌淡苔白，脉细弱",
+    "category": "气血两虚",
+    "difficulty": "complex",
+    "expected_entities": ["面色萎黄", "头晕", "心悸", "失眠", "食欲不振", "舌淡苔白", "脉细弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 3,
+    "question": "我腰膝酸软，手足心热，盗汗，口干咽燥，舌红少苔，脉细数",
+    "category": "肾阴虚",
+    "difficulty": "complex",
+    "expected_entities": ["腰膝酸软", "手足心热", "盗汗", "口干", "咽燥", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 4,
+    "question": "最近总是怕冷，手脚冰凉，腰膝冷痛，小便清长，舌淡胖苔白，脉沉迟",
+    "category": "肾阳虚",
+    "difficulty": "complex",
+    "expected_entities": ["怕冷", "手脚冰凉", "腰膝冷痛", "小便清长", "舌淡胖", "脉沉迟"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 5,
+    "question": "我胃脘胀痛，嗳气频繁，食欲不振，大便不爽，舌苔白腻，脉弦",
+    "category": "肝胃不和",
+    "difficulty": "complex",
+    "expected_entities": ["胃脘胀痛", "嗳气", "食欲不振", "大便不爽", "舌苔白腻", "脉弦"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 6,
+    "question": "咳嗽痰多色白，胸闷，舌苔白腻，脉滑",
+    "category": "痰湿蕴肺",
+    "difficulty": "medium",
+    "expected_entities": ["咳嗽", "痰多", "色白", "胸闷", "舌苔白腻", "脉滑"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 7,
+    "question": "干咳少痰，咽干鼻燥，口渴，舌红少津，脉细数",
+    "category": "燥邪伤肺",
+    "difficulty": "medium",
+    "expected_entities": ["干咳", "少痰", "咽干", "鼻燥", "口渴", "舌红少津", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 8,
+    "question": "心悸气短，动则加重，面色苍白，自汗，舌淡苔白，脉弱",
+    "category": "心气虚",
+    "difficulty": "medium",
+    "expected_entities": ["心悸", "气短", "面色苍白", "自汗", "舌淡苔白", "脉弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 9,
+    "question": "我最近失眠多梦，心烦，口舌生疮，小便短赤，舌尖红，脉数",
+    "category": "心火亢盛",
+    "difficulty": "medium",
+    "expected_entities": ["失眠", "多梦", "心烦", "口舌生疮", "小便短赤", "舌尖红", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 10,
+    "question": "胸胁胀痛，善太息，情志抑郁，咽中如有物梗阻，舌苔白，脉弦",
+    "category": "肝气郁结",
+    "difficulty": "medium",
+    "expected_entities": ["胸胁胀痛", "善太息", "情志抑郁", "咽中如有物梗阻", "脉弦"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 11,
+    "question": "头晕目赤，急躁易怒，口苦，便秘尿赤，舌红苔黄，脉弦数",
+    "category": "肝火上炎",
+    "difficulty": "medium",
+    "expected_entities": ["头晕", "目赤", "急躁易怒", "口苦", "便秘", "尿赤", "舌红苔黄", "脉弦数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 12,
+    "question": "我经常腹泻，大便溏薄，食少腹胀，面色萎黄，神疲乏力，舌淡苔白，脉缓弱",
+    "category": "脾气虚",
+    "difficulty": "complex",
+    "expected_entities": ["腹泻", "大便溏薄", "食少", "腹胀", "面色萎黄", "神疲乏力", "舌淡苔白", "脉缓弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 13,
+    "question": "胃脘隐痛，喜温喜按，食后痛减，口淡不渴，舌淡苔白，脉虚缓",
+    "category": "胃寒证",
+    "difficulty": "medium",
+    "expected_entities": ["胃脘隐痛", "喜温喜按", "食后痛减", "口淡不渴", "舌淡苔白", "脉虚缓"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 14,
+    "question": "胃脘灼痛，口渴喜冷饮，消谷善饥，牙龈肿痛，口臭，舌红苔黄，脉滑数",
+    "category": "胃热证",
+    "difficulty": "medium",
+    "expected_entities": ["胃脘灼痛", "口渴", "喜冷饮", "消谷善饥", "牙龈肿痛", "口臭", "舌红苔黄", "脉滑数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 15,
+    "question": "咳嗽气喘，痰黄稠，发热，口渴，舌红苔黄腻，脉滑数",
+    "category": "痰热蕴肺",
+    "difficulty": "medium",
+    "expected_entities": ["咳嗽", "气喘", "痰黄稠", "发热", "口渴", "舌红苔黄腻", "脉滑数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 16,
+    "question": "我最近总感觉乏力，没精神，不想吃饭，是什么原因？",
+    "category": "脾气虚",
+    "difficulty": "simple",
+    "expected_entities": ["乏力", "没精神", "不想吃饭"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 17,
+    "question": "头痛",
+    "category": "头痛",
+    "difficulty": "simple",
+    "expected_entities": ["头痛"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 18,
+    "question": "失眠怎么办",
+    "category": "失眠",
+    "difficulty": "simple",
+    "expected_entities": ["失眠"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 19,
+    "question": "口干",
+    "category": "口干",
+    "difficulty": "simple",
+    "expected_entities": ["口干"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 20,
+    "question": "便秘怎么调理",
+    "category": "便秘",
+    "difficulty": "simple",
+    "expected_entities": ["便秘"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 21,
+    "question": "我母亲60岁，最近经常头晕，腰膝酸软，夜尿频多，怕冷，舌淡胖有齿痕，脉沉弱",
+    "category": "肾阳虚",
+    "difficulty": "complex",
+    "expected_entities": ["头晕", "腰膝酸软", "夜尿频多", "怕冷", "舌淡胖", "齿痕", "脉沉弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 22,
+    "question": "两胁胀痛，口苦咽干，目眩，耳鸣，舌红苔黄，脉弦数",
+    "category": "少阳证",
+    "difficulty": "medium",
+    "expected_entities": ["两胁胀痛", "口苦", "咽干", "目眩", "耳鸣", "舌红苔黄", "脉弦数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 23,
+    "question": "我咳嗽反复发作，痰白粘腻，胸闷气短，食少便溏，舌苔白腻，脉滑",
+    "category": "痰湿蕴肺",
+    "difficulty": "complex",
+    "expected_entities": ["咳嗽", "痰白粘腻", "胸闷", "气短", "食少", "便溏", "舌苔白腻", "脉滑"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 24,
+    "question": "发热恶寒，无汗，头痛身痛，鼻塞流清涕，舌苔薄白，脉浮紧",
+    "category": "风寒感冒",
+    "difficulty": "medium",
+    "expected_entities": ["发热", "恶寒", "无汗", "头痛", "身痛", "鼻塞", "流清涕", "脉浮紧"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 25,
+    "question": "发热微恶寒，汗出，口渴，咽喉肿痛，舌苔薄黄，脉浮数",
+    "category": "风热感冒",
+    "difficulty": "medium",
+    "expected_entities": ["发热", "微恶寒", "汗出", "口渴", "咽喉肿痛", "舌苔薄黄", "脉浮数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 26,
+    "question": "我最近总感觉胃里烧得慌，反酸，口苦，舌红苔黄，这是什么病？",
+    "category": "胃热证",
+    "difficulty": "medium",
+    "expected_entities": ["胃里烧", "反酸", "口苦", "舌红苔黄"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 27,
+    "question": "月经不调，经前乳房胀痛，情志不畅，小腹胀痛，舌苔薄白，脉弦",
+    "category": "肝气郁结",
+    "difficulty": "medium",
+    "expected_entities": ["月经不调", "乳房胀痛", "情志不畅", "小腹胀痛", "脉弦"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 28,
+    "question": "我经常水肿，尤其是下肢，小便不利，畏寒肢冷，舌淡胖苔白滑，脉沉迟",
+    "category": "肾阳虚",
+    "difficulty": "complex",
+    "expected_entities": ["水肿", "下肢", "小便不利", "畏寒", "肢冷", "舌淡胖", "苔白滑", "脉沉迟"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 29,
+    "question": "五心烦热，潮热盗汗，颧红，口干，舌红少苔，脉细数",
+    "category": "阴虚火旺",
+    "difficulty": "medium",
+    "expected_entities": ["五心烦热", "潮热", "盗汗", "颧红", "口干", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 30,
+    "question": "我最近总觉得胸口闷，心慌，气短，活动后加重，舌暗有瘀斑，脉涩",
+    "category": "心血瘀阻",
+    "difficulty": "complex",
+    "expected_entities": ["胸闷", "心慌", "气短", "舌暗", "瘀斑", "脉涩"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 31,
+    "question": "半身不遂，口眼歪斜，语言不利，舌强语謇，舌苔白腻，脉滑",
+    "category": "中风",
+    "difficulty": "complex",
+    "expected_entities": ["半身不遂", "口眼歪斜", "语言不利", "舌强语謇", "舌苔白腻", "脉滑"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 32,
+    "question": "我关节疼痛，遇寒加重，得温则减，屈伸不利，舌苔白，脉弦紧",
+    "category": "寒湿痹证",
+    "difficulty": "medium",
+    "expected_entities": ["关节疼痛", "遇寒加重", "得温则减", "屈伸不利", "脉弦紧"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 33,
+    "question": "关节红肿热痛，痛不可触，发热口渴，舌红苔黄腻，脉滑数",
+    "category": "湿热痹证",
+    "difficulty": "medium",
+    "expected_entities": ["关节红肿热痛", "发热", "口渴", "舌红苔黄腻", "脉滑数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 34,
+    "question": "皮肤瘙痒，起红疹，遇热加重，口渴心烦，舌红苔黄，脉数",
+    "category": "风热客表",
+    "difficulty": "medium",
+    "expected_entities": ["皮肤瘙痒", "红疹", "遇热加重", "口渴", "心烦", "舌红苔黄", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 35,
+    "question": "我最近总是恶心呕吐，不想吃东西，身体困重，大便溏泄，舌苔白腻",
+    "category": "湿阻脾胃",
+    "difficulty": "medium",
+    "expected_entities": ["恶心", "呕吐", "食欲不振", "身体困重", "大便溏泄", "舌苔白腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 36,
+    "question": "小便频数短涩，尿急尿痛，尿色黄赤，舌红苔黄腻，脉数",
+    "category": "膀胱湿热",
+    "difficulty": "medium",
+    "expected_entities": ["小便频数", "尿急", "尿痛", "尿色黄赤", "舌红苔黄腻", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 37,
+    "question": "我最近耳鸣，听力下降，腰膝酸软，遗精盗汗，舌红少苔，脉细数",
+    "category": "肾阴虚",
+    "difficulty": "complex",
+    "expected_entities": ["耳鸣", "听力下降", "腰膝酸软", "遗精", "盗汗", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 38,
+    "question": "我鼻子经常出血，牙龈也出血，皮肤有紫斑，舌红苔黄，脉数",
+    "category": "血热妄行",
+    "difficulty": "medium",
+    "expected_entities": ["鼻出血", "牙龈出血", "紫斑", "舌红苔黄", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 39,
+    "question": "我最近面色苍白，头晕眼花，心悸，手足发麻，舌淡苔白，脉细",
+    "category": "血虚证",
+    "difficulty": "medium",
+    "expected_entities": ["面色苍白", "头晕", "眼花", "心悸", "手足发麻", "舌淡苔白", "脉细"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 40,
+    "question": "脘腹冷痛，呕吐清水，肠鸣腹泻，得温则减，舌淡苔白滑，脉沉紧",
+    "category": "寒凝胃肠",
+    "difficulty": "medium",
+    "expected_entities": ["脘腹冷痛", "呕吐清水", "肠鸣", "腹泻", "得温则减", "舌淡苔白滑", "脉沉紧"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 41,
+    "question": "我最近总是口渴多饮，多食易饥，多尿，身体消瘦，这是什么病？",
+    "category": "消渴",
+    "difficulty": "medium",
+    "expected_entities": ["口渴多饮", "多食易饥", "多尿", "消瘦"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 42,
+    "question": "我最近经常出汗，一动就出汗，气短懒言，容易感冒，舌淡苔白，脉弱",
+    "category": "气虚自汗",
+    "difficulty": "medium",
+    "expected_entities": ["自汗", "气短", "懒言", "容易感冒", "舌淡苔白", "脉弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 43,
+    "question": "晚上睡觉出汗，醒来汗止，五心烦热，口干，舌红少苔，脉细数",
+    "category": "阴虚盗汗",
+    "difficulty": "medium",
+    "expected_entities": ["盗汗", "五心烦热", "口干", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 44,
+    "question": "我最近眼睛红肿疼痛，怕光流泪，头痛，口苦，舌红苔黄，脉弦数",
+    "category": "肝火上炎",
+    "difficulty": "medium",
+    "expected_entities": ["眼睛红肿", "怕光", "流泪", "头痛", "口苦", "舌红苔黄", "脉弦数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 45,
+    "question": "我最近总是想吐，吃不下东西，身体沉重，口渴不想喝水，舌苔黄腻",
+    "category": "湿热中阻",
+    "difficulty": "medium",
+    "expected_entities": ["恶心", "食欲不振", "身体沉重", "口渴不欲饮", "舌苔黄腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 46,
+    "question": "我最近咽喉肿痛，咳嗽痰黄，发热，口渴，舌红苔黄，脉数",
+    "category": "风热犯肺",
+    "difficulty": "medium",
+    "expected_entities": ["咽喉肿痛", "咳嗽", "痰黄", "发热", "口渴", "舌红苔黄", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 47,
+    "question": "我最近总感觉肚子胀，放屁多，两胁胀满，情绪不好的时候更严重",
+    "category": "肝脾不和",
+    "difficulty": "medium",
+    "expected_entities": ["腹胀", "放屁多", "两胁胀满", "情志不畅"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 48,
+    "question": "我最近小便不利，排尿困难，小腹胀满，口渴不欲饮，舌红苔黄腻",
+    "category": "膀胱湿热",
+    "difficulty": "medium",
+    "expected_entities": ["小便不利", "排尿困难", "小腹胀满", "口渴不欲饮", "舌红苔黄腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 49,
+    "question": "我最近面色萎黄，指甲苍白，头晕，月经量少色淡，舌淡苔白，脉细弱",
+    "category": "肝血虚",
+    "difficulty": "complex",
+    "expected_entities": ["面色萎黄", "指甲苍白", "头晕", "月经量少", "色淡", "舌淡苔白", "脉细弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 50,
+    "question": "我最近感觉身体沉重，头重如裹，关节酸痛，口淡不渴，舌苔白腻，脉濡",
+    "category": "湿邪困脾",
+    "difficulty": "medium",
+    "expected_entities": ["身体沉重", "头重如裹", "关节酸痛", "口淡不渴", "舌苔白腻", "脉濡"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 51,
+    "question": "我最近经常打嗝，反酸，胃里嘈杂不舒服，口干口苦，舌红苔黄",
+    "category": "肝胃郁热",
+    "difficulty": "medium",
+    "expected_entities": ["打嗝", "反酸", "胃嘈杂", "口干", "口苦", "舌红苔黄"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 52,
+    "question": "我最近大便干结，几天才一次，口臭，腹胀，舌红苔黄燥，脉滑数",
+    "category": "肠热便秘",
+    "difficulty": "medium",
+    "expected_entities": ["大便干结", "口臭", "腹胀", "舌红苔黄燥", "脉滑数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 53,
+    "question": "我最近总是感觉气不够用，说话声音低，容易出汗，舌淡苔白，脉虚",
+    "category": "肺气虚",
+    "difficulty": "medium",
+    "expected_entities": ["气短", "声音低", "自汗", "舌淡苔白", "脉虚"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 54,
+    "question": "我最近咳嗽，痰中带血，潮热盗汗，颧红，口干咽燥，舌红少苔，脉细数",
+    "category": "肺阴虚",
+    "difficulty": "complex",
+    "expected_entities": ["咳嗽", "痰中带血", "潮热", "盗汗", "颧红", "口干", "咽燥", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 55,
+    "question": "我最近感觉肚子一阵一阵地疼，拉肚子，拉完还想去，里急后重，舌红苔黄腻",
+    "category": "湿热痢疾",
+    "difficulty": "medium",
+    "expected_entities": ["腹痛", "腹泻", "里急后重", "舌红苔黄腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 56,
+    "question": "我最近总是感觉怕风，出汗多，鼻塞，打喷嚏，舌苔薄白，脉浮缓",
+    "category": "风寒表虚",
+    "difficulty": "medium",
+    "expected_entities": ["怕风", "汗出", "鼻塞", "打喷嚏", "舌苔薄白", "脉浮缓"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 57,
+    "question": "我最近感觉喉咙里有东西堵着，咽不下去也吐不出来，心情不好的时候更明显",
+    "category": "梅核气",
+    "difficulty": "medium",
+    "expected_entities": ["咽中如有物梗阻", "情志不畅"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 58,
+    "question": "我最近总是感觉口渴，喝很多水也不解渴，尿多，体重下降，舌红苔黄，脉数",
+    "category": "消渴",
+    "difficulty": "medium",
+    "expected_entities": ["口渴", "多饮", "多尿", "消瘦", "舌红苔黄", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 59,
+    "question": "我最近感觉手脚麻木，有时候还会抽筋，指甲没有光泽，舌淡苔白，脉细",
+    "category": "肝血虚",
+    "difficulty": "medium",
+    "expected_entities": ["手足麻木", "抽筋", "指甲无光泽", "舌淡苔白", "脉细"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 60,
+    "question": "我最近总是感觉肚子胀，吃点东西就饱，打嗝反酸，大便稀，舌苔厚腻",
+    "category": "食积胃肠",
+    "difficulty": "medium",
+    "expected_entities": ["腹胀", "早饱", "打嗝", "反酸", "大便稀", "舌苔厚腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 61,
+    "question": "我最近感觉身体发热，午后更明显，口干不想喝水，身体困重，舌苔黄腻，脉濡数",
+    "category": "湿热证",
+    "difficulty": "medium",
+    "expected_entities": ["发热", "午后加重", "口干不欲饮", "身体困重", "舌苔黄腻", "脉濡数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 62,
+    "question": "我最近感觉心慌，心跳不规律，胸闷，气短，失眠多梦，舌淡苔白，脉结代",
+    "category": "心气血两虚",
+    "difficulty": "complex",
+    "expected_entities": ["心悸", "心跳不规律", "胸闷", "气短", "失眠", "多梦", "脉结代"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 63,
+    "question": "我最近感觉腰痛，弯腰活动受限，遇阴雨天加重，舌苔白腻，脉沉紧",
+    "category": "寒湿腰痛",
+    "difficulty": "medium",
+    "expected_entities": ["腰痛", "活动受限", "遇阴雨加重", "舌苔白腻", "脉沉紧"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 64,
+    "question": "我最近感觉眼睛干涩，视物模糊，指甲脆，月经量少，舌淡苔白，脉细",
+    "category": "肝血虚",
+    "difficulty": "medium",
+    "expected_entities": ["眼睛干涩", "视物模糊", "指甲脆", "月经量少", "舌淡苔白", "脉细"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 65,
+    "question": "我最近感觉怕冷，发热，不出汗，全身酸痛，鼻塞，舌苔薄白，脉浮紧",
+    "category": "风寒感冒",
+    "difficulty": "medium",
+    "expected_entities": ["怕冷", "发热", "无汗", "全身酸痛", "鼻塞", "脉浮紧"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 66,
+    "question": "我最近感觉头重脚轻，恶心，口苦，胁肋胀满，小便黄，舌苔黄腻，脉弦数",
+    "category": "肝胆湿热",
+    "difficulty": "complex",
+    "expected_entities": ["头重脚轻", "恶心", "口苦", "胁肋胀满", "小便黄", "舌苔黄腻", "脉弦数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 67,
+    "question": "我最近感觉肚子咕咕叫，拉肚子，拉出来的东西有未消化的食物，舌淡苔白，脉弱",
+    "category": "脾虚泄泻",
+    "difficulty": "medium",
+    "expected_entities": ["肠鸣", "腹泻", "完谷不化", "舌淡苔白", "脉弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 68,
+    "question": "我最近感觉口唇干燥，皮肤干燥，大便干，小便少，舌红少津，脉细",
+    "category": "津液亏虚",
+    "difficulty": "medium",
+    "expected_entities": ["口唇干燥", "皮肤干燥", "大便干", "小便少", "舌红少津", "脉细"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 69,
+    "question": "我最近感觉心烦，失眠，口舌生疮，小便黄，舌尖红，苔黄，脉数",
+    "category": "心火亢盛",
+    "difficulty": "medium",
+    "expected_entities": ["心烦", "失眠", "口舌生疮", "小便黄", "舌尖红", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 70,
+    "question": "我最近感觉四肢冰凉，冷汗淋漓，面色苍白，脉微欲绝",
+    "category": "亡阳证",
+    "difficulty": "complex",
+    "expected_entities": ["四肢冰凉", "冷汗", "面色苍白", "脉微欲绝"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 71,
+    "question": "我最近感觉口渴想喝热水，胃里冷痛，吃热的舒服，舌淡苔白，脉沉迟",
+    "category": "胃寒证",
+    "difficulty": "medium",
+    "expected_entities": ["口渴喜热饮", "胃冷痛", "得温则减", "舌淡苔白", "脉沉迟"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 72,
+    "question": "我最近感觉头胀痛，面红目赤，急躁，口苦，便秘，舌红苔黄，脉弦数",
+    "category": "肝阳上亢",
+    "difficulty": "medium",
+    "expected_entities": ["头胀痛", "面红目赤", "急躁", "口苦", "便秘", "舌红苔黄", "脉弦数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 73,
+    "question": "我最近感觉喉咙干，咳嗽，痰少不好咳出来，鼻子干，口渴，舌干红少苔",
+    "category": "燥邪伤肺",
+    "difficulty": "medium",
+    "expected_entities": ["咽干", "咳嗽", "痰少", "鼻燥", "口渴", "舌干红少苔"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 74,
+    "question": "我最近感觉胸胁苦满，不欲饮食，心烦喜呕，口苦，咽干，目眩，脉弦",
+    "category": "少阳证",
+    "difficulty": "complex",
+    "expected_entities": ["胸胁苦满", "不欲饮食", "心烦", "喜呕", "口苦", "咽干", "目眩", "脉弦"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 75,
+    "question": "我最近感觉身体沉重，关节肿痛，发热，口渴不欲饮，舌苔黄腻，脉滑数",
+    "category": "湿热痹证",
+    "difficulty": "medium",
+    "expected_entities": ["身体沉重", "关节肿痛", "发热", "口渴不欲饮", "舌苔黄腻", "脉滑数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 76,
+    "question": "我最近感觉小腹坠胀，尿频尿急，尿痛，尿色黄，舌红苔黄腻，脉数",
+    "category": "膀胱湿热",
+    "difficulty": "medium",
+    "expected_entities": ["小腹坠胀", "尿频", "尿急", "尿痛", "尿色黄", "舌红苔黄腻", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 77,
+    "question": "我最近感觉头晕，头重脚轻，腰膝酸软，耳鸣，记忆力下降，舌红少苔，脉细数",
+    "category": "肾阴虚",
+    "difficulty": "complex",
+    "expected_entities": ["头晕", "头重脚轻", "腰膝酸软", "耳鸣", "记忆力下降", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 78,
+    "question": "我最近感觉面色晦暗，嘴唇发紫，皮肤粗糙，舌暗有瘀点，脉涩",
+    "category": "血瘀证",
+    "difficulty": "medium",
+    "expected_entities": ["面色晦暗", "唇紫", "皮肤粗糙", "舌暗", "瘀点", "脉涩"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 79,
+    "question": "我最近感觉胃里不舒服，隐隐作痛，饿了更疼，吃东西好一点，口干，舌红少苔",
+    "category": "胃阴虚",
+    "difficulty": "medium",
+    "expected_entities": ["胃脘隐痛", "饥饿痛", "食后缓解", "口干", "舌红少苔"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 80,
+    "question": "我最近感觉手脚心热，心里烦，晚上出汗，腰酸，舌红少苔，脉细数",
+    "category": "阴虚火旺",
+    "difficulty": "medium",
+    "expected_entities": ["手足心热", "心烦", "盗汗", "腰酸", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 81,
+    "question": "我最近感觉全身没力气，说话声音小，不想吃饭，大便稀，舌淡有齿痕，脉弱",
+    "category": "脾气虚",
+    "difficulty": "medium",
+    "expected_entities": ["乏力", "声音低", "食欲不振", "大便稀", "齿痕舌", "脉弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 82,
+    "question": "我最近感觉肚子痛，拉肚子，拉完肚子还痛，大便有粘液，舌苔黄腻",
+    "category": "湿热痢疾",
+    "difficulty": "medium",
+    "expected_entities": ["腹痛", "腹泻", "里急后重", "粘液便", "舌苔黄腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 83,
+    "question": "我最近感觉头重如裹，身体困重，不想吃饭，口淡无味，舌苔白腻，脉濡",
+    "category": "湿邪困脾",
+    "difficulty": "medium",
+    "expected_entities": ["头重如裹", "身体困重", "食欲不振", "口淡无味", "舌苔白腻", "脉濡"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 84,
+    "question": "我最近感觉心前区疼痛，痛如针刺，痛处固定，舌暗有瘀斑，脉涩",
+    "category": "心血瘀阻",
+    "difficulty": "complex",
+    "expected_entities": ["心前区疼痛", "刺痛", "痛处固定", "舌暗", "瘀斑", "脉涩"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 85,
+    "question": "我最近感觉怕冷，四肢冰凉，腰痛，小便清长，夜尿多，舌淡胖，脉沉弱",
+    "category": "肾阳虚",
+    "difficulty": "complex",
+    "expected_entities": ["怕冷", "四肢冰凉", "腰痛", "小便清长", "夜尿多", "舌淡胖", "脉沉弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 86,
+    "question": "我最近感觉胁肋隐痛，悠悠不休，口干，头晕目眩，舌红少苔，脉弦细",
+    "category": "肝阴虚",
+    "difficulty": "medium",
+    "expected_entities": ["胁肋隐痛", "口干", "头晕", "目眩", "舌红少苔", "脉弦细"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 87,
+    "question": "我最近感觉咳嗽，喘息，痰白清稀，怕冷，口不渴，舌苔白滑，脉浮紧",
+    "category": "寒饮停肺",
+    "difficulty": "medium",
+    "expected_entities": ["咳嗽", "喘息", "痰白清稀", "怕冷", "口不渴", "舌苔白滑", "脉浮紧"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 88,
+    "question": "我最近感觉肚子痛，喜欢按，按了舒服，吃热的也舒服，不想吃饭，舌淡苔白",
+    "category": "虚寒腹痛",
+    "difficulty": "medium",
+    "expected_entities": ["腹痛", "喜按", "得温则减", "食欲不振", "舌淡苔白"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 89,
+    "question": "我最近感觉皮肤发黄，色泽鲜明，发热，口苦，胁痛，小便黄，舌苔黄腻",
+    "category": "湿热黄疸",
+    "difficulty": "medium",
+    "expected_entities": ["皮肤发黄", "色泽鲜明", "发热", "口苦", "胁痛", "小便黄", "舌苔黄腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 90,
+    "question": "我最近感觉皮肤发黄，色泽晦暗，怕冷，不想吃饭，大便溏，舌淡苔白腻",
+    "category": "寒湿黄疸",
+    "difficulty": "medium",
+    "expected_entities": ["皮肤发黄", "色泽晦暗", "怕冷", "食欲不振", "大便溏", "舌淡苔白腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 91,
+    "question": "我最近感觉头痛如裹，身体困重，胸闷，不想吃饭，舌苔白腻，脉濡",
+    "category": "风湿头痛",
+    "difficulty": "medium",
+    "expected_entities": ["头痛如裹", "身体困重", "胸闷", "食欲不振", "舌苔白腻", "脉濡"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 92,
+    "question": "我最近感觉头痛而胀，面红目赤，心烦易怒，口苦，舌红苔黄，脉弦数",
+    "category": "肝阳头痛",
+    "difficulty": "medium",
+    "expected_entities": ["头痛而胀", "面红目赤", "心烦易怒", "口苦", "舌红苔黄", "脉弦数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 93,
+    "question": "我最近感觉头晕，头重，胸闷，恶心，不想吃饭，舌苔白腻，脉弦滑",
+    "category": "痰浊眩晕",
+    "difficulty": "medium",
+    "expected_entities": ["头晕", "头重", "胸闷", "恶心", "食欲不振", "舌苔白腻", "脉弦滑"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 94,
+    "question": "我最近感觉心下痞满，不想吃饭，恶心，肠鸣，大便不调，舌苔腻",
+    "category": "痞证",
+    "difficulty": "medium",
+    "expected_entities": ["心下痞满", "食欲不振", "恶心", "肠鸣", "大便不调", "舌苔腻"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 95,
+    "question": "我最近感觉腰膝酸软，头晕耳鸣，脱发，牙齿松动，舌红少苔，脉细数",
+    "category": "肾精亏虚",
+    "difficulty": "complex",
+    "expected_entities": ["腰膝酸软", "头晕", "耳鸣", "脱发", "牙齿松动", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 96,
+    "question": "我最近感觉怕冷发热，身体痛，不出汗，烦躁，口渴，舌苔薄白而干，脉浮紧",
+    "category": "风寒化热",
+    "difficulty": "medium",
+    "expected_entities": ["怕冷", "发热", "身痛", "无汗", "烦躁", "口渴", "脉浮紧"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 97,
+    "question": "我最近感觉气短，咳嗽无力，痰白清稀，自汗，容易感冒，舌淡苔白，脉弱",
+    "category": "肺气虚",
+    "difficulty": "medium",
+    "expected_entities": ["气短", "咳嗽无力", "痰白清稀", "自汗", "容易感冒", "舌淡苔白", "脉弱"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 98,
+    "question": "我最近感觉口渴多饮，心烦，小便多，身体消瘦，舌红苔薄黄，脉数",
+    "category": "消渴上消",
+    "difficulty": "medium",
+    "expected_entities": ["口渴多饮", "心烦", "多尿", "消瘦", "舌红苔薄黄", "脉数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 99,
+    "question": "我最近感觉胃里嘈杂，饿了不想吃，口干，大便干，舌红少苔，脉细数",
+    "category": "胃阴虚",
+    "difficulty": "medium",
+    "expected_entities": ["胃嘈杂", "饥不欲食", "口干", "大便干", "舌红少苔", "脉细数"],
+    "expected_intent": "diagnosis"
+  },
+  {
+    "id": 100,
+    "question": "我最近感觉全身水肿，尤其是腰以下，小便少，怕冷，腰膝冷痛，舌淡胖苔白滑，脉沉迟",
+    "category": "肾阳虚水肿",
+    "difficulty": "complex",
+    "expected_entities": ["全身水肿", "腰以下肿甚", "小便少", "怕冷", "腰膝冷痛", "舌淡胖", "苔白滑", "脉沉迟"],
+    "expected_intent": "diagnosis"
+  }
+]

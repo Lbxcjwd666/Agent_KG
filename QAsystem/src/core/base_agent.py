@@ -17,7 +17,7 @@ class BaseAgent(ABC):
     def __init__(self, name: str, qwen_api, kg_enhancer=None):
         self.name = name
         self.agent_config = AGENT_CONFIG.get(name, {})
-        self.model = self.agent_config.get("model", "qwen-turbo")
+        self.model = self.agent_config.get("model", "qwen3.7-plus")
         self.timeout = self.agent_config.get("timeout", 15)
         self.qwen_api = qwen_api
         self.kg = kg_enhancer

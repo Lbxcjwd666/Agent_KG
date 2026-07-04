@@ -43,15 +43,19 @@ class AcupunctureAgent(BaseAgent):
         kg_context = payload.get("kg_context", "")
         entities = payload.get("entities", [])
         question = payload.get("question", "")
+        subgraph = payload.get("subgraph", {})
 
         syndrome = diagnosis_result.get("syndrome", {})
         syndrome_name = ""
         if isinstance(syndrome.get("primary"), dict):
             syndrome_name = syndrome["primary"].get("name", "")
 
-        # KG查询腧穴
         acu_kg = ""
-        if self.kg:
+        if subgraph:
+            acu_kg = self._format_subgraph(subgraph)
+        elif kg_context:
+            acu_kg = kg_context
+        elif self.kg:
             acu_kg = self._query_acupuncture(syndrome_name, entities)
 
         prompt = self._build_prompt(question, syndrome_name, acu_kg, kg_context)
@@ -73,8 +77,23 @@ class AcupunctureAgent(BaseAgent):
             "needle_technique": result.get("needle_technique", {}),
             "contraindicated_points": result.get("contraindicated_points", []),
             "overall_confidence": result.get("overall_confidence", 0.8),
-            "kg_context_used": bool(acu_kg)
+            "kg_context_used": bool(acu_kg) or bool(kg_context)
         }
+
+    def _format_subgraph(self, subgraph: Dict) -> str:
+        """格式化专属子图为自然语言"""
+        parts = []
+        for entity_text, data in subgraph.items():
+            if not isinstance(data, dict):
+                continue
+            entity_type = data.get("type", "")
+            parts.append(f"【{entity_text}（{entity_type}）】")
+            for key, values in data.get("relations", {}).items():
+                if not values:
+                    continue
+                names = [v.get("text", "") for v in values[:5]]
+                parts.append(f"  {key}: {', '.join(names)}")
+        return "\n".join(parts)
 
     def _query_acupuncture(self, syndrome_name: str, entities: list) -> str:
         parts = []

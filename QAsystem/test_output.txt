@@ -1,0 +1,2 @@
+[INFO] 模型 qwen3.7-plus 不在已知支持列表中，将尝试使用
+Import OK

@@ -25,7 +25,7 @@ ENTITY_TYPES = {
 # 关系类型配置（严格按照设计表）
 RELATION_TYPES = {
     "治疗": {
-        "label": "Treat",
+        "label": "treat",
         "head_entities": ["MED", "PRE", "ACU"],
         "tail_entities": ["DIS", "SYN", "SIG", "SYM"]
     },
@@ -140,7 +140,7 @@ NEO4J_CONFIG = {
 
 # 千问API配置
 QWEN_API_CONFIG = {
-    "api_key": "sk-4ccf930e9c494eb1818235daa89a9f32",  # 请替换为您的API密钥
+    "api_key": "sk-ws-H.RYYYMPP.o4kb.MEUCIGgnVzZ4Eq1bRwmb7qydmHbeDwRNfcwtljsj7ENrWXOdAiEAxOrrMDPVT3-XOOdLK374a0ugTXVlwDilyOVB9Lxv4yw",  # 请替换为您的API密钥
     "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
     # 模型选项说明：
     # - qwen-turbo: 快速响应，适合一般对话
@@ -151,7 +151,7 @@ QWEN_API_CONFIG = {
     # - qwen2.5-32b-instruct: 32B参数模型，支持微调
     # - qwen2.5-72b-instruct: 72B参数模型，支持微调
     # 注意：qwen2.5-vl是视觉语言模型，主要用于图像理解，不适合纯文本问答
-    "model": "qwen-max",  # 默认使用qwen-turbo，可根据需要修改
+    "model": "qwen3.7-plus",
     "temperature": 0.7,
     "max_tokens": 2000
 }
@@ -167,15 +167,28 @@ SYSTEM_CONFIG = {
 # 多Agent配置 — 5 Agent 诊疗管线 + 辅助Agent
 AGENT_CONFIG = {
     # 核心诊疗Agent
-    "diagnosis": {"model": "qwen-max", "timeout": 30},
-    "formula": {"model": "qwen-plus", "timeout": 20},
-    "acupuncture": {"model": "qwen-plus", "timeout": 20},
-    "regimen": {"model": "qwen-turbo", "timeout": 15},
-    "review": {"model": "qwen-turbo", "timeout": 15},
+    "diagnosis": {"model": "qwen3.7-plus", "timeout": 120},
+    "formula": {"model": "qwen3.7-plus", "timeout": 90},
+    "acupuncture": {"model": "qwen3.7-plus", "timeout": 90},
+    "regimen": {"model": "qwen3.7-plus", "timeout": 60},
+    "review": {"model": "qwen3.7-plus", "timeout": 60},
     # 辅助Agent
-    "orchestrator": {"model": "qwen-plus", "timeout": 20},
-    "entity_recognition": {"model": "qwen-turbo", "timeout": 15},
+    "orchestrator": {"model": "qwen3.7-plus", "timeout": 20},
+    "entity_recognition": {"model": "qwen3.7-plus", "timeout": 15},
     "kg_query": {"timeout": 10},
+}
+
+# 向量索引配置
+VECTOR_INDEX_CONFIG = {
+    "embedding_model": "bge-large-zh-v1.5",
+    "embedding_provider": "local",
+    "embedding_dimension": 1024,
+    "index_name": "entity_vector_index",
+    "similarity_function": "cosine",
+    "top_k": 10,
+    "batch_size": 64,
+    "vector_match_threshold": 0.75,
+    "concurrent_workers": 1,
 }
 
 # 持续学习配置
